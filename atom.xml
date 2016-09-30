@@ -40,6 +40,28 @@
   </entry>
   
   <entry>
+    <title>代写java COSE60507  Algorithmics</title>
+    <link href="http://yoursite.com/2016/10/01/page2/"/>
+    <id>http://yoursite.com/2016/10/01/page2/</id>
+    <published>2016-09-30T17:52:31.000Z</published>
+    <updated>2016-09-30T16:45:45.266Z</updated>
+    
+    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;实现binary sequence search tree（BSST）以及实现其升级版本AVL Tree，评分点比较详细，需要做对比分析以及实现，代码实现不能使用library，最终提交code和report，应客户要求，分别用Java、C#、C、C++四种语言进行了实现。&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;Scenario: GlobalQuiz is a popular mobile multiplayer quiz game.  Each registered player has a unique numerical id.  The GlobalQuiz server maintains a list in memory of the players currently playing the game.  This list can be considered a data dictionary, where the numerical id is the key, and the player details is the data.&lt;br&gt;&lt;br&gt;The data dictionary adt implements the following operations:&lt;br&gt;&lt;br&gt;          proc insert ( int key) ;&lt;br&gt;pointer fun  find( int key ) ;&lt;br&gt;proc delete( int key );&lt;br&gt;&lt;br&gt;Currently the player list is stored as list in an array, ordered by key.  When a player logs on to the game, their details are added to the back of the list and sifted to the correct position using one pass of an insertion sort.   When the server needs to access a player’s details, it conducts a binary search.  When a player leaves the game, their details are deleted from the list, and the remaining entries are moved down to fill the gap.&lt;br&gt;&lt;br&gt;GlobalQuiz has become very popular, with thousands of players connected at once.  Its makers would like to explore whether there is a more efficient way of storing the player details.  They would like to use a tree-like structure, and are considering a binary sequence search tree (BSST).&lt;br&gt;&lt;br&gt;Task: Original List Implementation: Write a program implementing the list, as described above, in a language of your choice from Java, C#, C++ or C.  Your program should contain one class implementing the ADT, and a main method or GUI which allows each method to be tested.  Your implementation simply needs to store a list of integers – the keys. [15 marks]&lt;br&gt;&lt;br&gt;State and justify the big-O efficiency of each method in the original list implementation. [5 marks]&lt;br&gt;&lt;br&gt;BSST proposal Describe and discuss, using diagrams, high-level pseudocode and a big-O analysis of each method, the advantages and disadvantages of using a Binary Sequence Search Tree (BSST) to implement the ADT. [15 marks]&lt;br&gt;&lt;br&gt;A better tree implementation Choose either the Order 2 B-Tree or an AVL Tree, and explain, using diagrams, high-level pseudocode, and big-O analysis, how it could be implemented and its advantages and disadvantages compared to the BSST proposal.  [15 marks] Write a program implementing your chosen data structure in the language of your choice. [20 marks]&lt;br&gt;&lt;br&gt;Conclusion  Summarise your analysis in a table, showing the big-O efficiencies of each of the three operations (insert, find and delete) for each of the 3 implementations.  Which implementation do you recommend for the GlobalQuiz scenario and why?   Would the recommendation be different for different usage scenarios?  [10 marks]&lt;br&gt;&lt;br&gt;Further Discussion Research and describe further implementations (such as other types of tree) that GlobalQuiz could consider.  What are their advantages and disadvantages? [15 marks]&lt;br&gt;&lt;br&gt;Referencing and readability of report      [5 marks]&lt;br&gt;&lt;/font&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;实现binary sequence search tree（BSST）以及实现其升级版本AVL Tree，评分点比较详细，需要做对比分析以及实现，代码实现不能使用library
+    
+    </summary>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="algorithmics" scheme="http://yoursite.com/tags/algorithmics/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JAVA代写 CS302 program 1</title>
     <link href="http://yoursite.com/2016/09/30/page1/"/>
     <id>http://yoursite.com/2016/09/30/page1/</id>
@@ -58,28 +80,6 @@
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
       <category term="autotest" scheme="http://yoursite.com/tags/autotest/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>代写java COSE60507  Algorithmics</title>
-    <link href="http://yoursite.com/2016/09/30/page2/"/>
-    <id>http://yoursite.com/2016/09/30/page2/</id>
-    <published>2016-09-30T07:55:30.000Z</published>
-    <updated>2016-09-30T16:37:05.528Z</updated>
-    
-    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;实现binary sequence search tree（BSST）以及实现其升级版本AVL Tree，评分点比较详细，需要做对比分析以及实现，代码实现不能使用library，最终提交code和report，应客户要求，分别用Java、C#、C、C++四种语言进行了实现。&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;Scenario: GlobalQuiz is a popular mobile multiplayer quiz game.  Each registered player has a unique numerical id.  The GlobalQuiz server maintains a list in memory of the players currently playing the game.  This list can be considered a data dictionary, where the numerical id is the key, and the player details is the data.&lt;br&gt;&lt;br&gt;The data dictionary adt implements the following operations:&lt;br&gt;&lt;br&gt;          proc insert ( int key) ;&lt;br&gt;pointer fun  find( int key ) ;&lt;br&gt;proc delete( int key );&lt;br&gt;&lt;br&gt;Currently the player list is stored as list in an array, ordered by key.  When a player logs on to the game, their details are added to the back of the list and sifted to the correct position using one pass of an insertion sort.   When the server needs to access a player’s details, it conducts a binary search.  When a player leaves the game, their details are deleted from the list, and the remaining entries are moved down to fill the gap.&lt;br&gt;&lt;br&gt;GlobalQuiz has become very popular, with thousands of players connected at once.  Its makers would like to explore whether there is a more efficient way of storing the player details.  They would like to use a tree-like structure, and are considering a binary sequence search tree (BSST).&lt;br&gt;&lt;br&gt;Task: Original List Implementation: Write a program implementing the list, as described above, in a language of your choice from Java, C#, C++ or C.  Your program should contain one class implementing the ADT, and a main method or GUI which allows each method to be tested.  Your implementation simply needs to store a list of integers – the keys. [15 marks]&lt;br&gt;&lt;br&gt;State and justify the big-O efficiency of each method in the original list implementation. [5 marks]&lt;br&gt;&lt;br&gt;BSST proposal Describe and discuss, using diagrams, high-level pseudocode and a big-O analysis of each method, the advantages and disadvantages of using a Binary Sequence Search Tree (BSST) to implement the ADT. [15 marks]&lt;br&gt;&lt;br&gt;A better tree implementation Choose either the Order 2 B-Tree or an AVL Tree, and explain, using diagrams, high-level pseudocode, and big-O analysis, how it could be implemented and its advantages and disadvantages compared to the BSST proposal.  [15 marks] Write a program implementing your chosen data structure in the language of your choice. [20 marks]&lt;br&gt;&lt;br&gt;Conclusion  Summarise your analysis in a table, showing the big-O efficiencies of each of the three operations (insert, find and delete) for each of the 3 implementations.  Which implementation do you recommend for the GlobalQuiz scenario and why?   Would the recommendation be different for different usage scenarios?  [10 marks]&lt;br&gt;&lt;br&gt;Further Discussion Research and describe further implementations (such as other types of tree) that GlobalQuiz could consider.  What are their advantages and disadvantages? [15 marks]&lt;br&gt;&lt;br&gt;Referencing and readability of report      [5 marks]&lt;br&gt;&lt;/font&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;实现binary sequence search tree（BSST）以及实现其升级版本AVL Tree，评分点比较详细，需要做对比分析以及实现，代码实现不能使用library
-    
-    </summary>
-    
-    
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
-    
-      <category term="algorithmics" scheme="http://yoursite.com/tags/algorithmics/"/>
     
   </entry>
   
