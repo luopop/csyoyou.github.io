@@ -40,6 +40,26 @@
   </entry>
   
   <entry>
+    <title>Java代写  Intermediate &amp; Object-Oriented Application Development</title>
+    <link href="http://yoursite.com/2016/10/05/page4/"/>
+    <id>http://yoursite.com/2016/10/05/page4/</id>
+    <published>2016-10-05T04:21:31.000Z</published>
+    <updated>2016-10-05T15:40:09.795Z</updated>
+    
+    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;Java的基础题目，根据输入分数数据处理统计，格式化输出&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;&lt;br&gt;This project is designed to help you practice File Input/Output using Java. It is to be completed and handed in by Thursday, October 6, 2016.&lt;br&gt;Design and write an application to provide a report on student exam scores.  The input is provided in the file scores.txt.  This file can be found at the course Angel web site.  Do not modify the input file in any way.&lt;br&gt;The data layout is a follows:&lt;br&gt;Score&lt;br&gt;Last Name&lt;br&gt;First Name&lt;br&gt;The data on the file is comma delimited.&lt;br&gt;The report output should appear as:&lt;br&gt;&lt;br&gt;To receive full credit, you must do the following:&lt;br&gt;1.    Use proper File Input/Output techniques.&lt;br&gt;2.    Generate a properly formatted report containing a report header with date. The detail lines must include the student name, letter grade, and score.  The summary should include the total number of exams, a breakdown of grade distribution, and the average exam score.  The output report file name should be report.txt.&lt;br&gt;3.    When assigning letter grades, use the following scale: 90 to 100 – A, 80 to 89 – B, 70 to 79 – C, 60 to 69 – D, below 60 - F.&lt;br&gt;Hand in:&lt;br&gt;1.    A printed copy of your report.&lt;br&gt;2.    A printed copy of your java code&lt;br&gt;3.    a written algorithm&lt;br&gt;4.    Either email your .java files in a compressed file (.zip)&lt;br&gt;&lt;br&gt;&lt;/font&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;Java的基础题目，根据输入分数数据处理统计，格式化输出&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;&lt;br&gt;This project
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python代写  Assignment 2 COMP9021, Session 2, 2016</title>
     <link href="http://yoursite.com/2016/10/02/page3/"/>
     <id>http://yoursite.com/2016/10/02/page3/</id>
