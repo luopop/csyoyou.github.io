@@ -40,6 +40,26 @@
   </entry>
   
   <entry>
+    <title>代写C   IP1  lab1</title>
+    <link href="http://yoursite.com/2016/10/09/page6/"/>
+    <id>http://yoursite.com/2016/10/09/page6/</id>
+    <published>2016-10-09T06:23:32.000Z</published>
+    <updated>2016-10-11T15:47:45.631Z</updated>
+    
+    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;是电路和C语言的结合，电阻串联并联，然后用欧姆定律求总的电流。 实现了三个function，一个欧姆定律function，一个串联function，一个并联function。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;As electrical engineering students, you are familiar with Ohm’s Law (V = IR) and calculating the value of resistors in series (R = R1+R2) and parallel (1/R = 1/R1 + 1/R2). Consider the following circuit:&lt;br&gt;Write a program to calculate the overall current in this circuit.&lt;br&gt;You must use 3 functions: ohm_law(…), series(…), and parallel(…). A 4th function parallel_three(…) is optional. Do not write functions like sum_r1_r2(…).&lt;br&gt;Calculate the current for:&lt;br&gt;int r1=100, r2=200, r3=300, r4=400, r5=500, r6=600, r7=700;&lt;br&gt;(you may copy&amp;amp;paste this into your .c file)&lt;br&gt;The answer should be 124.6 mA.&lt;br&gt;Calculate the current for:&lt;br&gt;int r1=123, r2=234, r3=345, r4=456, r5=567, r6=678, r7=789;&lt;br&gt;The answer should be 107.6 mA.&lt;br&gt;You may find it helpful to use intermediate variables, and to print debugging information.&lt;br&gt;&lt;br&gt;(optional: you can call functions as inputs to other functions, i.e.&lt;br&gt;z = f( g(x,y), h(x,y) );&lt;br&gt;Using this, calculate the current from voltage and Rx values in a single line.)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;是电路和C语言的结合，电阻串联并联，然后用欧姆定律求总的电流。 实现了三个function，一个欧姆定律function，一个串联function，一个并联function。&lt;
+    
+    </summary>
+    
+    
+      <category term="C" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C代写  CMPUT 201</title>
     <link href="http://yoursite.com/2016/10/09/page5/"/>
     <id>http://yoursite.com/2016/10/09/page5/</id>
@@ -55,9 +75,9 @@
     </summary>
     
     
-      <category term="Autotest" scheme="http://yoursite.com/tags/Autotest/"/>
-    
       <category term="C" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="Autotest" scheme="http://yoursite.com/tags/Autotest/"/>
     
   </entry>
   
@@ -97,9 +117,9 @@
     </summary>
     
     
-      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
-    
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
     
   </entry>
   
@@ -119,9 +139,9 @@
     </summary>
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
       <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -141,9 +161,9 @@
     </summary>
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
       <category term="Autotest" scheme="http://yoursite.com/tags/Autotest/"/>
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
