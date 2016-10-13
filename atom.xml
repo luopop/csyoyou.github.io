@@ -41,21 +41,21 @@
   
   <entry>
     <title>代写C   IP1  lab1</title>
-    <link href="http://yoursite.com/2016/10/09/page6/"/>
-    <id>http://yoursite.com/2016/10/09/page6/</id>
-    <published>2016-10-09T06:23:32.000Z</published>
-    <updated>2016-10-11T15:47:45.631Z</updated>
+    <link href="http://yoursite.com/2016/10/13/page7/"/>
+    <id>http://yoursite.com/2016/10/13/page7/</id>
+    <published>2016-10-13T14:13:33.000Z</published>
+    <updated>2016-10-13T14:19:47.064Z</updated>
     
-    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;是电路和C语言的结合，电阻串联并联，然后用欧姆定律求总的电流。 实现了三个function，一个欧姆定律function，一个串联function，一个并联function。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;As electrical engineering students, you are familiar with Ohm’s Law (V = IR) and calculating the value of resistors in series (R = R1+R2) and parallel (1/R = 1/R1 + 1/R2). Consider the following circuit:&lt;br&gt;Write a program to calculate the overall current in this circuit.&lt;br&gt;You must use 3 functions: ohm_law(…), series(…), and parallel(…). A 4th function parallel_three(…) is optional. Do not write functions like sum_r1_r2(…).&lt;br&gt;Calculate the current for:&lt;br&gt;int r1=100, r2=200, r3=300, r4=400, r5=500, r6=600, r7=700;&lt;br&gt;(you may copy&amp;amp;paste this into your .c file)&lt;br&gt;The answer should be 124.6 mA.&lt;br&gt;Calculate the current for:&lt;br&gt;int r1=123, r2=234, r3=345, r4=456, r5=567, r6=678, r7=789;&lt;br&gt;The answer should be 107.6 mA.&lt;br&gt;You may find it helpful to use intermediate variables, and to print debugging information.&lt;br&gt;&lt;br&gt;(optional: you can call functions as inputs to other functions, i.e.&lt;br&gt;z = f( g(x,y), h(x,y) );&lt;br&gt;Using this, calculate the current from voltage and Rx values in a single line.)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;</content>
+    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;实现一个Wumpus的teriminal端的游戏（println），输出一个4&lt;em&gt;4的表格，有玩家、恶魔、陷阱、金币，玩家遇到恶魔或者陷阱就游戏Lose，捡完所有的金币就游戏Win，同时玩家可以感知恶魔 陷阱 金币的提示。&lt;br&gt;这个作业 时间是12小时，然后比较麻烦的是需求给的不太清楚，需要结合网上的Wumpus游戏和作业需求综合理解，设计一个简易的Wumpus游戏，画出UML图，然后code。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;Wumpus!&lt;br&gt;Wumpus is a text-based game, where a player moves through a cave system searching&lt;br&gt;for gold and trying to avoid bottomless pits and a feared Wumpus. The cave system is&lt;br&gt;a 4 x 4 grid. Each grid element can hold one GameItem. A GameItem is one of: Gold,&lt;br&gt;Pit, Wumpus or ClearGround.&lt;br&gt;The player can move forward, backward, left or right one grid element at a time. The&lt;br&gt;cave system wraps around so, for example, moving left from position [3][0] causes&lt;br&gt;the player to appear in position [3][3].&lt;br&gt;The player can sense, but not see, what is in the immediate grid elements around the&lt;br&gt;player. A pit will be sensed as a breeze, gold as a faint glitter and the Wumpus as a&lt;br&gt;vile smell. In this assignment, the grid will be displayed, but in a real game this&lt;br&gt;feature would be disabled.&lt;br&gt;If the player moves onto a pit or the Wumpus, the player dies and the game ends.&lt;br&gt;If the player moves onto gold, the game score increases by one and the gold is&lt;br&gt;replaced by ClearGround.&lt;br&gt;Implementation:&lt;br&gt;You should write a Game class, which has a 2D array of size 4 x 4 of GameItem called&lt;br&gt;board for implementing the Wumpus game described above.&lt;br&gt;Classes Gold, Pit, Wumpus and ClearGround are extensions of class GameItem.&lt;br&gt;GameItem should provide a public method, display(), for use when displaying the&lt;br&gt;board and a private instance variable for specifying the displayed character. Gold is&lt;br&gt;displayed as ‘g’, a Pit as ‘p’, the Wumpus as ‘W’, clear ground as ‘.’ . GameItem&lt;br&gt;provides a constructor GameItem(char c) for specifying the displayed character.&lt;br&gt;It should not be possible to instantiate an object of GameItem. The player is not&lt;br&gt;implemented as an object, instead just being represented by Game as private row &amp;amp;&lt;br&gt;column coordinates. The position of the player is displayed by a ‘&lt;/em&gt;‘.&lt;br&gt;The items should be positioned randomly over board. There is exactly one Wumpus,&lt;br&gt;at least one, and up to three pieces of gold (chosen randomly) and exactly three pits.&lt;br&gt;The player is positioned over a ClearGround position.&lt;br&gt;Game should provide:&lt;br&gt;?  a private method setBoard(), which instantiates objects on the board&lt;br&gt;?  a private method display() which will display the board.&lt;br&gt;?  a private method senseNearby(), which displays text about what the&lt;br&gt;player can sense from the board elements immediately surrounding&lt;br&gt;the player.&lt;br&gt;?  a private method menu() which will provide a menu asking the user to&lt;br&gt;make a choice from the following and obtain the user input:&lt;br&gt;=====Wumpus====&lt;br&gt;1. Move player left&lt;br&gt;2. Move player right&lt;br&gt;3. Move player up&lt;br&gt;4. Move player down 5&lt;br&gt;Quit&lt;br&gt;?  a public method runGame() that will display the board, print out what&lt;br&gt;the player can sense, present the menu and process the user’s decision&lt;br&gt;according to the game play described above.&lt;br&gt;The World class only instantiates an object myGame of class Game, and calls&lt;br&gt;myGame.runGame()&lt;br&gt;You need to show the Pit , Wumpus and Gold when the game is being played and also&lt;br&gt;show the SenseNearby() field as this is testing your ability to utilize polymorphism to call&lt;br&gt;method of different classes.&lt;br&gt;GameItem display() method is used to display each game item.&lt;br&gt;Game display() method is used to loop through GameItem array to display the board.&lt;br&gt;You may find the class Random, available in java.util.* useful.&lt;br&gt;For example the following will assign integer variable guess a value from 0..4&lt;br&gt;inclusive.&lt;br&gt;Random randomGenerator = new Random();&lt;br&gt;guess = randomGenerator.nextInt(5);&lt;br&gt;.&lt;br&gt;Submission:&lt;br&gt;?  Due date: 9am 10th Oct 2016. Representing 30% of course assessment&lt;br&gt;?  This is a group assignment of maximum 3 students (prefer not solo)&lt;br&gt;?  You will need to submit 7 electronic files, (Game.java, GameItem.java, Gold.java, Pit.java,&lt;br&gt;Wumpus.java, ClearGround.java and World. Please note these must be Java source files (e.g.&lt;br&gt;World.java), not class files (i.e not World.class). We will not mark a class file.&lt;br&gt;?  This assignment needs to be well designed. Please draw the Class diagram of your final&lt;br&gt;coding design Please screenshot a full set of successful executions. Save the class diagram&lt;br&gt;and screenshots of executions in a PDF file called Design.pdf.&lt;br&gt;?  Weblearn is used for submission. Please zip all source files and Design.pdf into one for&lt;br&gt;submission (7z, rar, zipx or other compression format will be penalized).&lt;br&gt;?  Remember to include all team members’ names, student IDs and contribution % of each&lt;br&gt;person in you submission of Design.pdf in the first page. One submission one group and&lt;br&gt;multiple submission will be penalized or at your own risk of getting wrong marks.&lt;br&gt;Standard warning:&lt;br&gt;This assignment must be your own work. Any submission found in whole or in part to&lt;br&gt;be plagiarized will be given zero marks and will not count towards your assessment. If&lt;br&gt;an award of zero marks means that you do not pass the assignment hurdle then you will&lt;br&gt;fail the course.&lt;br&gt;Frequent Asked Questions&lt;br&gt;Question: I was just wondering if the Wumpus will be moving around the board as&lt;br&gt;well? Or will it be stationary like the position of the pits?&lt;br&gt;Answer: The Wumpus position is randomly generated. In each session, it will not be&lt;br&gt;move around. It will be stationary like the position of the pits.&lt;br&gt;Question: Is there only 1 pit, 1 gold and 1 Wumpus in the game?&lt;br&gt;Answer: There is exactly one Wumpus, at least one, and up to three pieces of gold&lt;br&gt;(chosen randomly) and exactly three pits. The player is positioned over a ClearGround&lt;br&gt;position&lt;br&gt;Question: Hey I’m hoping to submit and wanted to know if the tutor name is&lt;br&gt;important, I’m not sure who my tutor is.&lt;br&gt;Answer: The tutor’s name is not important. You can just submit to the default one.&lt;br&gt;Yes, all files need to be zipped into one file. The zip file name is not important as&lt;br&gt;weblearn will auto rename it.&lt;br&gt;Question: Is it like after generate Wumpus, pit and gold, the position of these objects&lt;br&gt;are settled, no matter where the player moves on the board, these objects are not&lt;br&gt;moving? Or, each time player moves a step, the position of W,P and G changes&lt;br&gt;randomly? If player is surrounded by more than one objects, senseNearby() should&lt;br&gt;output all information of them&lt;br&gt;Answer: After randomly generate W, P, G in the beginning of the game, these objects&lt;br&gt;are settled in position. Only replaced by “.” if player walks into it, like gold.&lt;br&gt;Yes, senseNearby() should output all information of up, down, left and right.&lt;br&gt;Question: At starting do I need to display 4X4 Grid along with GameItems like ( 1&lt;br&gt;Wumpus, 3 Pit and 3 Gold).I meant player basically see all gameItems position in the&lt;br&gt;grid (not like real game) at the beginning of the game.&lt;br&gt;Answer: Yes, you do need to display 4x4 grid along with GameItems at the starting&lt;br&gt;point.&lt;br&gt;Question: After each user selection from Menu do I need to display grid along with&lt;br&gt;gameItems position again.&lt;br&gt;Answer: Yes that is why you call display() method in the Game class.&lt;br&gt;Marking Guide:&lt;br&gt;OO Components 12 marks&lt;br&gt;Functional correct 12 marks&lt;br&gt;Documentation, Coding Style, Submission requirement, Error checking 8 marks&lt;br&gt;&lt;br&gt;&lt;/font&gt;</content>
     
     <summary type="html">
     
-      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;是电路和C语言的结合，电阻串联并联，然后用欧姆定律求总的电流。 实现了三个function，一个欧姆定律function，一个串联function，一个并联function。&lt;
+      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;实现一个Wumpus的teriminal端的游戏（println），输出一个4&lt;em&gt;4的表格，有玩家、恶魔、陷阱、金币，玩家遇到恶魔或者陷阱就游戏Lose，捡完所有的金币就游
     
     </summary>
     
     
-      <category term="C" scheme="http://yoursite.com/tags/C/"/>
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -75,9 +75,29 @@
     </summary>
     
     
+      <category term="Autotest" scheme="http://yoursite.com/tags/Autotest/"/>
+    
       <category term="C" scheme="http://yoursite.com/tags/C/"/>
     
-      <category term="Autotest" scheme="http://yoursite.com/tags/Autotest/"/>
+  </entry>
+  
+  <entry>
+    <title>代写C   IP1  lab1</title>
+    <link href="http://yoursite.com/2016/10/09/page6/"/>
+    <id>http://yoursite.com/2016/10/09/page6/</id>
+    <published>2016-10-09T06:23:32.000Z</published>
+    <updated>2016-10-11T15:47:45.631Z</updated>
+    
+    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;是电路和C语言的结合，电阻串联并联，然后用欧姆定律求总的电流。 实现了三个function，一个欧姆定律function，一个串联function，一个并联function。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;As electrical engineering students, you are familiar with Ohm’s Law (V = IR) and calculating the value of resistors in series (R = R1+R2) and parallel (1/R = 1/R1 + 1/R2). Consider the following circuit:&lt;br&gt;Write a program to calculate the overall current in this circuit.&lt;br&gt;You must use 3 functions: ohm_law(…), series(…), and parallel(…). A 4th function parallel_three(…) is optional. Do not write functions like sum_r1_r2(…).&lt;br&gt;Calculate the current for:&lt;br&gt;int r1=100, r2=200, r3=300, r4=400, r5=500, r6=600, r7=700;&lt;br&gt;(you may copy&amp;amp;paste this into your .c file)&lt;br&gt;The answer should be 124.6 mA.&lt;br&gt;Calculate the current for:&lt;br&gt;int r1=123, r2=234, r3=345, r4=456, r5=567, r6=678, r7=789;&lt;br&gt;The answer should be 107.6 mA.&lt;br&gt;You may find it helpful to use intermediate variables, and to print debugging information.&lt;br&gt;&lt;br&gt;(optional: you can call functions as inputs to other functions, i.e.&lt;br&gt;z = f( g(x,y), h(x,y) );&lt;br&gt;Using this, calculate the current from voltage and Rx values in a single line.)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;是电路和C语言的结合，电阻串联并联，然后用欧姆定律求总的电流。 实现了三个function，一个欧姆定律function，一个串联function，一个并联function。&lt;
+    
+    </summary>
+    
+    
+      <category term="C" scheme="http://yoursite.com/tags/C/"/>
     
   </entry>
   
@@ -117,9 +137,9 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
       <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
@@ -139,9 +159,9 @@
     </summary>
     
     
-      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
-    
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
     
   </entry>
   
@@ -161,9 +181,9 @@
     </summary>
     
     
-      <category term="Autotest" scheme="http://yoursite.com/tags/Autotest/"/>
-    
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="Autotest" scheme="http://yoursite.com/tags/Autotest/"/>
     
   </entry>
   
