@@ -40,6 +40,26 @@
   </entry>
   
   <entry>
+    <title>代写C++ CS37 Programming Assignment 1</title>
+    <link href="http://yoursite.com/2016/10/15/page9/"/>
+    <id>http://yoursite.com/2016/10/15/page9/</id>
+    <published>2016-10-15T13:42:55.000Z</published>
+    <updated>2016-10-15T17:34:05.800Z</updated>
+    
+    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;一个简单的c++程序，计算BMI指数，重点在于注意细节，c++的标准I/O的输入输出格式输出&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Total Point: 12 Due Date: 09/12/2016, Monday&lt;br&gt;Assignment Description:&lt;br&gt;Write a program that calculate the Body Mass Index (BMI). Your program should&lt;br&gt;perform the following tasks:&lt;br&gt;1. Prompt the user to enter the following data for each person:&lt;br&gt; ID (four digit integer),&lt;br&gt; Name 20 character string,&lt;br&gt; Weight in pounds (floating-point with 1 digit after decimal point),&lt;br&gt; Height in inches (floating-point with 1 digit after decimal point).&lt;br&gt;2. Compute the BMI using the following formula:&lt;br&gt;BMI = (weightInPounds &lt;em&gt; 703) / (heightInInches &lt;/em&gt; heightInInches)&lt;br&gt;3. Save (Write) the input data (id, name, weight, height) and the calculated BMI&lt;br&gt;(floating-point with 2 digits after decimal point) into a text file (e.g. bmifile.txt).&lt;br&gt;4. Repeat steps 1-3 to compute the BMIs for three persons, then close the text file.&lt;br&gt;5. Now, read all the BMI records from the text file, one person each time, and print out&lt;br&gt;a summary like the following:&lt;br&gt;Program Requirements:&lt;br&gt;1. The program must use streams, cout and cin objects to perform the IOs with&lt;br&gt;console, printer, and file, and use IO manipulators to format the output.&lt;br&gt;2. The program should include the following information as comment on top of source&lt;br&gt;code:&lt;br&gt; Programming assignment number&lt;br&gt; Author of the program&lt;br&gt; Date of programming (or due date)&lt;br&gt; Brief description on what the program will do&lt;br&gt;Grading:&lt;br&gt;Create and run your program using IDE of your choice (CodeBlock or Visual C++).&lt;br&gt;Print the source code, program output and a snapshot of the text file (to show the&lt;br&gt;file content) and turn in all three items for grading. The turn in documents must be&lt;br&gt;legible. Extremely tiny font or light/blur inks used in printing make it impossible&lt;br&gt;to read and grade your assignments.&lt;br&gt;Also save the source code and output in your computer or portable storage device (USB&lt;br&gt;device for example) so that they can be turned in for validation if asked to do so.&lt;br&gt;&lt;br&gt;&lt;/font&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;一个简单的c++程序，计算BMI指数，重点在于注意细节，c++的标准I/O的输入输出格式输出&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;&lt;
+    
+    </summary>
+    
+    
+      <category term="c++" scheme="http://yoursite.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
     <title>代写JAVA COSC1290</title>
     <link href="http://yoursite.com/2016/10/14/page8/"/>
     <id>http://yoursite.com/2016/10/14/page8/</id>
@@ -181,9 +201,9 @@
     </summary>
     
     
-      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
-    
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
     
   </entry>
   
