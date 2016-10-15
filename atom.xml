@@ -40,6 +40,28 @@
   </entry>
   
   <entry>
+    <title>代写JAVA COSC1290</title>
+    <link href="http://yoursite.com/2016/10/14/page8/"/>
+    <id>http://yoursite.com/2016/10/14/page8/</id>
+    <published>2016-10-14T13:12:35.000Z</published>
+    <updated>2016-10-15T16:38:24.713Z</updated>
+    
+    <content type="html">&lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;写基于JavaFX的GUI界面，在assignment1的command功能基础上加上sqlite数据库和文件存储操作，同时把command的功能用JavaFX实现。实现的时候通过参数的形式区分文件存储和数据库存储。由于assignment1的逻辑比较复杂，实现JavaFX界面的时候，工作量略大。&lt;br&gt;JavaFX还有内置的WebView，能通过其调Javascript，功能更强大，界面更好看，如果熟练之后，开发起来比swing更方便&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Requirement&lt;/strong&gt;&lt;br&gt;    Introduction&lt;br&gt;You are required to implement a basic Java program using Java SE 8.0 and JavaFX.&lt;br&gt;This assignment is designed to help you:&lt;br&gt;1. Enhance your ability to build a Graphical User Interface using JavaFX;&lt;br&gt;2. Practise implementation of various GUI event handlers;&lt;br&gt;3. Practise application of using file input and output processing;&lt;br&gt;4. Practise the use of command-line arguments.&lt;br&gt;This is an individual assignment and worth 10% towards your final grade.&lt;br&gt;    Academic Integrity (more)&lt;br&gt;The submitted assignment must be your own work. No marks will be awarded for any parts&lt;br&gt;which are not created by you—this includes use of 3 rd -party GUI components.&lt;br&gt;Plagiarism is treated very seriously at RMIT. Plagiarism includes copying code directly from&lt;br&gt;other students, internet or other resources without proper reference. Sometimes, students&lt;br&gt;study and work on assignments together and submit similar files; this may be regarded as&lt;br&gt;plagiarism. You should always create your own assignment even if you have similar ideas.&lt;br&gt;Plagiarism-detection tools will be used for all submissions. Severe penalties may be applied&lt;br&gt;in cases of plagiarism, including loss of all marks or, in repeat cases, expulsion from the&lt;br&gt;course.&lt;br&gt;    General Implementation Details&lt;br&gt;• Initial data should be read from an input text file. A Save option should be&lt;br&gt;implemented that writes out to a text file.&lt;br&gt;• All menu/interactive input should be via a graphical user interface, implemented in&lt;br&gt;JavaFX. All information displayed to the user should be via the same GUI.&lt;br&gt;• Sample GUI layouts will be put on Blackboard: you are free to have different&lt;br&gt;layouts as long as your GUI layouts are clear (marks may be deducted for very&lt;br&gt;poor design).&lt;br&gt;• Any incorrectly formatted input should be checked by the GUI implementation.&lt;br&gt;• You are to use packages: all your new code should be in packages called:&lt;br&gt;o gui&lt;br&gt;o fileio&lt;br&gt;Code not in either of these packages will not be considered for marking.&lt;br&gt;• You must not use 3 rd -party GUI components (i.e., not built by you).&lt;br&gt;• Marks will be allocated to proper documentation and coding layout and style. Your&lt;br&gt;coding style should be consistent with standard coding conventions (as in Assignment&lt;br&gt;1).&lt;br&gt;• Your programs will be marked on CSIT machines using Java SE 8.0. You should test&lt;br&gt;your program on these machines before you submit.&lt;br&gt;    Task Specification&lt;br&gt;You are to build a Graphical User Interface (GUI) for the MyTi system of Assignment 1. You&lt;br&gt;will also make running of the MyTi system more configurable by reading initial Card, User&lt;br&gt;and TravelPass information from input files and write updated information to an output file.&lt;br&gt;You do not need to add any other new functionality to the MyTi system of Assignment 1.&lt;br&gt;    What if my Assignment 1 did not work properly?&lt;br&gt;• If you did not get TravelPass purchasing and Journey-taking working fully in Assignment&lt;br&gt;1 then you are allowed to just purchase a TravelPass (as in the first Sample Run).&lt;br&gt;    Part A: Packages and Organisation of Code (0.5 marks)&lt;br&gt;You should organise your code into 3 packages. A package called myti should be used for&lt;br&gt;code from Assignment 1. Packages called gui and fileio should contain all new code for&lt;br&gt;Assignment 2 (you can put some of your existing code into these packages, if necessary).&lt;br&gt;    Part B: Command-Line Arguments (0.5 mark)&lt;br&gt;You are to use command-line arguments to provide the name of your input and output files.&lt;br&gt;For example, if your main() program is in the class Assign3 and you read input from&lt;br&gt;input.txt and your output is output.txt, then you would run your program as follows&lt;br&gt;from the command-line on a unix machine:&lt;br&gt;&amp;gt; java Assign2 input.txt output.txt&lt;br&gt;If you use eclipse, then you specify the arguments under Run &amp;gt; Run Configurations;&lt;br&gt;however, as always, your program will be marked by running it from the command-line.&lt;br&gt;    Part C: File Input and Output (1.5 marks)&lt;br&gt;Put initial TravelPass prices and Card andUser information in a text file (the name of this file&lt;br&gt;is the first command-line argument); your program should read this file at start-up and&lt;br&gt;initialise prices and create Users with the appropriate values. A sample input file will be&lt;br&gt;provided on Blackboard: you must follow that format precisely, though you are welcome to&lt;br&gt;include more information than in that sample.&lt;br&gt;Your program will be tested with different values (but with the same format) so make&lt;br&gt;sure you can handle reading the file properly.&lt;br&gt;When the SAVE option is selected on the GUI, you should write an output (text) file. The&lt;br&gt;output file must use the identical format to input file format below. You should write out the&lt;br&gt;same information as you read in with the updated values.&lt;br&gt;    Part D: Graphical User Interface (6 marks)&lt;br&gt;Add a GUI for at least the following functionalities from Assignment 1. (You can implement&lt;br&gt;a GUI that covers your complete Assignment 1 functionality but there’s no extra marks in it.)&lt;br&gt;• The GUI should begin with a single window for purchasing Travel Passes and taking&lt;br&gt;Journeys. Buttons for “Managing Cards and Users” and for “Display Reports” may open&lt;br&gt;up new windows. See the sample GUI on Blackboard;&lt;br&gt;• The Take a Journey window should include:&lt;br&gt;o a list for selecting a Card id (i.e., Take a Journey on this Card);&lt;br&gt;o lists to select 2 stations;&lt;br&gt;o a list to select the day of travel, and an input box to enter the time;&lt;br&gt;o a message box where error messages or other output is displayed;&lt;br&gt;o CANCEL and PURCHASE buttons;&lt;br&gt;• The Manage Passes and Users screen should include:&lt;br&gt;o a list of Card IDs and associated User names;&lt;br&gt;o when a Card is selected, User details and remaining credit is displayed;&lt;br&gt;o an input box and an ADD CREDIT button for adding credit for the selected Card:&lt;br&gt;when this is performed, credit for that Card is displayed / updated;&lt;br&gt;o a message box where error messages or other output is displayed;&lt;br&gt;o an Add a User panel that obtains the required information for a new user and adds&lt;br&gt;them. When a User is created, there should be an option to register a Card to that&lt;br&gt;User;&lt;br&gt;• The Display Reports screen should include:&lt;br&gt;o a single Display All Journeys button;&lt;br&gt;o a scrollable text box that contains the list of Journeys.&lt;br&gt;o Note, if in Assignment 1 your function just displayed the Journeys for a Card, then&lt;br&gt;you can do this here: you’ll need a drop-down box to select the Card to display;&lt;br&gt;• SAVE and QUIT (without saving) buttons should always be available (ideally, outside&lt;br&gt;the JTabbedPane).&lt;br&gt;• Each window will need buttons to open the other window options: for full marks, if a&lt;br&gt;window is already open then it just shows it on top of the others, not generate a new one.&lt;br&gt;Obvious GUI errors should be checked—for example, if the user tries to ADD CREDIT&lt;br&gt;without first selecting a Card from the menu.&lt;br&gt;Sample screens will be added to Blackboard. You do NOT have to follow these designs; they&lt;br&gt;are simply a suggestion and you are free to design your own screens, as long as your GUI&lt;br&gt;functionality is completely clear.&lt;br&gt;• GUI Demo: 1 / 0.5 marks of the GUI functionality will be for a demo in Week 10 / 11;&lt;br&gt;this can be of “click” functionality that isn’t fully connected to the MyTi system.&lt;br&gt;    Part E: Other (1.5 marks)&lt;br&gt;As always, marks will be awarded for coding style, documentation/comments, code layout&lt;br&gt;and clarity, meaningful error and other messages, proper error handling, choice of data&lt;br&gt;structures and other design decisions. You are encouraged to discuss such issues with your&lt;br&gt;tutors and lab assistants, or with the coding mentors.&lt;br&gt;    Bonus Task (1 mark)&lt;br&gt;Instead of reading/writing from files, read/write from a database using JDBC.&lt;br&gt;&lt;br&gt;&lt;/font&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;font size=&quot;4&quot;&gt;&lt;br&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br&gt;写基于JavaFX的GUI界面，在assignment1的command功能基础上加上sqlite数据库和文件存储操作，同时把command的功能用JavaFX实现。实现的时候
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="sqlite" scheme="http://yoursite.com/tags/sqlite/"/>
+    
+  </entry>
+  
+  <entry>
     <title>代写C   IP1  lab1</title>
     <link href="http://yoursite.com/2016/10/13/page7/"/>
     <id>http://yoursite.com/2016/10/13/page7/</id>
@@ -137,9 +159,9 @@
     </summary>
     
     
-      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
-    
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
     
   </entry>
   
@@ -159,9 +181,9 @@
     </summary>
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
       <category term="Algorithmics" scheme="http://yoursite.com/tags/Algorithmics/"/>
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
