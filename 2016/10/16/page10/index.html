@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>代写C CS37 Programming Assignment 3 | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="C">
+  <meta name="description" content="Introductionlinux下的c语言os方面课程，多线程归并排序统计加速比测试，测试1,2,4,8,16,32个线程的情况下加速比。代码不算难，但是要进行大量测试和统计操作。并且需要对linux下的多线程原理足够清楚RequirementProject 3Due date: Oct 17, 2016 (No late submissions)The goal of this project">
+<meta property="og:type" content="article">
+<meta property="og:title" content="代写C CS37 Programming Assignment 3">
+<meta property="og:url" content="http://yoursite.com/2016/10/16/page10/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introductionlinux下的c语言os方面课程，多线程归并排序统计加速比测试，测试1,2,4,8,16,32个线程的情况下加速比。代码不算难，但是要进行大量测试和统计操作。并且需要对linux下的多线程原理足够清楚RequirementProject 3Due date: Oct 17, 2016 (No late submissions)The goal of this project">
+<meta property="og:updated_time" content="2016-10-16T16:24:52.098Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="代写C CS37 Programming Assignment 3">
+<meta name="twitter:description" content="Introductionlinux下的c语言os方面课程，多线程归并排序统计加速比测试，测试1,2,4,8,16,32个线程的情况下加速比。代码不算难，但是要进行大量测试和统计操作。并且需要对linux下的多线程原理足够清楚RequirementProject 3Due date: Oct 17, 2016 (No late submissions)The goal of this project">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">代写C CS37 Programming Assignment 3</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">代写C CS37 Programming Assignment 3</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-10-16T14:52:53.000Z" itemprop="datePublished" class="page-time">
+  2016-10-16
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page10" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br>linux下的c语言os方面课程，多线程归并排序统计加速比测试，测试1,2,4,8,16,32个线程的情况下加速比。代码不算难，但是要进行大量测试和统计操作。<br>并且需要对linux下的多线程原理足够清楚<br><br><strong>Requirement</strong><br>Project 3<br>Due date: Oct 17, 2016 (No late submissions)<br>The goal of this project is to evaluate Amdahl’s law in the context of the sorting problem. The details of your implementation are as follows:<br>1.Implementation details<br>a.Your executable should be called PROG4<br>b.You will invoke PROG4 as<br>i.PROG4 <size of="" array=""> <number of="" threads=""><br>ii.Assume that <size of="" array=""> is a multiple of 32<br>iii.Assume that the number of threads is 1, 2, 4, 8, 16 or 32<br>iv.Example invocation:<br>PROG4   3200   16<br>2.When you execute the program, the following should happen<br>a.First, you will fill the array with strictly decreasing numbers. For example, if the array is of size 320, you can initialize it to 320, 319, 318 etc.<br>b.You will partition the array into 32 parts. You will sort each part using BUBBLESORT so that they are in increasing order. Finally, all 32 sorted parts will be merged to obtain the final sorted array. To achieve this with K threads, you will proceed as follows:<br>i.When you have K threads, each thread will handle 32/K parts and sort them. Now, you have 32 sorted parts of original array A.<br>ii.You will merge the sorted parts to generate array B that will represent the sorted array A.<br>c.You will verify that the array is actually sorted and contains the correct data. For example, in the above scenario, you should see numbers from 1..320.<br>3.Important observations:<br>a.You are partitioning the array into 32 parts independent of the number of threads you have. This is critical. This ensures that the actual work done is independent of the number of threads.<br>b.Normally, when you use multiple threads, this can increase the total work done. But we are trying to avoid the problem<br>c.We initialize the array to be in a decreasing order and use bubblesort to get it into increasing order.<br>d.The number 32 is chosen because cse410.cse.msu.edu has 32 processors.<br>4.As an illustration of this, for sake of discussion, assume that array A has 3200 elements. We partition array A into 32 parts, from [0..99], [100..199], … [3100..3199].<br>a.Consider the case where number of threads=1. In this case, you have only one thread. Hence, it will sort all 32 parts separately one after another. Then, it will merge it. This will correspond to the time required to sort the array with just one thread. This time will be split into two parts: the part that can be parallelized (namely the sorting of individual parts) and the part that cannot be parallelized (namely the merging part). Use this time to evaluate the value of f, the part that is sequential. As an illustration, if the time required for sorting individual parts was 200 and the time required for merging was 25 then f = 25/(200+25).<br>i.Some smart people will realize that the merging itself could be parallielized. But we will not do that in this project. The merging will always be sequential.<br>ii.Note that Amdahl’s law only considers the case where some part can be parallelized by n threads and the remaining part must be run on only one thread. It does not consider the case where you have some part where you can utilize more than one thread but cannot utilize all n.<br>iii.In fact, the merging part will be independent of the number of threads you have.<br>b.Consider the case where K=2. In this case, each thread will sort 16 parts. Each thread will sort the parts assigned to it independently (in parallel). Then, you will merge it to get the sorted array. Recall that the merging must be done sequentially. It is expected that the merging time will remain unchanged in this process.<br>5.What to turn in<br>a.Your .cpp files, .h files and makefile that will generate PROG4<br>b.A report (pdf) describing your experience with Amdahl’s law<br>i.You should consider five different array sizes from 320 to 32,000,000.<br>ii.The sizes you choose should be such that total time to run with 1 thread is at least 1 second and no more than 10 minutes.<br>iii.For chosen sizes, run your program with 1, 2, 4, 8, 16 and 32 threads.<br>iv.Run each experiment 3 times and use the average.<br>v.Identify the sequential fraction based on your experiment with 1 thread. Observe that sorting 32 parts can be parallelized. Merging cannot be.<br>vi.Compare the results you have with that predicated by Amdahl’s law.<br>vii.Explain the difference, if any.<br>viii.(Note that the verification time should not be included in the time you report.)<br>6. A few things that will help<br>a.You saw that you can provide each thread with a threadID<br>b.You can make assignments of the parts to be sorted based on threadID<br>c.For example, if you have 4 threads, thread 0 is responsible for first 8 parts and so on.<br>d.You can create partitions in-place<br>7.Some more things<br>a.Your sorting or merging should not assume that the array is provided in a sorted fashion. It should work for arbitrary array. The reason I have specified the initial array in the given fashion is so that you can validate correctness of your program.  For example, merging cannot be simply put the parts in reverse order.<br>b.Merging would essentially occur in the main() after all threads are joined.<br>c.You are provided with 2 files pth.cpp – that does things somewhat incorrectly (discussed in class) and pth.cpp that does things in the right fashion.<br></size></number></size></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/10/16/page10/" target="_blank" rel="external">http://yoursite.com/2016/10/16/page10/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/10/17/page11/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">代写C CS352 Programming Assignment 1</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/10/15/page9/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">代写C++ CS37 Programming Assignment 1</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page10" data-title="代写C CS37 Programming Assignment 3" data-url="http://yoursite.com/2016/10/16/page10/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "代写C CS37 Programming Assignment 3",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/10/16/page10/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
