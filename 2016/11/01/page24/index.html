@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Java代写：CMSC132 Six Degrees of Kevin Bacon | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Java,Algorithm">
+  <meta name="description" content="Introduction这次需要代写的Java编程作业，考察Graph的知识点，读文件构造Graph，然后按条件用BFS搜索，并最终输出结果。Requirementn this project, you write a program that will help you play the “Six Degrees of Kevin Bacon” game. This game is played">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java代写：CMSC132 Six Degrees of Kevin Bacon">
+<meta property="og:url" content="http://yoursite.com/2016/11/01/page24/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introduction这次需要代写的Java编程作业，考察Graph的知识点，读文件构造Graph，然后按条件用BFS搜索，并最终输出结果。Requirementn this project, you write a program that will help you play the “Six Degrees of Kevin Bacon” game. This game is played">
+<meta property="og:updated_time" content="2016-11-03T08:18:34.588Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java代写：CMSC132 Six Degrees of Kevin Bacon">
+<meta name="twitter:description" content="Introduction这次需要代写的Java编程作业，考察Graph的知识点，读文件构造Graph，然后按条件用BFS搜索，并最终输出结果。Requirementn this project, you write a program that will help you play the “Six Degrees of Kevin Bacon” game. This game is played">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Java代写：CMSC132 Six Degrees of Kevin Bacon</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Java代写：CMSC132 Six Degrees of Kevin Bacon</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-01T05:12:24.000Z" itemprop="datePublished" class="page-time">
+  2016-11-01
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page24" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br>这次需要代写的Java编程作业，考察Graph的知识点，读文件构造Graph，然后按条件用BFS搜索，并最终输出结果。<br><br><strong>Requirement</strong><br>n this project, you write a program that will help you play the “Six Degrees of Kevin Bacon” game. This game is played on a graph of movies and actors/actresses who starred in them. The Bacon Number is defined as follows: Kevin Bacon has a Bacon Number of 0; people who co-starred in a movie with Kevin Bacon have a Bacon Number of 1; people who co-starred in a movie with someone who has a Bacon Number of 1 in turn have a Bacon Number of 2; and so on. Given any actor/actress, the goal of the game is to establish their Bacon Number by a sequence of movies and co-stars. As shown in Figure 1, Bill Murray has a Kevin Bacon number of 1, because co-starred in “Wild Things”, while Cameron Diaz has a Kevin Bacon Number of 2, because she she co-starred with Bill Murray in “Charlie’s Angels”.<br>For example, using the “action” data set given below, we can show that “Al Pacino” has a Bacon Number<br>of 3 as follows:<br><br>Pacino, Al<br>   Heat (1995)<br>Rosales Jr., Thomas<br>   Lost World: Jurassic Park, The (1997)<br>Richards, Ariana<br>   Tremors (1990)<br>Bacon, Kevin<br>Kevin Bacon (0) starred in Tremors with Richards, Ariana (1) who starred in Lost World: Jurassic Park, The (1997) with Rosales Jr., Thomas (2) who starred in Heat (1995) with Pacino, Al (3). If we use the “all cast” data set given below, we can show that “Al Pacino” has a Bacon Number of 1 as follows:<br><br>Pacino, Al<br>   Boffo! Tinseltown’s Bombs and Blockbusters (2006)<br>Bacon, Kevin<br>Kevin Bacon (0) starred in Boffo! Tinseltown’s Bombs and Blockbusters (2006) with Pacino, Al (1). Inter- estingly this works way in the past as well:<br><br>De Rosselli, Rex<br>   Lion’s Claws, The (1918)<br>Brinley, Charles<br>   Adventure in Sahara (1938)<br>Lawrence, Marc (I)<br>   Big Easy, The (1987)<br>Goodman, John (I)<br>   Death Sentence (2007)<br>Bacon, Kevin<br>Turns out that Rex De Rosselli died in 1941 and yet he has a Bacon Number of just 4. Actually Rex really has a Bacon Number of 3 but we need to use a much bigger data set “cast.all.txt” to show this:<br><br>De Rosselli, Rex<br>   Dangerous Adventure, A (1922)<br>McCullough, Philo<br>   Chamber of Horrors (1966)<br>Danova, Cesare<br>   Animal House (1978)<br>Bacon, Kevin<br>We have included two data sets suitable for the program in the archive above (the data sets are courtesy of Robert Sedgewick):<br><br>action06.txt (4.4 MB, only action movies)<br>cast.all.txt (64 MB, all movies from the 2014 IMDB)<br>The format of these data sets is rather simple: Each line is a movie, and each movie consists of several fields separated by the “/“ character. The first field is the name of the movie itself, all the following fields are the names of actors and actresses starring in the movie. For example:<br><br>Heat (1995)/Daniels, Max/Perry, Manny/Marzan, Rick/Pacino, Al, …<br>Heat After Dark (1996)/Kitami, Toshiyuki/Sugata,…<br>Heated Vengeance (1985)/Dye, Cameron/Walker, Robert (III), …<br>Reading this data is not complicated, but we hand you the parsing code anyway so you can focus on the search algorithm instead.<br>In order to find the smallest Bacon Number for an actor we proceed as follows: First we identify the vertices for both Kevin Bacon and the actor in question (you already have that code). Then we start a breadth-first search at the vertex for Kevin Bacon; as we do this we keep track of the “previous vertex” that got us to the one we’re currently investigating. Once we find the vertex for the other actor, we are done: We just have to print out the path that got us here. This implementation of BFS is the only thing you have to write for this problem!<br>You will implement following functions in the given project:<br><br>1.Degree of separation from Kevin Bacon:<br>2.Degree of separation between any two actors/actresses:<br>3.Search actor/actress/movie:<br>4.List cast of a movie or movies of an actor/actress:<br>5.Exit<br>Select:<br>Here is what each menu item does:<br><br>Finds the Kevin Bacon number of an actor/actress<br>Find the shortest distance between any two actors/actresses.<br>Actors with same name has a Roman number after their names. You can enter the name and search the exact name in the database. For example, Emma Watson’s name appeared as “Watson, Emma (II)” in the movie database.<br>If input is a movies, it lists all the case. If the input is an actor/actress, it lists all the movies he/she<br>starred in.<br>terminate the program.<br>The “Graph” class, “Bag” class are fully implemented for you. The Graph class represents an undirected graph of vertices named 0 through V - 1. It supports the following two primary operations: add an edge to the graph, iterate over all of the vertices adjacent to a vertex. It also provides methods for returning the number of vertices V and the number of edges E. Parallel edges and self-loops are permitted. This implementation uses an adjacency-lists representation, which is a vertex-indexed array of Bag objects. All operations take constant time (in the worst case) except iterating over the vertices adjacent to a given vertex, which takes time proportional to the number of such vertices.<br>You will have add the mapping relationships between vertex symbols (name of a movie, actor, acres) and vertex number in “SymbolGraph” class. For example: in Graph 2, vertex 0 and vertex 5 can represent movies and other vertices represent actors/actresses. You also have to implement to methods to find the shortest path between two given vertices. All edges have the weight of 1. Therefore, you can also use BFS to find the shortest distance between two vertices.<br>Before you are sure your program is running correctly, test your code with a smaller database base. Start with a file that only has 5-10 movies and actors/actresses. If you think your program is working, then try with “action06.txt”, (4.4 MB, only action movies). To try “cast.all.txt”, 64 MB, all movies from the 2014 IMDB, 300,000 movies, 900,000 actors/actresses, you have to allocate larger memory for your project. Google it for instructions to do that. If you run your program from coo and line you specify memory size in your command line. Following command allocate 2gb memory for JVM to run KevinBacon.<br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/01/page24/" target="_blank" rel="external">http://yoursite.com/2016/11/01/page24/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/02/page25/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">C++代写：CS2401 STL Container</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/10/30/page23/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python代写：CP164 Stacks</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page24" data-title="Java代写：CMSC132 Six Degrees of Kevin Bacon" data-url="http://yoursite.com/2016/11/01/page24/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "Java代写：CMSC132 Six Degrees of Kevin Bacon",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/01/page24/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

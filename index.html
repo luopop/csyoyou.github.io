@@ -163,6 +163,286 @@
     </li>
   
     <li class="post-list-item">
+        <article id="post-page25" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/11/02/page25/">C++代写：CS2401 STL Container</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-11-02T07:25:28.000Z" itemprop="datePublished" class="post-time">
+  2016-11-02
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>STL容器的Lab作业，基础用法，并不难，只不过要过测试集，细节方面还是要注意的。<br><br><strong>Requirement</strong><br>The purpose of this lab is to gain some familiarity with an STL Container, and the use of an external iterator. For this lab you will NOT be creating any classes of your own. In fact you can do the whole lab in the main, although I think that you will see that it is highly advisable to have at least one non-member function since there is a task that is repeated.<br>Begin by copying the file names.txt to your working directory. This file has a long list of first names, all taken from some of my classes. Briefly open it and look at it, or just skim through it with more names.txt<br><br>At the top of your program #includeas well as iostream, string, and fstream. Declare a multiset that is capable of holding strings.<br>Fill the multiset with all the names in the file. (Since there are no spaces in the names you can use &gt;&gt; or getline.)<br>Now declare an iterator that is appropriate for traversing the multiset. Set it to the beginning of the multiset full of names, and walk through the list, outputting each name it finds. (There are a lot of them, so you may want to separate them with spaces instead of putting one on each line.)<br>Run and test this program. Your name should be somewhere in the list. (Note that the names are now in alphabetical order.)<br>Here is the place where you want to pass your STL container to a non-member function, since we are doing something that is basically the same three times in a row. If you do you should pass the container by const and reference, since it is large. You will probably want one additional parameter.<br><br>Declare two iterators.<br>Move one of them through the list to the first name that begins with ‘M’. Since you know it is returning a string, you will know that (it).at(0) will return the first character in that string.<br>Now set the second iterator equal to the first. Use it to count how many M names there are in the list. Print this number out.<br>Using the second iterator, print out all the M names in reverse alphabetical order. (Remember that these are bidirectional iterators, so you –it works to go backwards.)<br>Now do the above three steps for all the ‘C’ names and then for all the ‘Q’ names.<br>If I had asked for ‘Y’ (I didn’t) the output would look like:<br>There are 3 Y names in the list<br>They are:Yujia Yuanhang Yingjie<br>This program has no user interaction. When you have it working, simply start a script file, run the program once, and close the script file.<br>Submit your source code and the script file to Blackboard.<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page24" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/11/01/page24/">Java代写：CMSC132 Six Degrees of Kevin Bacon</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-11-01T05:12:24.000Z" itemprop="datePublished" class="post-time">
+  2016-11-01
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>这次需要代写的Java编程作业，考察Graph的知识点，读文件构造Graph，然后按条件用BFS搜索，并最终输出结果。<br><br><strong>Requirement</strong><br>n this project, you write a program that will help you play the “Six Degrees of Kevin Bacon” game. This game is played on a graph of movies and actors/actresses who starred in them. The Bacon Number is defined as follows: Kevin Bacon has a Bacon Number of 0; people who co-starred in a movie with Kevin Bacon have a Bacon Number of 1; people who co-starred in a movie with someone who has a Bacon Number of 1 in turn have a Bacon Number of 2; and so on. Given any actor/actress, the goal of the game is to establish their Bacon Number by a sequence of movies and co-stars. As shown in Figure 1, Bill Murray has a Kevin Bacon number of 1, because co-starred in “Wild Things”, while Cameron Diaz has a Kevin Bacon Number of 2, because she she co-starred with Bill Murray in “Charlie’s Angels”.<br>For example, using the “action” data set given below, we can show that “Al Pacino” has a Bacon Number<br>of 3 as follows:<br><br>Pacino, Al<br>   Heat (1995)<br>Rosales Jr., Thomas<br>   Lost World: Jurassic Park, The (1997)<br>Richards, Ariana<br>   Tremors (1990)<br>Bacon, Kevin<br>Kevin Bacon (0) starred in Tremors with Richards, Ariana (1) who starred in Lost World: Jurassic Park, The (1997) with Rosales Jr., Thomas (2) who starred in Heat (1995) with Pacino, Al (3). If we use the “all cast” data set given below, we can show that “Al Pacino” has a Bacon Number of 1 as follows:<br><br>Pacino, Al<br>   Boffo! Tinseltown’s Bombs and Blockbusters (2006)<br>Bacon, Kevin<br>Kevin Bacon (0) starred in Boffo! Tinseltown’s Bombs and Blockbusters (2006) with Pacino, Al (1). Inter- estingly this works way in the past as well:<br><br>De Rosselli, Rex<br>   Lion’s Claws, The (1918)<br>Brinley, Charles<br>   Adventure in Sahara (1938)<br>Lawrence, Marc (I)<br>   Big Easy, The (1987)<br>Goodman, John (I)<br>   Death Sentence (2007)<br>Bacon, Kevin<br>Turns out that Rex De Rosselli died in 1941 and yet he has a Bacon Number of just 4. Actually Rex really has a Bacon Number of 3 but we need to use a much bigger data set “cast.all.txt” to show this:<br><br>De Rosselli, Rex<br>   Dangerous Adventure, A (1922)<br>McCullough, Philo<br>   Chamber of Horrors (1966)<br>Danova, Cesare<br>   Animal House (1978)<br>Bacon, Kevin<br>We have included two data sets suitable for the program in the archive above (the data sets are courtesy of Robert Sedgewick):<br><br>action06.txt (4.4 MB, only action movies)<br>cast.all.txt (64 MB, all movies from the 2014 IMDB)<br>The format of these data sets is rather simple: Each line is a movie, and each movie consists of several fields separated by the “/“ character. The first field is the name of the movie itself, all the following fields are the names of actors and actresses starring in the movie. For example:<br><br>Heat (1995)/Daniels, Max/Perry, Manny/Marzan, Rick/Pacino, Al, …<br>Heat After Dark (1996)/Kitami, Toshiyuki/Sugata,…<br>Heated Vengeance (1985)/Dye, Cameron/Walker, Robert (III), …<br>Reading this data is not complicated, but we hand you the parsing code anyway so you can focus on the search algorithm instead.<br>In order to find the smallest Bacon Number for an actor we proceed as follows: First we identify the vertices for both Kevin Bacon and the actor in question (you already have that code). Then we start a breadth-first search at the vertex for Kevin Bacon; as we do this we keep track of the “previous vertex” that got us to the one we’re currently investigating. Once we find the vertex for the other actor, we are done: We just have to print out the path that got us here. This implementation of BFS is the only thing you have to write for this problem!<br>You will implement following functions in the given project:<br><br>1.Degree of separation from Kevin Bacon:<br>2.Degree of separation between any two actors/actresses:<br>3.Search actor/actress/movie:<br>4.List cast of a movie or movies of an actor/actress:<br>5.Exit<br>Select:<br>Here is what each menu item does:<br><br>Finds the Kevin Bacon number of an actor/actress<br>Find the shortest distance between any two actors/actresses.<br>Actors with same name has a Roman number after their names. You can enter the name and search the exact name in the database. For example, Emma Watson’s name appeared as “Watson, Emma (II)” in the movie database.<br>If input is a movies, it lists all the case. If the input is an actor/actress, it lists all the movies he/she<br>starred in.<br>terminate the program.<br>The “Graph” class, “Bag” class are fully implemented for you. The Graph class represents an undirected graph of vertices named 0 through V - 1. It supports the following two primary operations: add an edge to the graph, iterate over all of the vertices adjacent to a vertex. It also provides methods for returning the number of vertices V and the number of edges E. Parallel edges and self-loops are permitted. This implementation uses an adjacency-lists representation, which is a vertex-indexed array of Bag objects. All operations take constant time (in the worst case) except iterating over the vertices adjacent to a given vertex, which takes time proportional to the number of such vertices.<br>You will have add the mapping relationships between vertex symbols (name of a movie, actor, acres) and vertex number in “SymbolGraph” class. For example: in Graph 2, vertex 0 and vertex 5 can represent movies and other vertices represent actors/actresses. You also have to implement to methods to find the shortest path between two given vertices. All edges have the weight of 1. Therefore, you can also use BFS to find the shortest distance between two vertices.<br>Before you are sure your program is running correctly, test your code with a smaller database base. Start with a file that only has 5-10 movies and actors/actresses. If you think your program is working, then try with “action06.txt”, (4.4 MB, only action movies). To try “cast.all.txt”, 64 MB, all movies from the 2014 IMDB, 300,000 movies, 900,000 actors/actresses, you have to allocate larger memory for your project. Google it for instructions to do that. If you run your program from coo and line you specify memory size in your command line. Following command allocate 2gb memory for JVM to run KevinBacon.<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page23" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/30/page23/">Python代写：CP164 Stacks</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-30T01:32:24.000Z" itemprop="datePublished" class="post-time">
+  2016-10-30
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>这次需要代写的是一个关于Stack的Lab作业，由于是Lab作业，工作量并不大，都是基本的Stack操作。<br><br><strong>Requirement</strong><br>sing Versus Extending an ADT<br><br>Note: In this and future labs we make a distinction between using an ADT and extending an ADT. You must be clear on this distinction:<br><br>Using an ADT<br><br>When asked to use an ADT write a program that is implementation independent, i.e. the program uses only ADT methods (such as those for a stack) and works for either the array or linked implementation of a data structure. Do not change any code in the ADT implementation files such as stack_array.py.<br><br>Extending an ADT<br><br>When asked to extend an ADT you are going to add new methods to an ADT, meaning that you are going to add code to one or both of the array or linked implementation of a data structure, such as stack_array.py.<br><br>The Stack ADT (Abstract Data Type)<br><br>A stack is a data structure that follows LIFO (Last In, First Out) rules. Data is added to the top of a stack and removed from the top of a stack. The Stack ADT provides methods for manipulating data in a stack.<br>A reminder of some important points of ADT use are:<br><br>No matter what the underlying implementation of the stack programs should access a stack only through these methods.<br>As a corollary to the first point, the stack can be implemented in any number of ways so long as any given implementation follows the ADT function requirements. The implementation must invisible to the program using the Stack ADT.<br>A stack may store any type of data, although all the data it stores should be of the same type.<br>The following code imports a stack class and the Food class then initializes a stack:<br><br>1<br>2<br>3<br>4<br>5<br>from stack_array import Stack<br>from food import Food<br><br>s = Stack()<br> …<br>The line:<br><br>1<br>from stack_array import Stack<br>imports the Stack class from the library file stack_array.py. This library file can be replaced by any other file that implements the Stack ADT methods.<br>The line:<br><br>1<br>from food import Food<br>gives access to the methods in the food.py library file as above.<br>The line:<br><br>1<br>s = Stack()<br>creates a stack named s. The stack is now ready to accept data.<br><br>Project References<br><br>As we work through the term we will be creating a number of different data structures and adding more functionality to the Food library already written. Making sure that each new project has the latest version of a data structure or Food library is difficult to do if we are reduced to copying and pasting our pydev modules into each new project. Fortunately, Eclipse provides a much better mechanism to reference code. Setting up Project References allows you to link one Pydev project to another, and to use the code from one project in another with the import and from … import * statements already shown. Nothing needs to be changed in your source code.<br>To make a reference from one project to another in Eclipse, right click on a project name in the Navigator pane. From the resulting pop-up menu click on Properties and then on Project References in the resulting dialog box.<br>Click on the check box of all projects that you wish to reference from the current project. In this example the project album is already selected, and the project data_structures will be added as a reference. Once this is done all of the classes in both album and data_structures will be available through import statements.<br>A few things to keep in mind when using project references:<br><br>All referenced projects must be open when attempting to run a program.<br>Submit all referenced projects as part of your Eclipse archive (.zip) file when submitting exercises or the markers will not be able to run your programs. You may select multiple projects to include in an Eclipse archive file.<br>Do not use the same Pydev module names in two different referenced projects or Eclipse will not know which one an import statement is supposed to be referring to.<br>Project references go one way only. If the project stacks references the project data_structures, then data_structures should not reference stacks. Circular references are a very bad idea.<br>Upon occasion referenced projects may become ‘out of sync’ with the project that references them. To fix this, right-click on the project and choose Refresh to update Eclipse from the file system.<br>Array-based Stacks<br><br>The file stack_array.py is a text file containing the basic outline of the array-based Stack class. Copy this code into the Pydev module stack_array.py in your login_data_structures project (where login is your Network login). Thus, a student with the Network login barn4520 should name their projects barn4520_Food and barn4520_data_structures.) The Lab Instructor will walk you through this library and discuss its inner workings.<br><br>Tasks<br><br>(If you were unable to complete Lab 1 correctly, you may use these files: food.py, food_utilities.py, and foods.txt as the basis for your lab. These files will not be available until after the labs for the previous week are completed.)<br>For the appropriate tasks you may download and use the Food class definition in food.py from Lab 1.<br>For all of your data structures (stacks, queues, BSTs, etc.), put your code into libraries in your Pydev project login_data_structures.<br><br>For the stack_array library complete the implementations of the is_empty, pop, and peek methods. These methods extend the Stack ADT.<br>Write and test the following function:<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>def array_to_stack(s, a):<br>    “””<br>    ——————————————————-<br>    Pushes contents of a onto s.<br>    Use: array_to_stack(s, a)<br>    ——————————————————-<br>    Preconditions:<br>        s - a Stack object (Stack)<br>        a - a Python list (list)<br>    Postconditions:<br>        The contents of a are moved into s, a is empty.<br>    ——————————————————-<br>    “””<br>Add this function to a Pydev module named utilities in your login_data_structures project so that you have easy access to it later.<br><br>Write and test the following function:<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>def stack_to_array(s, a):<br>    “””<br>    ——————————————————-<br>    Pops contents of s into a.<br>    Use: stack_to_array(s, a)<br>    ——————————————————-<br>    Preconditions:<br>        s - a Stack object (Stack)<br>        a - a Python list (list)<br>    Postconditions:<br>        Contents of s are moved into a, s is empty.<br>    ——————————————————-<br>    “””<br>Add this function to the Pydev module named utilities in your login_data_structures project.<br><br>Write and test the following function:<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>def stack_test(a):<br>    “””<br>    ——————————————————-<br>    Tests<br>    Use: stack_test(a)<br>    ——————————————————-<br>    Preconditions:<br>        a - list of data (list of ?)<br>    Postconditions:<br>        the methods of Stack are tested for both empty and<br>        non-empty stacks using the data in a:<br>        is_empty, push, pop, peek<br>    ——————————————————-<br>    “””<br>    s = Stack()<br><br>    # tests for the stack methods go here<br>    # print the results of the method calls and verify by hand<br><br>    return<br>Add this function to the Pydev module named utilities in your login_data_structures project.<br>Use a list of integers to test your stack code.<br><br>Re-use stack_test, but this time pass it a list of Food data. (Use the data in foods.txt).<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page22" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/28/page22/">为什么你需要编程作业代写帮助？</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-27T18:22:24.000Z" itemprop="datePublished" class="post-time">
+  2016-10-28
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br><br><br><strong>Requirement</strong><br>为什么你需要编程作业代写帮助？<br><br>计算机编程一直都不是一个简单的领域，即使是对于那些痴迷于计算机编程的同学，乃至大神们，也很难掌握所有的理论和概念。但是，教授、讲师们不可能延长课时，让同学们有充分时间去领悟其中的精髓，甚至是精通计算机编程。<br>那有什么办法可以让同学们熟练掌握计算机编程呢？7*24的图书馆学习吗？当然不是！俗话说的好，“火车跑得快，全靠车头带”，同学们需要的是一名专业的工程师，在前方带领大家。<br><br>为什么你需要一名专业的工程师指导？<br><br>同学们寻求作业代写帮助往往有下面几个原因：没有足够的时间编程，理论概念太多需要时间梳理，不知道如何调试，无法修复Bug等等。其实这些原因并不特别，在我们工程师的日常工作中，这些也都是司空见惯的事情：项目明天要上线，技术调研需要时间整理汇总，生产环境不让调试，程序有Bug等等。当我们工程师自己解决不了的时候，也是去询问更资深的工程师，甚至专家。在他们帮忙解决问题、敲代码调试的时候，我们工程师也是坐在旁边观摩学习的。<br><br>专业工程师指导的好处有哪些？<br><br>首先，可以随时方便的获得在线帮助，尽可能专业地回答你相关领域的问题，包括理论问题、作业讲解、例题辅导，代码调试等等，甚至可以发给你参考材料的网址，省去了你在图书馆埋头的时间。<br>其次，专业的工程师都不会轻易放弃。对于专业的工程师来说，解决难题就是一种挑战，没有理由放弃任何难题。讲解的程序通常都是高品质的代码，结合了工程师多年的一线经验，会让你感受到醍醐灌顶，茅塞顿开的畅快。<br>最后，专业的工程师能快速理解需求，为每名同学量身定制最实惠的价格！<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page21" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/27/page21/">Java代写：CIS304 Bank Account Application</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-27T03:32:14.000Z" itemprop="datePublished" class="post-time">
+  2016-10-27
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>用Java Swing作为GUI，从文件中读取信息并显示，实现逻辑，整体控件不多，很基础的作业。<br><br><strong>Requirement</strong><br><br>What to turn in<br><br>Use Export Project in NetBeans to export your project to a zip file, name it YourLastName_FirstName_project.zip. Send the file as a single attachment through Blackboard. The subject of this email is YourLastName_FirstName_project.<br><br>Note<br><br>Write your name as a comment line at the very beginning of each .java program: 1 point deducted for each file without your name at top.<br>Besides this documentation, I also provide you a text file, accounts.txt (described below). You should download this text file into the directory of your Netbeans project for your programs. Make sure when accessing this text file programmatically, your program just uses the file name without explicitly providing a path (so called relative path). For instance,<br>1<br>File accountFile = new File(“accounts.txt”);<br>For more information about the absolute path, refer to chapter 18 lecture slides. Failing to use the relative path loses 4 points.<br><br>Suggestions<br><br>Start early and start from simple – this is VERY important. For example, begin from the week when the project is available. As the first step, you construct the GUI but not implement functions for button clicks.<br>For the give function buttons, you may start to implement the Exit function first, and then the functions of Deposit and Withdraw buttons.<br>Always keep a copy of your working code before you implement more requirements.<br>Requirements in summary<br><br>1) Develop a Java GUI application that reads account information from the provided text file (accounts.txt), shows all account numbers in a JComboBox, and displays other GUI controls as shown in Fig. 1;<br>2) Exit button : Quit the application;<br>3) Deposit button: Make a deposit to a selected account;<br>4) Withdraw button: Make a withdrawal from a selected account;<br>5) Transfer To button: Make a transfer from a selected account to a beneficiary account;<br><br>Requirements in details<br><br>GUI in general<br><br>Once the program starts, it reads all account information from accounts.txt (each row in the file is a account record and is in the format of<br><br>accountNumber&lt;&gt;openDate&lt;&gt;customerName&lt;&gt;balance<br>The openDate is in the format of year/month/day.) It then fills a JComboBox with all account numbers and shows other GUI controls as in Fig. 1. Your program must be able to “read” the file of this format programmatically because when I test your project, the file content (not the format) will be changed.<br>When you select an item (account number) from the JComboBox, the corresponding values for openDate, customerName, and balance will be shown in the three read-only text fields, and the Deposit, Withdraw, and Transfer To buttons become enabled, see Fig. 2.<br><br>Exit<br><br>Clicking this button to close the frame and exit the program.<br>Instead of using mouse to click the button, pressing Alt + x will also trigger the Exit button.<br>Deposit<br><br>(After selecting an account number from the JComboBox), clicking the Deposit button will popup a window as shown in Fig. 3 asking you to enter a deposit amount for the selected account. Hint: this dialog window is generated by JOptionPane.showInputDialog().<br>If you enter a non-negative number, such as 100, the amount will be deposited to the account. See Fig 4 - the balanced is adjusted accordingly. The accounts.txt file should also be updated accordingly as well.<br>If you clicking Cancel in Fig. 3, nothing will happen to this account.<br>If an invalid deposit amount is entered in Fig. 3, such as -100 or $100, you will see an error message as shown in Fig 5.<br>Hint: this dialog window is generated by JOptionPane. showConfirmDialog().<br><br>Withdraw<br><br>(After selecting an account from the JComboBox), clicking the Withdraw button will popup a window as shown in Fig. 6 asking you to enter a withdrawal amount for the selected account.<br>If you enter a non-negative number, such as 100, and if the account balance is sufficient, the withdrawal will be made from the account successfully. See Fig. 7, the balanced is adjusted. The accounts.txt file should also be updated accordingly as well.<br>If you clicking Cancel in Fig. 6, nothing will occur to this account.<br>If an invalid withdrawal amount is entered in Fig. 6, such as -100 or $100, you will see an error message as shown in Fig 8.<br>If a withdrawal amount is greater than the balance, you show an error message and stop the withdrawal.<br>Transfer To<br><br>(After selecting an account from the JComboBox), clicking the Transfer To button will popup a window as shown in Fig. 10 asking you to enter a beneficiary account number.<br>If a valid account number (any number existing in the JComboBox) is entered, after click OK button, a window like Fig. 11 pops up asking for amount to transfer.<br>If a valid amount is entered, and the balance is not less than this amount and sometimes the sum of this transfer amount and a transfer fee, the transfer will be succeeded as shown in Fig. 12 and 13. The transfer fee is only applied to account with the balance less than $10000 which is specified in AccountConstants interface (more about AccountConstants see end of this document).<br>If an invalid beneficiary account number (i.e., a number which does not exist in the account number JComboBox) is entered in Fig. 10, Fig. 14 shows the error message.<br>If the balance is not sufficient for the transfer amount, Fig. 15 shows the error message.<br>If the balance is not sufficient to cover both transfer amount and transfer fee (when such a fee applies), Fig. 16 shows the error message.<br>Design requirements<br><br>You must have the following five classes (at least 5 points deduction for missing a required class).<br><br>AccountConstants – contains two constants, CHECKING_BALANCE_THRESHOLD (value is 10000) and TRANSFER_FEE (value is 2.0). For this project, the business rule is as follows:<br>When making a transfer to a beneficiary account, if the balance of the transferring account is less than CHECKING_BALANCE_THRESHOLD, TRANSFER_FEE is deducted from the balance after the transfer is made. If the balance is not sufficient to cover both CHECKING_BALANCE_THRESHOLD and TRANSFER_FEE (if the fee applies), the transfer should not be made. If the balance of transferring account is not less than CHECKING_BALANCE_THRESHOLD, TRANSFER_FEE is waived for this transfer.<br>Account – transferTo() method is abstract. deposit() and withdraw() are not abstract. If you need, feel free to define other methods, such as getBalance(), in the Account class.<br>CheckingAccount: extends Account and implements the transferTo method (refer to the above diagram). The returned value of transferTo method is defined as follows.<br>return 0: transfer successful and without transfer fee<br>return 1: transfer successful and with the transfer fee applied<br>return -1: transfer unsuccessful because balance is less than transfer amount and transfer fee<br>return -2: transfer unsuccessful because balance is less than transfer amount<br>AccountUtility – reads accounts.txt file, updates the file, and provides data for other programs.<br>AccountApp – is the only Java program having the main method. This must be the only file with a main method. If not, you lose 5 points.<br>Depending on your design and it’s your decision that you may have more Java programs than those specified above.<br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page20" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/26/page20/">C代写：CS158 Find The Digits</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-26T14:46:54.000Z" itemprop="datePublished" class="post-time">
+  2016-10-26
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>代写一个C语言的小作业，寻找一个数学问题的解<br><br><strong>Requirement</strong><br><br>Given a positive integer (greater than zero) and a positive digit (1 - 9) find the smallest multiple of the positive integer that is composed only of digits less than or equal to the digit specified by the user.<br>Example Execution #1:<br><br>Enter a positive integer: 7<br>Enter largest permissible digit: 3<br>Smallest multiple of 7 containing digits less than or equal to 3 is: 21<br>Example Execution #2:<br><br>Enter a positive integer: 88<br>Enter largest permissible digit: 5<br>Smallest multiple of 88 containing digits less than or equal to 5 is: 352<br>Example Execution #3:<br><br>Enter a positive integer: 15<br>Enter largest permissible digit: 2<br>Smallest multiple of 15 containing digits less than or equal to 2 is: 120<br>Example Execution #4:<br><br>Enter a positive integer: 12<br>Enter largest permissible digit: 1<br>Smallest multiple of 12 containing digits less than or equal to 1 is: 11100<br>Example Execution #5:<br><br>Enter a positive integer: 34<br>Enter largest permissible digit: 4<br>Smallest multiple of 34 containing digits less than or equal to 4 is: 34<br>Example Execution #6:<br><br>Enter a positive integer: 789<br>Enter largest permissible digit: 2<br>Smallest multiple of 789 containing digits less than or equal to 2 is: 11202222<br>Additional Requirements<br><br>Add the homework assignment header file to the top of your program. A description of your program will need to be included in the assignment header. This particular header can be added to your file by entering hhw while in command mode in vi.<br>Each example execution represents a single test of your program. The six examples provided imply that the program was run six different times.<br>Your program is expected to accept input and produce output in the same manner demonstrated above.<br>The user will always enter a positive integer followed by a single digit in the range from 1 to 9.<br>Each test case will result in finding a multiple that is less than or equal to INT_MAX as found in the limits.h library.<br>Do not add any “bonus” features not demonstrated in the example executions provided.<br>Course standards prohibit the use of programming concepts not yet introduced in lecture. For this assignment you can consider all material in the first six chapters of the book, notes, and lectures to be acceptable for use.<br>The use of arrays will result in no credit being awarded for your effort.<br>For this assignment you will be required to implement the user-defined functions (from chapter 4). Failing to follow course standards as they relate to good user-defined function use will result in a zero for this assignment.<br>A program MUST compile to be considered for partial credit. The submission script will reject the submission of any file that does not successfully compile on the guru server. The name of the source code file you attempt to submit must be hw05.c, no variation is permitted.<br>Course Programming and Documentation Standards Reminders<br><br>Use the course function header (head_fx vi shortcut hfx while in command mode) for every user-defined function in your program.<br>List and comment all parameters to a function, one per line, in the course function header.<br>All function declarations will appear in the global declaration section of your program.<br>The user-defined function definitions will appear in your program after the main function.<br>Indent all code within relevant selection and repetition constructs two additional spaces.<br>Make use of { and } with all relevant selection and repetition constructs.<br>Place a single space between all operators and operands. Comment all variables to the right of each declaration. Declare only one variable per line.<br>Notice that several programs (see program 2-9 on pages 74-75) in the programming text use a single line comment to indicate the start of the local declaration and executable statement sections of the main function.<br>At no point during the semester should these two sections ever overlap. You might consider adopting this habit of commenting the start of each section to help you avoid this mistake.<br>Select meaningful identifiers (names) for all variables and functions in your program.<br>Indent all code found within the main and all user-defined functions exactly two spaces.<br>Control-forcing statements such as exit, break, continue, and the use of multiple return statements in a single function are not acceptable practices according to course standards.<br>Do not single (or double) space the entire program, use blank lines when appropriate.<br>Consider making symbolic/defined constants to represent those values that do not change during the execution of the program.<br>There is no need to include example output with your submission.<br>Remove any diagnostic print statements from your code, even if they are commented out (inactive), unless you believe your program to be logically incorrect or incomplete as a way to demonstrate to your lab instructor how much of the problem you were able to solve and attempted to implement.<br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page19" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/25/page19/">Python代写：CME3036 June Jolly</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-25T14:36:14.000Z" itemprop="datePublished" class="post-time">
+  2016-10-25
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>这次需要代写的作业比较有意思，根据提供的历史数据中，各场比赛的得分情况，来预测本次球赛的每个球队的胜率。<br>类似世界杯赛场的大数据预测，不过作业的模型和公式要简单许多。<br>最终冠军和初始分组有关，事实上并没有一支球队能够稳拿冠军，每次模拟的结果都不同。<br>程序语言不限，甚至允许用Objective-C, Perl以及Ruby来写。选择用Python因为编写和调试方便。<br><br><strong>Requirement</strong><br><br>FThe National Funball League (NFL) runs a series of funball games each year. This time period is colloquially known as funball season. The goal of funball is to score the most points. Many cities have their own funball teams and compete in the NFL. Despite the name, funball is very serious and the games are extremely competitive.<br>In June after the regular season, the NFL hosts a single-elimination tournament to determine the best funball team. Win or go home! The winner gets a year’s worth of bragging rights and claim to a rotating trophy.<br>In an attempt to make the tournament as exciting as possible, the NFL pairs stronger teams with weaker teams in the early rounds expecting that only the best teams will be left at the end of the tournament. The process of ranking teams is called seeding. Lower seed values indicate stronger teams.<br>For logistical reasons, the tournament is broken into 4 regions: N, S, E, and W.<br>The tournament is so popular that several derived games have appeared. Among the most popular is a pick’em challenge where players attempt to pick all of the winners in the tournament before any tournament games are played. In recent years, the pick’em challenge has been hosted by Sanguine Bank which offered a million dollar prize to anyone who could pick all of the correct teams.<br><br>Questions<br><br>Let p(A) be the winning percentage of team A and p B be the winning percentage of team B. Assume we use the formula 1 to estimate the probability that A wins in a matchup against B.<br><br>P(A wins|A and B play) = p(A)(1 - p(B)) / p(A)(1 - p(B)) + (1 - p(A))p(B)<br>Using this formula, which year’s tournament results had the highest probability?<br>To answer this question, please use the attached data.<br><br>regular season results.csv<br>seasons.csv<br>teams.csv<br>tourney results.csv<br>tourney seeds.csv<br>tourney slots.csv<br>Sanguine Bank has decided that the payout of the pick’em challenge is too risky. They contacted Auspicious Insurance Group (AIG) for a quote on a special insurance contract that covers the payout from the challenge. How much should AIG charge Sanguine Bank for the insurance<br>contract? It is sufficient to explain your approach; no code or amounts are required for this question.<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page18" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/24/page18/">C++代写 FIT2049 Simple Game Implementation</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-24T05:26:34.000Z" itemprop="datePublished" class="post-time">
+  2016-10-24
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>代写一个比较炫酷的3D的游戏，本质上其实还是在2D上的Grid运算，只不过GUI方面提供了3D的渲染引擎。<br><br><strong>Requirement</strong><br><br>For your first assignment you’ll be implementing a simple colour matching game inspired by the Bejeweled series and creatively titled “Colour Match”. The game revolves around finding groups of the same colour on a 3D grid of cubes. The basic gameplay is as follows:<br><br>When the game starts a grid of random colours will appear on screen.<br>In a separate section of the screen, the player will be shown a random colour – this is known as the “Next Colour”.<br>Using the arrow keys, the player will select one of the cubes on the grid and when they press the spacebar key, the colour of the selected cube will change to match the “Next Colour”.<br>If the change in colour causes three or more cubes of the same colour to be “connected”, those cubes are removed from the screen and the player’s score is increased (the amount of score increase is up to you, but they should get bigger scores for matching larger amounts of cubes).<br>After the matched cubes are removed, cubes above them on the grid should move down to fill their place (there should never be any holes in the board). New cubes should also appear along the top of the board to fill the place of any cubes which fell down to a lower row.<br>After the cubes are removed, the “Next Colour” is randomised again and the player can pick another cube to replace.<br>When the game ends, a game over screen should be displayed which tells the player their final score. A quit and a restart button should also be present on this screen.<br>The end condition of the game is controlled by two things:<br><br>If a move doesn’t result in a match of three or more connected cubes, a life is lost. After losing three lives, the game ends.<br>A move counter should also be included which limits the amount of allowed moves per game. The player should be able to see the amount of moves remaining somewhere in the UI.<br>To spice up the gameplay, a special Power Cube should be included, as outlined below:<br><br>When the player selects a cube on the grid and activates the power cube with the P key, every cube on the grid that matches the selected colour should be removed from the board.<br>The score rewarded should be based on the amount of cubes that were removed.<br>The power cube is available from the start of the game and can only be used once - use it wisely!<br>Defining “Connected”<br><br>There are a few options for what we consider “connected” to mean. You can attempt one of the three options presented below depending on the grade you’re targeting.<br><br>To receive a pass for the criterion “Are matching cubes correctly identified?”, you should look for matching colours in the immediate four neighbors. In the below images, the dark grey tile is the selected cell for the current turn, and the light grey are matching colours which should be removed.<br>To receive a medium grade, you should look for lines of the same colour originating from the selected cell on any of its four sides.<br>To be eligible for full marks, you should keep stepping through neighbours and find chunks of the same colour.<br>Provided Assets<br><br>Provided inside the Assignment 1 Assets file on Moodle are all the assets you’ll need to create the game. The cubes have a width and length of one unit allowing for easier placement. It is recommended you build your solution off the Week 3 Base Code (while waiting for that code to be released, you should spend week two thinking about your solution).<br>Please note that while additional assets may be included, they won’t be considered when marking.<br>Only your C++ code and the quality of your gameplay will be assessed (we’re not marking your modelling skills).<br><br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
         <article id="post-page17" 
   class="article article-type-post" itemprop="blogPost">
      
@@ -197,291 +477,11 @@
 </article>
     </li>
   
-    <li class="post-list-item">
-        <article id="post-page16" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/22/page16/">代写C++ Project for C++</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-22T06:23:32.000Z" itemprop="datePublished" class="post-time">
-  2016-10-22
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>写一个c++的项目，该项目主要练习c++的基础知识和对类的封装，需要实现2个类，然后对这2个类进行扩展要求，属于c++的初级用法<br><br><strong>Requirement</strong><br><br>Project for C++<br>• Create an application containing the<br>following:<br>2+ user defined classes<br>4+ data members per class<br>(including at least one use of an array)<br>4+ methods per class (access and manipulation)<br>2+ if / if-else statements<br>2+ while loops<br>2+ for loops<br>1 or more nested loops<br>File IO for reading and writing data<br>CSCI  1300  Fall  2016<br>Project for C++<br>For this project, you will submit:<br>•  A description of what your program does and how to use it (1-2 pages).<br>•  Screenshots showing the program working.<br>•  Your code.<br>•  Zip all files together and submit them to Moodle. Name the zip file<br><lastname>_Project1.zip.<br>• <br>FAQs:<br>•  Do I have to design my own project, or can I work with a friend to design a<br>project?<br>–  You can work with a friend to come up with a project concept and you can help each<br>other work through coding issues, but each of you needs to submit individual work.<br>•  How will projects be graded?<br>–  All projects will be interview graded to give you the opportunity to brag about your work<br>and also discuss parts of your project that might not be working quite the way you<br>want them to.<br>CSCI  1300  Fall  2016<br>Project Contest<br>As an incentive for this project, we will select the best project in three categories:<br>Best Novice Project<br>As there are students that have had prior programming experience, this award is<br>limited to students who had no experience in programming before this class.<br>Best Game<br>Games are a common theme in projects. This award will recognize who submits<br>the best game.<br>Best Public Service Project<br>Providing the public with programs to aid or support a special cause can<br>significantly improve our world. This award will recognize who submits the best<br>project for a public cause.<br>Each TA will submit the best project from their recitations for each category. All the TA’s and the<br>Instructor will vote to determine the winners. (The judging criteria will be on the code<br>correctness and style, creativity of idea, and clarity of the written explanation.)<br>The students of the winning projects will receive a 2 point bonus in their final grade.<br>CSCI  1300  Fall  2016<br><br><br><br></lastname></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c++</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page15" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/20/page15/">代写JavaScript Assignment 1</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-20T03:13:42.000Z" itemprop="datePublished" class="post-time">
-  2016-10-20
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>题目分析如下：<br>1.图书积分规则:<br> 如果客户购买0本书，他们赚0分<br> 如果客户购买1本书，他们可获得4分<br> 如果客户购买2本书，他们可获得8分<br> 如果客户购买3本书，他们可获得16分<br> 如果客户购买的书超过3本,超过3本的部分按照每本16分的基础上在加7分<br><br>2.非图书积分规则:<br>  每消费$10便可获得4分:例如–消费$12获得4分<br><strong>Requirement</strong><br><br>1<br>CS 170 ‐ Computer Applications for Business<br>Fall 2016 ‐ Assignment 7<br>JavaScript Event-Driven Programming<br>Due Date  Before 11:00 PM - Friday, October 28 th , 2016<br>Accept Until Before 11:00 PM - Friday, November 4 th , 2016<br>Evaluation 15 points<br>Submit to Sakai Assignment7_answers.html file<br>To get credit for this assignment:<br>Upload and submit the Assignment7_answers.html file through Sakai.<br>Learning Objectives:<br>This assignment is designed to practice:<br>1.  Understand the basic input and output mechanisms of dynamic web applications from<br>the code perspective<br>2.  Implement JavaScript code which will handle user events<br>3.  Display feedback of said processed interactions back to the user<br>4.  Practice your understanding of basic JavaScript from the prior Assignment<br>a  variables, including;<br>i  The declaration, initialization and assignment processes<br>b  Use of the conditional if statements<br>c  Use of arithmetic and logic operators<br>d  Use of comments<br>Directions:<br>You are provided an HTML program. Your responsibility is to insert the HTML tags with the<br>appropriate JavaScript statements that will solve the problem discussed below, and to<br>comment the html file with the requested information per the requirements. The problem<br>description and HTML program provided are slightly different from Assignment 6. Be sure to<br>start fresh.<br>2<br>Problem to solve:<br>The Serendipity Booksellers has a book club that awards points to its customers based on the<br>number of books purchased each month. The points are awarded as follows:<br> If a customer purchases 0 books, they earn 0 points<br> If a customer purchases 1 book, they earn 4 points<br> If a customer purchases 2 books, they earn 8 points<br> If a customer purchases 3 books, they earn 16 points<br> If a customer purchases more than 3 books, they earn an additional 7 points on top of<br>the 16 points for each book above 3.<br>Serendipity Booksellers also awards points based on the dollar value spent on non-book<br>merchandise. Four (4) points are awarded for every $10 spent. Partial awards are not provided.<br>For example, 4 points will be awarded for spending $10.00 up to $10.99. No points are awarded<br>for less than $10.<br>Preferred Customers receive a bonus of double award points.<br>The Serendipity Booksellers website needs to be updated to ask the customer to enter the<br>number of books purchased last month, the dollars spent on non-book merchandise, confirm if<br>they are a Preferred Customer, and then calculate and display the number of award points<br>earned.<br>Requirements:<br>For this assignment;<br>1. Your program will calculate the award points as described above.<br>2. You will generate HTML comments to add your name, section and TA name. Each on a<br>separate line within the <head> tags. This will (should) NOT be visible in the document<br>on the web browser).<br>3. Utilize a <form> tag<br>4. You will then add the HTML tags with the proper JavaScript code to produce:<br>a. A textbox to solicit the number of books purchased<br>b. A textbox to solicit the dollars of non-book merchandise<br>c. Grouped radio buttons to determine Preferred Customer membership<br>d. A button to calculate the number of points awarded<br>e. A readonly textbox to display the result the calculation<br>5. Utilize JavaScript comments to explain the steps you are preforming within your code. A<br>JavaScript comment’s form is:<br>/<em> Place your comment between the stars </em>/<br>3<br>6. Variable names should be descriptive. For example, if a program is calculating the total<br>charge for a bill at a restaurant, it may have a variable named tipAmount.<br>7. Utilize at least one if/else statement. Consider using the if/else in determining the<br>bonus points.<br>A sample of what your webpage could look like:<br>Additional Information:<br>Since the contents of a textbox, is going to be used in mathematical operations. Textboxes<br>sometimes treat input as Strings. Use the function parseInt() to convert the String text to a<br>number. Otherwise your calculation operations will not perform as expected.<br>JavaScript provides several math utilities. The Math.floor() method rounds a number<br>DOWNWARDS to the nearest integer, and returns the result.<br>References:<br>Fluency 6  - Chapter 17 - Fundamental Concepts Expressed in JavaScript<br>- Chapter 18 – A JavaScript Program<br>w3schools.com  - <a href="http://www.w3schools.com/js/default.asp" target="_blank" rel="external">http://www.w3schools.com/js/default.asp</a><br>Firefox Tools - <a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Tools/Debugger</a><br>Lectures’ slides and examples<br>Recitation Week 6<br>Recitation Week 7<br><br><br></form></head></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page14" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/19/page14/">代写Java Assignment 1</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-19T05:12:42.000Z" itemprop="datePublished" class="post-time">
-  2016-10-19
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>写一个购票管理系统，涉及到增，删，改，查等操作，是JAVA的入门级别基础知识，主要考察对java的级别操作，I/O读写等知识点<br><br><strong>Requirement</strong><br>ITECH1000 Programming 1 1623<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 1 of 9<br>Assignment 1<br>Overview<br>This is an individual assignment that requires you to design, develop and test a small procedural Java<br>program.<br>Timelines and Expectations<br>Percentage Value of Task: 20%<br>Due: 16:00 Friday 21 st October 2016 (week 7)<br>Minimum time expectation: 10 hours<br>Learning Outcomes Assessed<br>The following course learning outcomes are assessed by completing this assessment:<br>  Identify and use the correct syntax of a common programming language<br>  Recall and use typical programming constructs to design and implement simple software<br>solutions<br>  Reproduce and adapt commonly used basic algorithms<br>  Utilise pseudocode and/or algorithms as a major program design technique<br>  Write and implement a solution algorithm using basic programming constructs<br>  Demonstrate debugging and testing skills whilst writing code<br>  Develop self-reliance and judgement in adapting algorithms to diverse contexts<br>  Design and write program solutions to identified problems using accepted design constructs<br>ITECH1000 Programming 1 1623<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 2 of 9<br>Assessment Details<br>The Federation University Australia Olympic Games are about to commence! The games have been<br>scheduled to begin on Saturday 3rd December 2016, competitors are busy training and now it’s time<br>to prepare to sell spectator tickets.<br>Your task is to design, develop and test a small application for recording ticket sales to this event.<br>Stage 1: Design<br>This stage requires you to prepare documentation that describes the function of the program and how<br>it is to be tested. There is no coding or code testing involved in this stage. A document template has<br>been provided for your use.<br>Requirements:<br>1) Read through Stage 2: Program Development to obtain details of the requirements of this<br>program.<br>2) Write an algorithm that describes how the program will operate.<br>a. All program requirements – base, standard and advanced – must be included, even if you<br>do not end up including all these requirements in your program code.<br>b. The algorithm must be structured logically so that the program would function correctly.<br>3) Prepare and document test cases that can be used to check that the program works correctly,<br>once it has been coded. You do NOT need to actually run the test cases in this stage; this will<br>occur in Stage 3: Testing.<br>a. All program requirements – base, standard and advanced, must be included, even if you<br>do not end up including all these requirements in your program code.<br>b. Make sure the test cases include checking of data entered by the user to make sure that<br>only valid data is accepted. If the user enters invalid data, the user should be informed of<br>this and given another chance to enter the data. NB: As we have not covered exception<br>handling, you may assume that the user will always enter an integer.<br>c. Test cases should be documented using a template like the one below. You may include<br>extra information if you wish. At this stage, the Actual Result column will be left blank.<br>Test Case  Expected Result  Actual Result<br>The user selects to purchase Tier 1<br>tickets.<br>The user is prompted to<br>enter the number of<br>tickets to purchase.<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 3 of 9<br>Stage 2: Program Development<br>Using the Design Documentation to assist you, develop a Java program that records spectator ticket<br>sales at the gate for the Federation University Australia Olympic Games, implementing the<br>requirements outlined in this section. These requirements have been broken into three groups:<br>  Base Functionality includes the minimal level of requirements to achieve the essential<br>components of this assignment. This group of requirements focuses on getting the code to<br>work and on using the programming constructs we cover in class. You can expect to use<br>constants, variables, loops, conditional statements and arithmetic operators for these<br>requirements and you should look for opportunities to use these wherever you can. You will not<br>receive full marks for implementing a requirement, even if it works, if you have not used the<br>appropriate programming construct to do so.<br>At this level, you can decide if it is easier for you to code everything within a single method, or<br>to modularize it straight away.<br>  Standard Functionality ensures the code is modularized, and that method calls are used to<br>ensure the program flows correctly. It allows data to pass from one method to another as<br>parameters. It also includes providing a running total of tickets within an order, which is not<br>essential for getting the program to work, but is useful information for the user to see.<br>  Advanced Functionality provides a challenge task, and is best left until all the other requirements<br>have been addressed. It requires looking at a Java API to find out how to use a class we have<br>not covered in the course, and using this to provide a countdown of days remaining until the<br>games commence.<br>All three groups require that you follow coding conventions, such as proper layout of code, using<br>naming conventions and writing meaningful comments throughout your program.<br>Base Functionality:<br>1. Display a welcome message when the program starts<br>  The welcome message should have a row of asterisks at the top and the bottom, just long<br>enough to extend over the text. Hint: Use a For loop for this.<br>  The first line of the message should read “FEDERATION UNIVERSITY AUSTRALIA<br>OLYMPICS” and be approximately centred in the row of asterisks by printing white space<br>first. Hint: Can you modify the For loop from the previous step to print the white spaces?<br>  A second line of the message should be blank.<br>  The third line should read “Developed by” followed by your name and a comma, then “<br>student ID ”, then your student id, then finally “ for ITECH1000 Sem 2 2016”.<br>  The fourth line should be blank.<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 4 of 9<br>2. Provide a menu from which the user can select to Purchase Tickets, View Ticket Sales or Exit.<br>This menu should be repeated each time after the user has chosen and completed an option until<br>the user chooses to Exit. The user selects an option by entering the number next to it. If an<br>invalid number is selected, the user is advised and shown the menu again to make another<br>selection.<br>3. When the user selects the Purchase Tickets option, provide another menu from which the user<br>can select Tier 1 Tickets, Tier 2 Tickets, Finalise Order or Cancel Order. The user selects an<br>option by entering the number next to it. If an invalid number is selected, the user is advised and<br>shown the menu again to make another selection.<br>a. Should the user select Tier 1 Tickets or Tier 2 Tickets, they are prompted to enter the<br>Number of Tickets required. After entering the number of tickets required, they are<br>returned to the Ticket Purchasing Menu so that they may choose to purchase additional<br>tickets. The user may not choose to purchase a negative number of tickets, but a<br>purchase of 0 tickets is permitted.<br>b. Should the user select Finalise Order:<br>i. The sale is processed by displaying the number of each type of ticket purchased<br>and the total cost of the tickets in this order. A Tier 1 ticket costs $18.50; a Tier 2<br>ticket costs $11.25.<br>ii. A record is kept of the total cost of tickets sold, the total number of Tier 1 tickets<br>sold and the total number of Tier 2 tickets sold. This is a combined total from all<br>orders; there is no need to keep a record of the number of tickets in each<br>individual order.<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 5 of 9<br>iii. The user is returned to the menu from Step 2.<br>c. Should the user select Cancel Order:<br>i. The order is cancelled and a message displayed to confirm this to the user.<br>ii. The user is returned to the menu from Step 2.<br>4. When the user selects the View Ticket Sales option, display the total value of ticket sales and both<br>the total number of Tier 1 tickets and the total number of Tier 2 tickets sold across ALL orders.<br>Highlight this message display with a row of 50 asterisks before and after the message. After the<br>final row of asterisks, redisplay the menu from Step 2.<br>5. When the user selects Exit System, quit the program with a message to the user.<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 6 of 9<br>Standard Functionality:<br>6. Update the Ticket Purchasing Menu so that a running total of tickets included in an order is<br>displayed until the order is finalized<br>7. Modularize the code, correctly using method calls and passing data between methods as<br>parameters.<br>Advanced Functionality:<br>8. Update the Welcome Message to include a countdown of the number of days to go until the<br>games begin.<br>a. Use the GregorianCalendar class to manage your dates. You will need to import<br>java.util.GregorianCalendar to use this library.<br>b. The countdown must be calculated based on the number of days between the time the<br>program runs, and Saturday 3rd December 2016. It should also be possible to just update<br>the date within the code and have the countdown automatically recalculate the number of<br>days until the games commence.<br>c. There is no pre-defined method for finding the difference between two dates in this library.<br>You will need to develop your own, using the features of the GregorianCalendar class.<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 7 of 9<br>Stage 3: Testing<br>Using a copy of the test cases developed in Stage 1: Design, test the program you have developed in<br>Stage 2: Program Development. Document your results, including both failed and successful tests.<br>Note: Please do not leave out any failed tests. If your testing highlights that your program has not<br>worked correctly, then the failed tests help to demonstrate that you have been testing your program<br>properly.<br>To show that you have tested your program, include small (but readable) screen captures in your<br>Actual Results as well as any explanatory comments. Microsoft Windows includes a Snipping Tool<br>that is useful for taking captures of the relevant parts of the screen.<br>You may test your program in phases if you wish. Stage 2: Program Development provides three<br>separate groups of functionality in the requirements, working from the minimal level of requirements<br>through to more advanced concepts. Each of these groups can be tested individually.<br>Base Functionality:<br>This phase requires you to check that the base functions (displaying welcome message when the<br>program starts, showing a menu of options until the user chooses to exit, purchasing tickets, viewing<br>ticket sales and exiting the system) have been implemented.<br>Standard Functionality:<br>In addition to the Base Functionality, this section includes displaying a running total of tickets that have<br>been added to an order until such time as the order has been finalized. This new functionality must<br>also be tested.<br>If you originally wrote and tested the Base Functionality by including all the code in a single method,<br>this phase also requires that you modularize your code, and use method calls and pass data between<br>methods to ensure your program still runs correctly. This means all your code will need to be re-<br>tested to ensure that all the previous functionality still works.<br>Advanced Functionality:<br>This phase requires testing the code that calculates and displays the number of days until the games<br>comments in the welcoming message shown when the program starts.<br>Submission<br>Your program code and testing documentation should be zipped into a single file and loaded into the<br>Assignment Box provided in Moodle by the due date and time.<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 8 of 9<br>Marking Criteria/Rubric<br>Task<br>Available<br>Marks<br>Student<br>Mark<br>Stage 1: Design Documentation<br>Development of an algorithm describing how the program should function<br>  All requirements from the Assessment Details section included  1<br>  Logical structure  1<br>Documented test cases to validate program<br>  All requirements from the Assessment Details section included  1<br>  Data is validated to ensure user entries are appropriate and incorrect user entries<br>are handled smoothly<br>1<br>Stage 2: Program Development<br>A Java program addressing the requirements outlined in the Assignment Details section,<br>including appropriate use of loops, conditional statements, constants and variables:<br>Use of coding conventions throughout entire program, including readable and clear layout,<br>following naming conventions and including meaningful and appropriate comments.<br>1<br>Base Functionality:<br>  Display of a welcome message when the program starts  1<br>  Menu displayed until user chooses to exit  1<br>  Purchase Tickets option to select and order a user-selected combination of Tier 1<br>and Tier 2 tickets<br>2<br>  View Ticket Sales to display the total value of ticket sales and both the total number<br>of Tier 1 tickets and the total number of Tier 2 tickets sold<br>1<br>  Exit System to quit the program with a message to the user  1<br>Standard Functionality:<br>  Running total of tickets included in an order displayed in the Purchase Tickets menu<br>until the order is finalised<br>1<br>  Code modularized, correctly using method calls and passing data between methods  2<br>Advanced Functionality:<br>  Countdown of days to go until the games commence included in the welcome<br>message<br>3<br>Stage 3: Testing<br>Documented test results clearly showing all the testing that has been conducted and the<br>results of this testing.<br>  Testing of base functionality<br>1<br>  Testing of standard functionality<br>1<br>  Testing of advanced functionality<br>1<br>Total  20<br>CRICOS Provider No. 00103D  1623 Assignment 1 specification.docx  Page 9 of 9<br>Feedback<br>Assignments will be marked within 2 weeks of submission. Marks will be loaded in fdlGrades, and a<br>completed marking sheet will be available via Moodle.<br>Plagiarism:<br>Plagiarism is the presentation of the expressed thought or work of another person as though it is one’s<br>own without properly acknowledging that person. You must not allow other students to copy your work<br>and must take care to safeguard against this happening. More information about the plagiarism policy<br>and procedure for the university can be found at <a href="http://federation.edu.au/students/learning-and-" target="_blank" rel="external">http://federation.edu.au/students/learning-and-</a><br>study/online-help-with/plagiarism.<br><br><br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithmics/">Algorithmics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page12" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/18/page12/">代写c++ Programming Assignment 2</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-17T20:22:46.000Z" itemprop="datePublished" class="post-time">
-  2016-10-18
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>用c++实现简单的机器学习，统计词频，情感分析等等，此处用到的数据结构算法是哈希表，需要先对数据进行清理操作，<br>然后分词，最后统计词频，根据公式情感分析等等，此题目比较新颖，通过c++来讲述数据挖潜和机器学习的原理知识，对数据结构<br>哈希表也考的很到位，点赞<br><strong>Requirement</strong><br>Assignment 2<br>Due:​​ Oct 14th (Friday) before 11:59 PM<br>1. Learning Goals<br>Learn how to<br>1. use associative containers like ​std::unordered_set​ and ​std::unordered_map<br>2. use iterators to iterate through associative containers<br>3. use ​algorithms​ that are available in the C++ Standard Library<br>4. pass command line arguments to a C++ program<br>5. partition a C++ program in header files (.hpp) and source files (.cpp)<br>6. read, understand, and use code written by other people<br>2. Description<br>In this assignment you’ll be doing the following:<br>1. Read a raw text file containing movie reviews and ratings.<br>2. Remove the punctuations and stopwords (e.g. is, and, the, etc.) from the reviews and<br>write the contents to a clean review file.<br>3. Associate a value for all words found in the clean reviews based on the average rating of<br>the word.<br>4. Using the map between the words and their associated values, rate reviews from<br>another file that doesn’t have any rating already.<br>5. Write the ratings of the reviews to an output file.<br>2.1. Clean the data<br>The raw data with the reviews and the rating will be present in a file named<br>rawReviewRatings.txt​. Every review is given a rating between 0 - 4 (both inclusive). The<br>following are interpretation of the rating values:<br>● 0 = Negative<br>● 1 = Somewhat Negative<br>● 2 = Neutral<br>● 3 = Somewhat Positive<br>● 4 = Positive<br>Each line of review follows the following format:<br><rating> <review><br>Example:<br>4 The Jungle Book is awesome!<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br>where 4 is the rating and the text “The Jungle Book is awesome!” is the review.<br>Now, your first task is to read the contents of this file and ​clean the data!<br>The following steps needs to be performed in the same order for cleaning the data:<br>1. Read the raw reviews from an input file. e.g. ​rawReviewRatings.txt<br>2. Replace the hyphens in every line of text with spaces.<br>e.g. If the review contains the word “awe-inspiring”, then it should be split into 2 words<br>namely “awe” and “inspiring”<br>3. Split each line of text into multiple words using the space character as the delimiter.<br>e.g. “The Jungle Book is awesome!” becomes | “The” | “Jungle” | “Book” | “is” |<br>“awesome!” |<br>4. Remove the punctuation marks from the words.<br>e.g. “awesome!” becomes “awesome” and “!” becomes “”<br>5. If there are any trailing/leading whitespaces, then remove them. Remember that the<br>space character (‘ ’), tab (‘\t’), newline (‘\n’), etc. are considered as whitespaces. For a<br>complete list of whitespace characters ​this​.<br>e.g. “zootopia ” becomes “zootopia”, “hello\t” becomes “hello”, and “world\n” becomes<br>“world”<br>6. Remove the empty words. i.e. words with length == 0.<br>7. Remove single lettered words. i.e. words with length == 1.<br>8. Remove stopwords. e.g. is, and, the, etc. The list of stopwords can be found in the file<br>stopwords.txt<br>9. Write the contents of the clean data to a file named ​cleanReviewRatings.txt​.<br>2.2. Fill the dictionary<br>Using the ​cleanReviewRatings.txt file, create a map/dictionary for every word that is found in<br>this file. The dictionary is of type<br>​<br>std::unordered_map<string, std::pair<long,="" long="">&gt;.<br>We associate a pair of values for each word namely its total_rating and its total_count. For<br>example, the word “fantastic” has occurred 3 times in the file ​cleanReviewRatings.txt with<br>associated ratings of 3, 4, and 3 (see the last 3 lines in the file). Therefore the word “fantastic”<br>gets a total_rating of 10 (i.e. 3 + 4 + 3 = 10) and a total_count of 3 since it had occurred 3 times<br>in the file. In a similar way, the other entries in this map are filled up as shown below. You may<br>want to read about a ​std::pair​ to understand more about how this map is organized.<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br>word total_rating total_count<br>fantastic  10  3<br>Zootopia  3  1<br>Dory  1  1<br>Finding  1  1<br>worst  0  1<br>The  6  2<br>inspiring  2  1<br>Jungle  8  2<br>Book  8  2<br>good  1  1<br>Jack  0  1<br>awesome  4  1<br>Lion  5  2<br>King  5  2<br>awe  2  1<br>Jill  0  1<br>2.3. Rate new reviews<br>Using the map/dictionary that we created in the previous step, we are going to read new unrated<br>reviews from a file (e.g. ​rawReviews.txt​) and predict a rating for each review in this file. The<br>predicted rating for each review is written to an output file named ​ratings.txt​.<br>How do we predict the ratings for the unrated reviews?<br>1. Read the input file with the unrated raw reviews (e.g. ​rawReviews.txt​).<br>2. Clean the data and produce an output file named ​cleanReviews.txt​. The process for<br>cleaning the data is exactly the same as we did in step 2.1.<br>3. Rate each review by finding the rating for each word from the map/dictionary that we<br>created in step 2.2. The rating for a line of review is the average value of the rating of all<br>the words in the review. If some word in this unrated review is not found in the<br>map/dictionary, then that word is given a neutral rating of 2. If a review is empty (i.e. the<br>review contains no words in it), then such a review is also given a neutral rating of 2.<br>e.g. Let see how we computed the rating for the 2nd review in ​cleanReviews.txt (i.e.<br>“The Lion King fantastic”). We lookup the map/dictionary that we created before and get<br>the average rating for each word in this review. The average ratings of each word in this<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br>review is shown below:<br>The: 6/2 = 3<br>Lion: 5/2 = 2.5<br>King: 5/2 = 2.5<br>fantastic: 10/3 = 3.33<br>Based on these individual values, this line gets and average review of 2.83 as shown in<br>the file ​ratings.txt​.<br>Rating for this line = (3 + 2.5 + 2.5 + 3.33) / 4 = 2.83<br>We are dividing by 4 since this review contains 4 words in total.<br>Another example: “Finding Nemo great”<br>Finding: 1<br>Nemo: 2 (because it is NOT found in the map)<br>great: 2 (because it is also NOT found in the map)<br>Rating for this line = (1 + 2 + 2) / 3 = 1.67<br>4. Write the ratings for all the reviews to an output file named ​ratings.txt​.<br>A high-level process diagram of the steps explained in 2.1 - 2.3 is shown. Hope this<br>visualization helps you to understand the idea in a better way! :)<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br>That’s it! Now, after completing this step you may pat yourself on the back for doing an amazing<br>job with this assignment! :) Also, if you have not taken Artificial Intelligence or Machine Learning<br>before then you have just now completed your first exercise in Machine Learning. You just<br>created a program that may predict the ratings of movie reviews based on some learning it did<br>before based on some reviews that already had ratings associated with them. Well, even though<br>our algorithm is very simple, this is the basic idea behind Machine Learning. Newcomers,<br>welcome to the world of Artificial Intelligence! :)<br>3. Sample Output<br>If your program runs correctly without any errors, then NO OUTPUT will be written to the<br>console. If any input/output file cannot be opened, only then your program writes some error<br>messages to the console. All error handling is already taken care of in the file ​main.cpp​.<br>3.1. Small Data<br>INPUT FILES:<br>Rated Review File: ​rawReviewRatings.txt<br>Unrated Review File: ​rawReviews.txt<br>Stopwords File: ​stopwords.txt<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br>OUTPUT FILES:<br>Cleaned Rated Review File: ​cleanReviewRatings.txt<br>Cleaned Unrated Review File: ​cleanReviews.txt<br>Ratings File: ​ratings.txt<br>3.2. “Big” Data<br>INPUT FILES:<br>Rated Review File: ​rawReviewRatingsBig.txt<br>Unrated Review File: ​rawReviewsBig.txt<br>Stopwords File: ​stopwords.txt<br>OUTPUT FILES:<br>Cleaned Rated Review File: ​cleanReviewRatings.txt<br>Cleaned Unrated Review File: ​cleanReviews.txt<br>Ratings File: ​ratings.txt<br>4. Important Details<br>1. The code for this assignment is split across 5 files.<br>a. main.cpp<br>b. a2.hpp<br>c. a2.cpp​ (This is the ONLY file you should modify!)<br>d. trim.hpp<br>e. trim.cpp<br>The .hpp files are the header files which contain only the declaration of the functions and<br>the .cpp files are the source files which contain the implementation of these functions. If<br>you want to understand more about why we have separate header and source files, then<br>maybe you should read ​this​.<br>2. Take some time to read the source code starting from the main() function that is present<br>inside the file main.cpp.<br>3. All the code you write for this assignment will only be inside the file ​a2.cpp. You should<br>not perform any file IO, print to stdout, or print to stderr in a2.cpp.<br>4. The files trim.hpp and trim.cpp are provided only to help you with trimming the<br>whitespaces in strings since doing so in C++ is not so easy as it’s in Java. You may read<br>these files to find out how to trim strings for this assignment.<br>5. You should use the following command to ​compile​​ your program.<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br>$ g++ <em>.cpp -std=c++11<br>where </em>.cpp means all the .cpp files are to be compiled. You need not mention the<br>names of the .hpp files since they are included from within the .cpp files. The option<br>“-std=c++11” informs the compiler that our may contain C++11 features (e.g.<br>std::unordered_map was introduced only in C++11).<br>6. Your program takes the two files ​rawReviewRatings.txt and ​rawReviews.txt as ​command<br>line arguments​. ​​You should run your program as shown below:<br>$ ./a.out rawReviewRatings.txt rawReviews.txt<br>If you don’t give these 2 command line arguments to your program, then the following<br>error message will be printed. This error handling is already handled for you in main.cpp.<br>$ ./a.out<br>USAGE: ./a.out <reviewratingsfile> <reviewsfile><br>7. If your program works correctly without any errors, then nothing is printed to the console.<br>Only the three output files cleanReviewRatings.txt, cleanReviews.txt and ratings.txt will<br>be produced. You may even try compiling and running your program before adding any<br>code in a2.cpp to see if these 3 output files are produced. The contents of these output<br>files will be empty until the methods in a2.cpp are implemented.<br>8. You should NOT add any new functions/methods in a2.cpp.<br>9. You ​SHOULD NOT MODIFY​​ any of the following in a2.cpp:<br>a. Names of the functions<br>b. Names and types of the parameters to a function.<br>c. Return types of the functions.<br>10.An approximate number of lines of code is given for each function in a2.cpp. These are<br>the number of lines for each function in Gerald’s implementation of a2.cpp. We have<br>provided this information since it may help you to see how little code you may write if you<br>make use of the C++ Standard Library effectively. This would help you to stop and think<br>for a while before you may write a lot of code by yourself and maybe later realize that<br>you could have used some functionality from the standard library to do the same thing<br>with little code and more effectively!<br>11.Updates to this specification that may be posted on piazza are also part of this<br>specification.<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br>5. Grading Scheme<br>Item  Grade<br>Correctness of your code  90<br>Code Style (indentation) &amp;<br>Implementation Comments in a2.cpp<br>10<br>TOTAL  100<br>6. Submission<br>Submit ​ONLY your a2.cpp​​ file at the following location:<br>/p/course/cs368-gerald/public/handin/<cslogin>/a2<br>Remember that ​no late work is accepted​​ in this course and there are no exceptions!<br>Hope you have a great time learning and coding associative containers and<br>algorithms using the C++ Standard Library! :)<br>CS 368 (C++) - Fall 2016<br>Adalbert ​Gerald​​ Soosai Raj<br><br><br></cslogin></reviewsfile></reviewratingsfile></string,></review></rating></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithmics/">Algorithmics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c++</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page13" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/18/page13/">代写python Programming Assignment 4</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-17T20:22:46.000Z" itemprop="datePublished" class="post-time">
-  2016-10-18
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>TASK 1:<br>主要工作量如下:<br>1.读取数据和标签，设置函数为：load_data<br>2.归一化数据，使用sklearn的函数sklearn.preprocessing.normalize<br>3.使用sklearn的函数sklearn.cross_validation.train_test_split进行数据拆分，按照70%，15%，15%拆分训练集，验证集，测试集<br>4.使用np.savetxt保存相关集合<br><br>TASK 2:<br>朴素贝叶斯使用算法为：sklearn.naive_bayes.BernoulliNB<br>验证准确率为：<br>(‘valid accuracy score:’, 0.62646869836607311)<br>测试准确率为：<br>(‘test accuracy score:’, 0.62184459335413989)<br>混淆矩阵为：<br>[[14118 16819   136     0    30    36   819]<br> [ 6262 33060  2466    12   159   207   147]<br> [    0   225  4832    72    33   180     0]<br> [    0     0   199   170     0    44     0]<br> [  146   983   173     0   100     6     0]<br> [   31   299  1962    29   112   205     0]<br> [  925   434    11     0     0     0  1710]]<br><br>剩下的不一一列举…<br><br><strong>Requirement</strong><br>1.Overview<br>The aim of this assignment is to compare alternative techniques for predicting forest cover types from cartographic variables. You will be using the sklearn machine learning library to perform this study. The dataset is based on four wilderness areas in the Roosevelt National Forest, located in the Front Range of northern Colorado. Cover type data came from US Forest Service inventory information, while the cartographic variables used to predict cover type consisted of elevation, aspect, and other information derived from standard digital spatial data processed in a geographic information system (GIS).<br>Data Set Information:<br>The prediction of forest cover type is from cartographic variables only (no remotely sensed data). The actual forest cover type for a given observation (30 x 30 meter cell) was determined from US Forest Service (USFS) Resource Information System (RIS) data. Independent variables were derived from data originally obtained from US Geological Survey (USGS) and USFS data. Data is in raw form (not scaled) and contains binary (0 or 1) columns of data for qualitative independent variables (wilderness areas and soil types).<br>This study area includes four wilderness areas located in the Roosevelt National Forest of northern Colorado. These areas represent forests with minimal human-caused disturbances, so that existing forest cover types are more a result of ecological processes rather than forest management practices.<br>Some background information for these four wilderness areas: Neota (area 2)<br>probably has the highest mean elevational value of the 4 wilderness areas. Rawah (area 1) and Comanche Peak (area 3) would have a lower mean elevational value, while Cache la Poudre (area 4) would have the lowest mean elevational value.<br>As for primary major tree species in these areas, Neota would have spruce/fir (type 1), while Rawah and Comanche Peak would probably have lodgepole pine (type 2) as their primary species, followed by spruce/fir and aspen (type 5). Cache la Poudre would tend to have Ponderosa pine (type 3), Douglas-fir (type 6), and cottonwood/willow (type 4).<br>The Rawah and Comanche Peak areas would tend to be more typical of the overall dataset than either the Neota or Cache la Poudre, due to their assortment of tree species and range of predictive variable values (elevation, etc.) Cache la Poudre would probably be more unique than the others, due to its relatively low elevation range and species composition.<br>Attribute Information:<br>Given is the attribute name, attribute type, the measurement unit and a brief description. The forest cover type is the classification problem. The order of this listing corresponds to the order of entries along the vectors of the database.<br>Name / Data Type / Measurement / Description<br>Elevation / quantitative /meters / Elevation in meters<br>Aspect / quantitative / azimuth / Aspect in degrees azimuth<br>Slope / quantitative / degrees / Slope in degrees<br>Horizontal_Distance_To_Hydrology / quantitative / meters / Horz Dist to nearest surface water features<br>Vertical_Distance_To_Hydrology / quantitative / meters / Vert Dist to nearest surface water features<br>Horizontal_Distance_To_Roadways / quantitative / meters / Horz Dist to nearest roadway<br>Hillshade_9am / quantitative / 0 to 255 index / Hillshade index at 9am, summer solstice<br>Hillshade_Noon / quantitative / 0 to 255 index / Hillshade index at noon, summer soltice<br>Hillshade_3pm / quantitative / 0 to 255 index / Hillshade index at 3pm, summer solstice<br>Horizontal_Distance_To_Fire_Points / quantitative / meters / Horz Dist to nearest wildfire ignition points<br>Wilderness_Area (4 binary columns) / qualitative / 0 (absence) or 1 (presence) / Wilderness area designation<br>Soil_Type (40 binary columns) / qualitative / 0 (absence) or 1 (presence) / Soil Type designation<br>Cover_Type (7 types) / integer / 1 to 7 / Forest Cover Type designation<br>Your tasks<br>Preprocessing (5 marks)<br>Write a Python script (with the file named task_1.py), that<br>loads the dataset shuffles the data<br>deals with any missing value (if any)<br>performs normalization of the data<br>creates numpy arrays train_data, validation_data and test_data which contain respectively 70%, 15% and 15% of the shuffled data.<br>saves these preprocessed arrays<br>Whenever applicable use the validation set to select the architectural<br>parameters needed to build the following classifiers;<br>Naive Bayes (5 marks)<br>Write a Python script (with the file named task_2.py), that<br>builds naïve Bayes classifiers<br>evaluates the prediction errors<br>reports these errors with a confusing matrix<br>Decision Trees (5 marks)<br>Write a Python script (with the file named task_3.py), that<br>builds decision tree classifiers<br>evaluates the classifiers<br>Nearest Neighbours (5 marks)<br>Write a Python script (with the file named task_4.py), that<br>builds kNN classifiers<br>evaluates the classifiers<br>Support Vector Machines (5 marks)<br>Write a Python script (with the file named task_5.py), that<br>builds SVM classifiers<br>evaluates the classifiers<br>Deliverables<br>You should submit via Blackboard a zip file containing<br>A report in pdf format limited to 10 pages of text (be concise!)<br>describing the design of your experiments<br>reporting on the performance of your classifiers<br>a statement of completeness (concise description of what you have implemented, what works, what doesn’t).<br>All your Python script files with proper commenting. Good code documentation is critical.<br><br><br><br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithmics/">Algorithmics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page11" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/17/page11/">代写C CS352 Programming Assignment 1</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-17T15:22:43.000Z" itemprop="datePublished" class="post-time">
-  2016-10-17
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>linux下的c语言入门级别的3个小题，第一个是控制格式的打印和输出，第二题是对比表达式是否是相同的表达式，<br>需要解析表达式，对运算符进行分析，第三题是分解一个数，获取质数的和。<br><br><strong>Requirement</strong><br>ECE15: Homework 5<br>In all homeworks, the dialogue boxes show the system prompt in ( ˜ )$, the user input in red, and the<br>computer output in black. Unless otherwise indicated, assume that the user will always enter a valid<br>input.<br>Problem0. Read the following Zybooks sections and solve the problems there in.<br>Sections 7.1 to 7.4 by 8pm Tuesday October 25th.<br>Sections 7.5 to 7.8 by 8pm Thursday October 27th.<br>Problem1. A histogram represents a sequence of values as vertical rectangles of proportional<br>heights. Write a program histogram.c that asks the user for a sequence of space-separated positive<br>integers followed by zero, and draws a “sideways” histogram representing each positive integer n as<br>n spaces followed by a vertical bar, and separating these lines by a line of “-” whose width is the<br>maximum width of its adjacent rectangles.<br>( ˜ )$ a.out<br>Positive widths followed by 0: 6 2 1 3 4 0<br>——<br>|<br>——<br>|<br>–<br>|<br>—<br>|<br>—-<br>|<br>—-<br>( ˜ )$ a.out<br>Positive widths followed by 0: 3 2 1 0<br>—<br>|<br>—<br>|<br>–<br>|<br>-<br>( ˜ )$ a.out<br>Positive widths followed by 0: 3 0<br>—<br>|<br>—<br>( ˜ )$ a.out<br>Positive widths followed by 0: 0<br>( ˜ )$<br>Problem2. Lines in the plane are often represented by linear equations, for example 2x+5y=3,<br>or 10y+4x=6, that represents the same line. To standardize the representation one can express y as a<br>function of x, for the line above, y=-0.4x+0.6 where -0.4 is called the slope, and 0.6 is the intercept.<br>Two lines are parallel if they have the same slope (with the same or different intercepts), and called the<br>same if they have the same slope and intercept.<br>Write a program line.c that asks the user for equations of straight lines in the plane and prints<br>whether the lines are all same, are all parallel but not all the same, or not all parallel. Note that for any<br>set of lines, only one of these description holds. If no equations are entered, a corresponding message<br>gets printed.<br>The equations can be entered as ax ± by = c or ay ± bx = c, where a,b,c are doubles. The program<br>asks the user for lines until the they decide to stop. Since floating-point numbers are stored with<br>small rounding errors, consider two slopes, or two intercepts, to be equal if the absolute value of their<br>difference is ≤ 10 − 10 .<br>( ˜ )$ a.out<br>Enter another equation? [y/n]: y<br>Equation: 6x+7.5y=1.5<br>Enter another equation? [y/n]: y<br>Equation: 6x+7.5y=1.5<br>Enter another equation? [y/n]: y<br>Equation: 9.1x+0.8y=2<br>Enter another equation? [y/n]: n<br>Not all lines parallel.<br>( ˜ )$ a.out<br>Enter another equation? [y/n]: y<br>Equation: 2.5x+3.2y=4.1<br>Enter another equation? [y/n]: y<br>Equation: 3.2y+2.5x=1.6<br>Enter another equation? [y/n]: n<br>All lines parallel but not all same.<br>( ˜ )$ a.out<br>Enter another equation? [y/n]: y<br>Equation: 2x-3y=4<br>Enter another equation? [y/n]: y<br>Equation: -3y+2x=4<br>Enter another equation? [y/n]: n<br>All lines same.<br>( ˜ )$ a.out<br>Enter another equation? [y/n]: y<br>Equation: -3y+2x=4<br>Enter another equation? [y/n]: n<br>All lines same.<br>( ˜ )$ a.out<br>Enter another equation? [y/n]: n<br>No equations!<br>( ˜ )$<br>2<br>Problem3. Write a program prime.c that asks the user for an integer n ≥ 2 and prints n as a<br>sum of prime numbers: p 1 + p 2 + … + p k .<br>Typically, there may be several ways to write n as a sum of primes. Print the sum where p 1 is the<br>largest prime ≤ n that is not n − 1; p 2 is the largest prime ≤ n − p 1 that is not n − p 1 − 1, and so on.<br>( ˜ )$ a.out<br>Integer: 4<br>Prime sum: 2 + 2<br>( ˜ )$ a.out<br>Integer: 9<br>Prime sum: 7 + 2<br>( ˜ )$ a.out<br>Integer: 148<br>Prime sum: 139 + 7 + 2<br>( ˜ )$ a.out<br>Integer: 2<br>Prime sum: 2<br>( ˜ )$<br>3<br><br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page10" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/16/page10/">代写C CS37 Programming Assignment 3</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-16T14:52:53.000Z" itemprop="datePublished" class="post-time">
-  2016-10-16
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>linux下的c语言os方面课程，多线程归并排序统计加速比测试，测试1,2,4,8,16,32个线程的情况下加速比。代码不算难，但是要进行大量测试和统计操作。<br>并且需要对linux下的多线程原理足够清楚<br><br><strong>Requirement</strong><br>Project 3<br>Due date: Oct 17, 2016 (No late submissions)<br>The goal of this project is to evaluate Amdahl’s law in the context of the sorting problem. The details of your implementation are as follows:<br>1.Implementation details<br>a.Your executable should be called PROG4<br>b.You will invoke PROG4 as<br>i.PROG4 <size of="" array=""> <number of="" threads=""><br>ii.Assume that <size of="" array=""> is a multiple of 32<br>iii.Assume that the number of threads is 1, 2, 4, 8, 16 or 32<br>iv.Example invocation:<br>PROG4   3200   16<br>2.When you execute the program, the following should happen<br>a.First, you will fill the array with strictly decreasing numbers. For example, if the array is of size 320, you can initialize it to 320, 319, 318 etc.<br>b.You will partition the array into 32 parts. You will sort each part using BUBBLESORT so that they are in increasing order. Finally, all 32 sorted parts will be merged to obtain the final sorted array. To achieve this with K threads, you will proceed as follows:<br>i.When you have K threads, each thread will handle 32/K parts and sort them. Now, you have 32 sorted parts of original array A.<br>ii.You will merge the sorted parts to generate array B that will represent the sorted array A.<br>c.You will verify that the array is actually sorted and contains the correct data. For example, in the above scenario, you should see numbers from 1..320.<br>3.Important observations:<br>a.You are partitioning the array into 32 parts independent of the number of threads you have. This is critical. This ensures that the actual work done is independent of the number of threads.<br>b.Normally, when you use multiple threads, this can increase the total work done. But we are trying to avoid the problem<br>c.We initialize the array to be in a decreasing order and use bubblesort to get it into increasing order.<br>d.The number 32 is chosen because cse410.cse.msu.edu has 32 processors.<br>4.As an illustration of this, for sake of discussion, assume that array A has 3200 elements. We partition array A into 32 parts, from [0..99], [100..199], … [3100..3199].<br>a.Consider the case where number of threads=1. In this case, you have only one thread. Hence, it will sort all 32 parts separately one after another. Then, it will merge it. This will correspond to the time required to sort the array with just one thread. This time will be split into two parts: the part that can be parallelized (namely the sorting of individual parts) and the part that cannot be parallelized (namely the merging part). Use this time to evaluate the value of f, the part that is sequential. As an illustration, if the time required for sorting individual parts was 200 and the time required for merging was 25 then f = 25/(200+25).<br>i.Some smart people will realize that the merging itself could be parallielized. But we will not do that in this project. The merging will always be sequential.<br>ii.Note that Amdahl’s law only considers the case where some part can be parallelized by n threads and the remaining part must be run on only one thread. It does not consider the case where you have some part where you can utilize more than one thread but cannot utilize all n.<br>iii.In fact, the merging part will be independent of the number of threads you have.<br>b.Consider the case where K=2. In this case, each thread will sort 16 parts. Each thread will sort the parts assigned to it independently (in parallel). Then, you will merge it to get the sorted array. Recall that the merging must be done sequentially. It is expected that the merging time will remain unchanged in this process.<br>5.What to turn in<br>a.Your .cpp files, .h files and makefile that will generate PROG4<br>b.A report (pdf) describing your experience with Amdahl’s law<br>i.You should consider five different array sizes from 320 to 32,000,000.<br>ii.The sizes you choose should be such that total time to run with 1 thread is at least 1 second and no more than 10 minutes.<br>iii.For chosen sizes, run your program with 1, 2, 4, 8, 16 and 32 threads.<br>iv.Run each experiment 3 times and use the average.<br>v.Identify the sequential fraction based on your experiment with 1 thread. Observe that sorting 32 parts can be parallelized. Merging cannot be.<br>vi.Compare the results you have with that predicated by Amdahl’s law.<br>vii.Explain the difference, if any.<br>viii.(Note that the verification time should not be included in the time you report.)<br>6. A few things that will help<br>a.You saw that you can provide each thread with a threadID<br>b.You can make assignments of the parts to be sorted based on threadID<br>c.For example, if you have 4 threads, thread 0 is responsible for first 8 parts and so on.<br>d.You can create partitions in-place<br>7.Some more things<br>a.Your sorting or merging should not assume that the array is provided in a sorted fashion. It should work for arbitrary array. The reason I have specified the initial array in the given fashion is so that you can validate correctness of your program.  For example, merging cannot be simply put the parts in reverse order.<br>b.Merging would essentially occur in the main() after all threads are joined.<br>c.You are provided with 2 files pth.cpp – that does things somewhat incorrectly (discussed in class) and pth.cpp that does things in the right fashion.<br></size></number></size></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page9" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/10/15/page9/">代写C++ CS37 Programming Assignment 1</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-10-15T13:42:55.000Z" itemprop="datePublished" class="post-time">
-  2016-10-15
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>一个简单的c++程序，计算BMI指数，重点在于注意细节，c++的标准I/O的输入输出格式输出<br><br><strong>Requirement</strong><br><br>Total Point: 12 Due Date: 09/12/2016, Monday<br>Assignment Description:<br>Write a program that calculate the Body Mass Index (BMI). Your program should<br>perform the following tasks:<br>1. Prompt the user to enter the following data for each person:<br> ID (four digit integer),<br> Name 20 character string,<br> Weight in pounds (floating-point with 1 digit after decimal point),<br> Height in inches (floating-point with 1 digit after decimal point).<br>2. Compute the BMI using the following formula:<br>BMI = (weightInPounds <em> 703) / (heightInInches </em> heightInInches)<br>3. Save (Write) the input data (id, name, weight, height) and the calculated BMI<br>(floating-point with 2 digits after decimal point) into a text file (e.g. bmifile.txt).<br>4. Repeat steps 1-3 to compute the BMIs for three persons, then close the text file.<br>5. Now, read all the BMI records from the text file, one person each time, and print out<br>a summary like the following:<br>Program Requirements:<br>1. The program must use streams, cout and cin objects to perform the IOs with<br>console, printer, and file, and use IO manipulators to format the output.<br>2. The program should include the following information as comment on top of source<br>code:<br> Programming assignment number<br> Author of the program<br> Date of programming (or due date)<br> Brief description on what the program will do<br>Grading:<br>Create and run your program using IDE of your choice (CodeBlock or Visual C++).<br>Print the source code, program output and a snapshot of the text file (to show the<br>file content) and turn in all three items for grading. The turn in documents must be<br>legible. Extremely tiny font or light/blur inks used in printing make it impossible<br>to read and grade your assignments.<br>Also save the source code and output in your computer or portable storage device (USB<br>device for example) so that they can be turned in for validation if asked to do so.<br><br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c++</a></li></ul>
-
-</article>
-    </li>
-  
 </ul>
 
 <nav id="page-nav">
     <div class="inner">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
     </div>
 </nav>
 
