@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Java代写：Assignment 2 | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Java,Network">
+  <meta name="description" content="Introductionjava的网络编程，主要是一个FileSender 发送类和一个FileReceiver接收类， 考察了网络编程的基础知识，CRC32 Checksum验证，消息头的封装和解封，数据的传输等等知识RequirementPage 1 of 6Assignment 2IntroductionIn this assignment, you will transfer a file">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java代写：Assignment 2">
+<meta property="og:url" content="http://yoursite.com/2016/11/13/page38/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introductionjava的网络编程，主要是一个FileSender 发送类和一个FileReceiver接收类， 考察了网络编程的基础知识，CRC32 Checksum验证，消息头的封装和解封，数据的传输等等知识RequirementPage 1 of 6Assignment 2IntroductionIn this assignment, you will transfer a file">
+<meta property="og:updated_time" content="2017-01-04T03:59:21.084Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java代写：Assignment 2">
+<meta name="twitter:description" content="Introductionjava的网络编程，主要是一个FileSender 发送类和一个FileReceiver接收类， 考察了网络编程的基础知识，CRC32 Checksum验证，消息头的封装和解封，数据的传输等等知识RequirementPage 1 of 6Assignment 2IntroductionIn this assignment, you will transfer a file">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Java代写：Assignment 2</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Java代写：Assignment 2</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-13T14:12:33.000Z" itemprop="datePublished" class="page-time">
+  2016-11-13
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page38" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Network/">Network</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br>java的网络编程，主要是一个FileSender 发送类和一个FileReceiver接收类， 考察了网络编程的基础知识，CRC32 Checksum验证，<br>消息头的封装和解封，数据的传输等等知识<br><br><strong>Requirement</strong><br>Page 1 of 6<br>Assignment 2<br>Introduction<br>In this assignment, you will transfer a file over UDP protocol on top of an unreliable channel<br>that may either corrupt or drop packets randomly (but always deliver packets in order).<br>Writing Your Programs<br>You are free to write your programs on any platform/IDE that you are familiar with.<br>Grading<br>Your programs will be graded according to their correctness using a grading script:<br>• [2 points] Programs are compilable on sunfire, program execution follows specified<br>Java commands (see sections below).<br>• [1 point] Programs can successfully transfer a file from sender to receiver when channel is<br>perfectly reliable (i.e. no error at all).<br>Page 2 of 6<br>• [1 point] Programs can successfully transfer a file from sender to receiver in the presence of<br>data packet corruption.<br>• [1 point] Programs can successfully transfer a file from sender to receiver in the presence of<br>ACK/NAK packet corruption.<br>• [1 point] Programs can successfully transfer a file from sender to receiver in the presence of<br>data packet loss.<br>• [1 point] Programs can successfully transfer a file from sender to receiver in the presence of<br>ACK/NAK packet loss.<br>• [1 point] Programs can successfully transfer a file from sender to receiver in the presence<br>of both packet corruption and packet loss.<br>To conclude a successful file transfer, received file must have identical content as the<br>sent one (use command cmp to check it on sunfire). Your program should work for<br>both text and binary files, and for both small files and large files (a few MBs).<br>Grading script doesn’t care what messages your programs print on the screen. It just checks<br>if the received file is exactly the same as the sent one in respective test cases.<br>• [2 points] (Who runs faster?) Time taken for your programs to transfer an enormous file<br>(more than 10MB) in the presence of both packet corruption and packet loss will be noted<br>down. The fastest batch of student programs will receive 2 marks and slower programs that<br>are still faster than average will receive 1 mark. J<br>You may apply the knowledge gained from this or other courses as appropriate. However,<br>since the objective of this assignment is to design a fast network transmission protocol,<br>you are NOT allowed to play tricks (e.g., data compression) to gain unfair advantage<br>over your peers. Please consult the teaching team if you are unsure if certain techniques<br>can be used or not.<br>A Word of Advice<br>This assignment is complex and time-consuming. You are suggested to write programs<br>incrementally and modularly. For example, deal with data packet corruption first, then ACK<br>packet corruption, then data packet loss, etc. Test your programs after every single major<br>change. Take note that partial credit will be awarded even if your programs don’t meet all listed<br>requirements.<br>Page 3 of 6<br>Overall Architecture<br>There are three programs in this assignment, FileSender, UnreliNET and<br>FileReceiver. Their relationship is illustrated in Figure 1 below. The FileSender and<br>FileReceiver programs implement a file transfer application over UDP protocol. The<br>UnreliNET program simulates the transmission channel that transmits packets unreliably and<br>randomly corrupts or loses packets. However, for simplicity, you can assume that this channel<br>always delivers packets in order.<br>Figure 1: UnreliNet Simulates Unreliable Network<br>The UnreliNET program acts as a proxy between FileSender and FileReceiver.<br>Instead of sending packets directly to FileReceiver, FileSender sends all packets to<br>UnreliNET. UnreliNET may introduce bit errors to packets or lose packets randomly. It<br>then forwards packets (if not lost) to FileReceiver. When receiving feedback packets from<br>FileReceiver, UnreliNET may also corrupt them or lose them with certain probability<br>before relaying them to FileSender.<br>The UnreliNET program is complete and given. Your task in this assignment is to develop the<br>FileSender and FileReceiver programs so that a file can be successfully transferred<br>from sender to receiver in the presence of possible packet corruption and packet loss. The<br>received file should be identical to the file sent. You may need to implement techniques learnt<br>in lecture, including sequence number, acknowledgement, timeout and retransmission, to<br>ensure that packets are correctly delivered.<br>FileSender Class<br>The FileSender program is basically a file uploader that opens a given file and sends its<br>content as a sequence of packets to UnreliNet. UnreliNet would then corrupt/lose<br>packets with certain probability before relaying them to the FileReceiver program.<br>To run FileSender on sunfire, type command:<br>java  FileSender  <path filename=""></path>  <unrelinetip><br><unrelinetport> <rcvfilename><br>For example:<br>java FileSender ../test/cny.mp3 localhost 9000 gxfc.mp3<br>sends the file cny.mp3 from directory (relative path) ../test to UnreliNet running in<br>the same host at port 9000. UnreliNet will then pass the file to your FileReceiver<br>program to be stored as gxfc.mp3.<br>UnreliNET  FileSender  FileReceiver<br>Page 4 of 6<br>(Note: Windows system uses a different file separator ‘\’, e.g., ..\test\cny.mp3)<br>You may assume that during testing, your sender program will be supplied with the correct<br>path and filename (no more than 100 bytes long). No input validation is needed.<br>UnreliNET Class<br>The UnreliNET program simulates an unreliable channel that may corrupt or lose packets<br>with a certain probability. This program is given and shouldn’t be changed.<br>To run UnreliNET on sunfire, type command:<br>java  UnreliNET  <p_data_corrupt>  <p_ack_corrupt><br><p_data_loss> <p_ack_loss> <unrelinetport> <rcvhostname><br><rcvport><br>For example:<br>java UnreliNET 0.3 0.2 0.1 0.05 9000 localhost 9001<br>listens on port 9000 and forwards all received data packets to FileReceiver running on the<br>same host at port 9001, with 30% chance of packet corruption and 10% chance of packet loss.<br>The UnreliNET program also forwards ACK/NAK packets to FileSender, with 20% packet<br>corruption rate and 5% packet loss rate.<br>Packet Corruption Probability<br>The UnreliNET program randomly corrupts or loses data packets and ACK/NAK packets<br>according to the specified parameters P_DATA_CORRUPT, P_ACK_CORRUPT P_ACK_LOSS and<br>P_ACK_LOSS. You can set these values to anything in the range [0, 0.3] during testing (setting a<br>too large corruption/loss rate may result in a very slow file transmission).<br>If you have trouble getting your code to work, it might be advisable to set them to 0 first for<br>debugging purposes.<br>FileReceiver Class<br>The FileReceiver program receives a file from FileSender (through UnreliNET) and<br>saves it in the same directory as the FileReceiver program, with a filename specified by<br>FileSender.<br>To run FileReceiver on sunfire, type command:<br>java FileReceiver <rcvport><br>For example:<br>java FileReceiver 9001<br>listens on port 9001 and dumps the bytes received into a file whose name is given by sender.<br>Page 5 of 6<br>Running All Three Programs<br>You should first launch FileReceiver, followed by UnreliNET in the second window.<br>Finally, launch FileSender in a third window to start data transmission. All programs should<br>receive user input from command-line argument only. Please always test your programs in<br>localhost to avoid the interference of network traffic on your programs.<br>The UnreliNET program simulates unreliable communication network and runs infinitely.<br>Once launched, you may reuse it in consecutive tests. To manually terminate it, press <ctrl> + c.<br>The UnreliNET program prints out information that is helpful in debugging your programs.<br>However, we will disable such outputs in speed test.<br>The sender and receiver programs shouldn’t communicate with each other directly – all traffic<br>should be forwarded by the UnreliNET program. The sender program should terminate<br>properly (e.g., no exception, no infinite loop) once transmission finishes. However, you may<br>leave the receiver program running infinitely (i.e., no need for receiver to detect end of<br>transmission and terminate, but DO remember to close the file output stream at the end).<br>Self-defined Header/Trailer Fields at Application Layer<br>UDP transmission is unreliable. To detect packet corruption or packet loss, you may need to<br>implement reliability checking and recovery mechanisms at application layer. The following<br>header/trailer fields are suggested though you may have your own design:<br> Sequence number<br> Checksum<br>Note that each packet FileSender sends should contain at most 1000 bytes of application<br>data (inclusive of self-defined header/trailer fields), or UnreliNET program will reject it.<br>Computing Checksum<br>To detect bit errors, FileSender should compute checksum for every outgoing packet and<br>embed it in the packet. FileReceiver needs to re-compute checksum to verify the integrity<br>of a received packet.<br>Please refer to Assignment 0 Exercise 3 on how to compute checksum using Java CRC32 class.<br>Timer and Timeout Value<br>Sender may have to maintain a timer for unacknowledged packet. You are suggested to use the<br>setSoTimeout() method of Java Socket class.<br>You shouldn’t set a timeout value that is larger than 200ms, or your program might be too slow<br>in transmitting data and thus get killed by the grading script.<br>Page 6 of 6<br>Reading/Writing Values to Header/Trailer Fields<br>The number of header/trailer fields and the sequence of their appearance in a packet is the<br>agreement between sender and receiver (i.e. an application layer protocol designed by you).<br>As discussed in tutorial 3, to give value to a header field of a 4-byte integer, you may consider<br>ByteBuffer class from java.nio package. An example is shown below.<br>At sender side:<br>int length = 1000;<br>// allocate a 4-byte array to store converted integer<br>byte[] pktLen = ByteBuffer.allocate(4).putInt(length).array();<br>// copy content of pktLen to the beginning of output buffer of pkt<br>System.arraycopy(pktLen, 0, buffer, 0, pktLen.length);<br>At receiver side:<br>// extract the first 4 bytes of a packet as the integer ‘length’<br>ByteBuffer wrapper = ByteBuffer.wrap(pkt.getData(), 0, 4);<br>int length = wrapper.getInt();<br><br><br></ctrl></rcvport></rcvport></rcvhostname></unrelinetport></p_ack_loss></p_data_loss></p_ack_corrupt></p_data_corrupt></rcvfilename></unrelinetport></unrelinetip></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/13/page38/" target="_blank" rel="external">http://yoursite.com/2016/11/13/page38/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/14/page39/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Java代写：CM0718 Program Design and Implementation</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/11/12/page37/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">C代写：Chat Room</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page38" data-title="Java代写：Assignment 2" data-url="http://yoursite.com/2016/11/13/page38/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "Java代写：Assignment 2",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/13/page38/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

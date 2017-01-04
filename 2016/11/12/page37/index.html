@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C代写：Chat Room | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="C">
+  <meta name="description" content="Introduction用c语言写一个多人聊天室，大致要求就是做一个能够实现自由加入和退出的聊天室。 一个人发送信息其他人都能收到，消息发送成功要有个提示。每个人加入和退出也会有提示，前面的英文有举例。多人聊天的时候可以分辨出来那句话是谁发的。Requirementyou will implement a multi-user chat program. In C program please.T">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C代写：Chat Room">
+<meta property="og:url" content="http://yoursite.com/2016/11/12/page37/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introduction用c语言写一个多人聊天室，大致要求就是做一个能够实现自由加入和退出的聊天室。 一个人发送信息其他人都能收到，消息发送成功要有个提示。每个人加入和退出也会有提示，前面的英文有举例。多人聊天的时候可以分辨出来那句话是谁发的。Requirementyou will implement a multi-user chat program. In C program please.T">
+<meta property="og:updated_time" content="2017-01-04T03:53:16.980Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C代写：Chat Room">
+<meta name="twitter:description" content="Introduction用c语言写一个多人聊天室，大致要求就是做一个能够实现自由加入和退出的聊天室。 一个人发送信息其他人都能收到，消息发送成功要有个提示。每个人加入和退出也会有提示，前面的英文有举例。多人聊天的时候可以分辨出来那句话是谁发的。Requirementyou will implement a multi-user chat program. In C program please.T">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">C代写：Chat Room</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">C代写：Chat Room</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-12T13:22:33.000Z" itemprop="datePublished" class="page-time">
+  2016-11-12
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page37" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br>用c语言写一个多人聊天室，大致要求就是做一个能够实现自由加入和退出的聊天室。 一个人发送信息其他人<br>都能收到，消息发送成功要有个提示。每个人加入和退出也会有提示，前面的英<br>文有举例。多人聊天的时候可以分辨出来那句话是谁发的。<br><br><strong>Requirement</strong><br>you will implement a multi-user chat program. In C program please.<br>The Bare Minimum<br>The minimum requirement is for a central server that can accept two connections.<br>Either client can then type a message, which is then sent to the server. The server<br>relays the message to the other client. A sample run of the program might look like the<br>following:<br>&gt; ./chat 127.0.0.1<br>What is your screen name? &gt;&gt; KitC<br>KitC has joined the chat.<br>Linda has joined the chat.<br>&gt;&gt; Hi, Linda. Are we having our meeting later today?<br>[Your Message Has Been Sent]<br>Linda: No. I’m really busy writing our paper and<br>a couple other people have conflicts.<br>&gt;&gt; Okay. Thanks!<br>[Your Message Has Been Sent]<br>&gt;&gt; exit<br>KitC has left the chat.<br>This is only an example interface, but shows the minimum requirements of sending<br>messages between the clients. A confirmation that your message has been sent by the<br>client is also a requirement at this level.<br>Level 2 Requirements<br>In Level 2, a few more features may be added. In the example above, there were<br>notifications when a user entered or left the chat. Level 2 code should add this feature.<br>At this level, the server should be able to accept multiple connections | not just two.<br>That means that the server needs to keep track of who sent a message and distribute<br>it to all of the other clients except the one who sent it.<br>Buffet Features<br>If you have time or interest, you can add any or all of the following features.<br>Private messages between clients (Something like @replies in Twitter)<br>Sending a message to a subset of clients<br>Add some pretty formatting to the messages (like colors, line wrapping, etc.)<br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/12/page37/" target="_blank" rel="external">http://yoursite.com/2016/11/12/page37/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/13/page38/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Java代写：Assignment 2</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/11/11/page36/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">C代写：Bonus Lab (Chat Program using Message Queues)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page37" data-title="C代写：Chat Room" data-url="http://yoursite.com/2016/11/12/page37/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "C代写：Chat Room",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/12/page37/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

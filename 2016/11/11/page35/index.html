@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C代写：Bonus Lab (Chat Program using Message Queues) | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="C,unix">
+  <meta name="description" content="Introductionunix的IPC通讯，涉及到消息队列，共享内存等等多进程知识，是操作系统的必须课程RequirementIn this assignment you are to develop a chat program between two users, similar to theone already available on the UNIX system called ta">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C代写：Bonus Lab (Chat Program using Message Queues)">
+<meta property="og:url" content="http://yoursite.com/2016/11/11/page35/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introductionunix的IPC通讯，涉及到消息队列，共享内存等等多进程知识，是操作系统的必须课程RequirementIn this assignment you are to develop a chat program between two users, similar to theone already available on the UNIX system called ta">
+<meta property="og:updated_time" content="2017-01-04T03:50:07.945Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C代写：Bonus Lab (Chat Program using Message Queues)">
+<meta name="twitter:description" content="Introductionunix的IPC通讯，涉及到消息队列，共享内存等等多进程知识，是操作系统的必须课程RequirementIn this assignment you are to develop a chat program between two users, similar to theone already available on the UNIX system called ta">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">C代写：Bonus Lab (Chat Program using Message Queues)</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">C代写：Bonus Lab (Chat Program using Message Queues)</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-11T14:32:43.000Z" itemprop="datePublished" class="page-time">
+  2016-11-11
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page35" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unix/">unix</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br>unix的IPC通讯，涉及到消息队列，共享内存等等多进程知识，是操作系统的必须课程<br><br><strong>Requirement</strong><br>In this assignment you are to develop a chat program between two users, similar to the<br>one already available on the UNIX system called talk. When two instances of your<br>program are being run simultaneously on the system, a user typing in one instance will be<br>able to send the message typed to the user running the other instance of the program.<br>User interface can be a very simple one by using printf() and scanf() functions of the C<br>programming language. IPC mechanism is going to be developed using Message Queues.<br>Important: You should design your code so that when the user is waiting to type a<br>message, at the same time messages are being retrieved from the queue if they arrive in it.<br>This requires multi-threaded program.<br>Specifics<br>IPC Introduction and naming<br>Under UNIX operating system, apart from pipes and signals as primitive type of IPC,<br>from System V release new techniques were added: message queues, semaphores and<br>shared memory. You can investigate the status of IPC facilities on the system by entering<br>ipcs –b on the command prompt. IPC Message queues will exist even after the process<br>creating it terminates, thus it should be manually removed with the ipcrm –q <id><br>command, since IPC resources on a system are limited.<br>IPC system calls related to the Message Queues that is the mechanism of choice for the<br>IPC are: msgget for allocating an IPC or gaining access to an existing queue. msgctl to<br>control an IPC, modify its status and/or remove it. Lastly, for sending and receiving<br>messages msgsnd and msgrcv are used.<br>Once an IPC facility is created using the msgget function, an IPC identifier is returned by<br>the system. The user creating the IPC facility identified by the returned identifier should<br>specify the access permissions. Header <sys ipc.h=""> defines the IPC permissions structure<br>called: ipc_perm. Also, <sys types.h=""> needs to be included in every program before the<br>sys/ipc.h is included.<br>The unique system-wide identifier identifies message queues. To create such an identifier<br>of type key_t defined in the <sys ipc.h=""> file, ftok() function should be used. If ftok() is<br>called with the same arguments from two different processes, the same key would be<br>produced, thus two different processes would be able to access the same IPC facility.<br>For example:<br>key_t key;<br>key = ftok(“.”, 123);<br>First argument is the reference to an existing accessible file (in UNIX, file “.” – a<br>reference to the current directory is always available and accessible). Second argument is<br>some integer, referred to as an id. There are also constants to be passed as an ID: for<br>example IPC_PRIVATE that assures that returned key is always unique.<br>Creating Message Queue<br>A message queue is created using the msgget system call. If successful, a non-negative<br>integer is returned which is a message queue identifier that can be used in subsequent<br>calls that reference it. First parameter is the key returned by ftok(), and the second<br>parameter is the access permission that is of the same format as the chmod command<br>parameter. Passing 0777 would give read and write permissions to everyone on the<br>system. To verify proper access permissions are made, once the queue is created, you can<br>observe set permissions with the ipcs –b command described at the beginning of this<br>section. Furthermore, use the IPC_CREAT flag ORed with the 0777 to assure that the<br>queue is created if it does not exist or if it already exist, an identifier to it is simply<br>returned.<br>For example:<br>mq_handle = msgget(key, IPC_CREAT | 0777);<br>if(mq_handle&lt;=-1) {<br>printf(“Error creating message queue\n”);<br>perror(“MQ Sample”); /<em> print the error </em>/<br>return(1);<br>}<br>Obtaining information about the message queue<br>Using the msgctl function and the IPC_STAT flag passed to it, information about the<br>queue, its owner, number of bytes on the queue, number of messages, etc…can be<br>obtained. An include file <sys msg.h=""> needs also to be included in the program.<br>For example:<br>struct msqid_ds *info;<br>int ret;<br>…<br>ret = msgctl(mq_handle, IPC_STAT, info);<br>if(ret==-1) {<br>printf(“Failed to obtain message queue information\n”);<br>perror(“MQ Sample”);exit(1); }<br>printf(“# of messages on queue: %d\n”, info-&gt;msg_qnum);<br>Communicating through Message Queue<br>A message is defined in the struct msgbuf in the include file <sys msg.h="">. First field of<br>the structure, mtype, is an user-defined positive integer id, agreed between the programs<br>using the message queue to selectively retrieve the messages from it. Suppose, 4<br>programs (instances of the chat program) are using the same message queue, in that case<br>the following should be done to assure proper bi-directional communication:<br>Instance 1  Instance 2  Instance 3  Instance 4<br>Instance 1  –  12  13  14<br>Instance 2  21  –  23  24<br>Instance 3  31  32  –  34<br>Instance 4  41  42  43  –<br>For example:<br>Instance 1 will use mtype=12 to send a message to the Instance 2 and also Instance 1 will<br>retrieve messages that have mtype=21. Instance 2 will use mtype=12 to retrieve messages<br>from the queue from the Instance 1 and it will use mtype=21 to send a message to the<br>Instance 1. Thus, we assure that there is a bi-directional communication on the same<br>channel (same message queue) that is shared by many instances of the same chat program<br>and messages are not delivered to the wrong instance.<br>msgsend()<br>msgsend() takes four parameters and it returns 0 on success and –1 on failure setting the<br>errno global variable to a pre-specified number that can be examined to retrieve the error<br>(or by using perror() function to get a meaningful message).<br>First parameter is the identifier of the message queue. Second parameter is the pointer to<br>the actual message. Third parameter is the size of the message obtained by using the<br>sizeof operator, and the last parameter is the flags. IPC_NOWAIT is one flag, which<br>causes a non-blocking send (send would block if the queue was full) or a zero can be<br>passed if no flags are needed).<br>msgrcv()<br>msgrcv() takes five parameters. First one is the queue identifier. Second one is the pointer<br>to where the received message will be placed (receiver’s end structure should have the<br>first member as ulong to assure message type can be correctly written). Third one is the<br>maximum size of the message that can be received. Fourth parameter specifies which<br>messages should be received: an identifier used in mtype at the sender’s side or 0 to<br>retrieve all messages. Fifth parameter is the flags. IPC_NOWAIT is to create a no-<br>blocking receive and MSG_NOERROR is not to produce any error if the message<br>received is bigger than the maximum size specified. If MSG_NOERROR is not specified<br>and message received is larger than the maximum specified size an error will occur.<br>msgrcv() returns –1 on failure or number of bytes received if it is successful. On error, it<br>also sets errno global variable able to be retrieved using perror().<br>Submission<br>You should submit your C program on Carmen along with details on how to run it and<br>anything else that would allow the grader to grade your work.<br><br><br></sys></sys></sys></sys></sys></id></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/11/page35/" target="_blank" rel="external">http://yoursite.com/2016/11/11/page35/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/11/page36/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">C代写：Bonus Lab (Chat Program using Message Queues)</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/11/10/page34/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">C代写：Software Tools and Systems Programming</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page35" data-title="C代写：Bonus Lab (Chat Program using Message Queues)" data-url="http://yoursite.com/2016/11/11/page35/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "C代写：Bonus Lab (Chat Program using Message Queues)",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/11/page35/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

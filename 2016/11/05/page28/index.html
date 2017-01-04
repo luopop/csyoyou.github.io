@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C++代写：ECE 275 ­ Project 3 | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="C++,Algorithm">
+  <meta name="description" content="Introductionc++模拟一个汽车运动模型，文件输入运行轨迹，车辆情况等等。根据一些数学和物理的公式，计算最后的汽车运动情况，同时考虑到c++的类的设计，要求类设计完好。control类，driver类，read类，write类等等功能分离使得思路更加清晰代码明了RequirementUsageUsage: catcar controlInputs stateOutputsRequirem">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++代写：ECE 275 ­ Project 3">
+<meta property="og:url" content="http://yoursite.com/2016/11/05/page28/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introductionc++模拟一个汽车运动模型，文件输入运行轨迹，车辆情况等等。根据一些数学和物理的公式，计算最后的汽车运动情况，同时考虑到c++的类的设计，要求类设计完好。control类，driver类，read类，write类等等功能分离使得思路更加清晰代码明了RequirementUsageUsage: catcar controlInputs stateOutputsRequirem">
+<meta property="og:updated_time" content="2017-01-03T09:22:46.548Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C++代写：ECE 275 ­ Project 3">
+<meta name="twitter:description" content="Introductionc++模拟一个汽车运动模型，文件输入运行轨迹，车辆情况等等。根据一些数学和物理的公式，计算最后的汽车运动情况，同时考虑到c++的类的设计，要求类设计完好。control类，driver类，read类，write类等等功能分离使得思路更加清晰代码明了RequirementUsageUsage: catcar controlInputs stateOutputsRequirem">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">C++代写：ECE 275 ­ Project 3</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">C++代写：ECE 275 ­ Project 3</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-04T21:24:54.000Z" itemprop="datePublished" class="page-time">
+  2016-11-05
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page28" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br>c++模拟一个汽车运动模型，文件输入运行轨迹，车辆情况等等。根据一些数学和物理的公式，计算最后的汽车运动情况，同时考虑到c++的类的设计，要求类设计完好。<br>control类，driver类，read类，write类等等功能分离使得思路更加清晰代码明了<br><br><strong>Requirement</strong><br><br>Usage<br>Usage: catcar controlInputs stateOutputs<br>Requirements Summary<br>Create a C++ program that reads control inputs for a self­driving car from an input file. The program will simulate the car’s<br>state over the time horizon given by the control inputs, and write the results to an output file. The major problem is: the input<br>file was written in such a way that the control inputs are stored out of order!<br>Assignment Name<br>The assignment name for this assignment is: ​catcar<br>1. Kinematic Model Simulation<br>In this project, you will create a program that controls an autonomous vehicle from an input control file. The only problem is<br>that the input controls are jumbled, since a function that operated on the linked list that stored them was badly designed: they<br>were stored in order in a queue, but the queue was designed by a Visual Basic programmer who doesn’t understand memory.<br>They printed the nodes out by order of memory address of the list nodes, instead of by the node order prescribed by the next<br>pointers.<br>So you need to put them back in the right order before proceeding. This program will read in time value at which this<br>command should be executed, then the commanded speed, and tire angle. The duration of the command is the difference<br>between this command’s time value, and the next time value (when the nodes are in order), at a maximum of 201 ms. If there<br>are any durations longer than 201 ms, the input file should be declared invalid, and no simulation should take place.<br>With this sequence of commands, you should save the vehicle’s state at each time step. During the execution of control<br>commands, this program will record the vehicle’s state as it moves (or stands still), and save the output states to a file.<br>2. File Format<br>2.1 controlInputs<br>For this assignment, the input text file will consist of control information, each line contains sample time (in seconds),<br>commanded vehicle velocity (m/s), and tire angle rate (radians/s), with elements separated by whitespace (even the first<br>number could be padded by a whitespace in the front). All values should be stored as doubles.<br>0.06 5 0.523<br>0.02 20 ­0.523<br>0.07 8 0<br>0.00 0 0<br>In this example, at time 0.06 the vehicle should take in as its input command a velocity of 5, with a tire­angle rate of 0.523,<br>for 0.01 seconds. The duration of 0.01 is determined by looking at the next time step (after the vector is confirmed to be<br>sorted), and taking the difference (0.07 ­  0.06).<br>Clearly the above example is an extreme case of driving aggressively. Your program should run regardless of the unlikely<br>control inputs, as long as the below conditions are met:<br>­ The rst element of the sorted list must be at exactly time 0.<br>­ Commanded tire angle rate must be between [?­0.5236, 0.5236] radians/sec (i.e., / 6 radians/sec). ±π<br>­ Commanded velocity must be between [0, 30] m/s;<br>­ Time values must be non­negative; and<br>­ Duration between sorted input objects must be between [5, 201] ms.<br>If any of these are violated for any input value in the file, then the ​controlInputs file is deemed invalid, and an empty<br>output file is written. If at any time a line fails to parse, then the file should be declared invalid. This policy is for safety: you<br>wouldn’t want to start controlling an autonomous car if you accidentally passed in the wrong file, and it started somehow<br>parsing lines!<br>2.2 outputFile<br>This assignment should output a file with information on the state values of the vehicle throughout its journey. The format for<br>this file is one called csv (comma separated values), and is common for inputting data into MATLAB. Each output entry is as<br>follows:<br>t,x1,x2,x3,x4\n<br>Where t is the time at which this state value was measured, and the values in x are given by the kinematic equation (1). The<br>precision for each value should be whatever is the default when using C++ iostream methods.<br>If the control inputs are determined to be invalid, you should create an empty file with the name provided from the command<br>line.<br>3. Vehicle Model<br>You are developing a vehicle simulator, which describes the kinematic motion of a front­steered, two­wheel drive vehicle.<br>The vehicle you are simulating is visually depicted below. The equations of motion for this vehicle are provided in (1).<br>x<br>​<br>1 ​ = ​u<br>​<br>1 ​ cos(​x<br>​<br>3​ ) cos(​x<br>​<br>4​ )<br>(1)<br>x<br>​<br>2 ​ = ​u<br>​<br>1 ​ cos(​x<br>​<br>3​ ) sin(​x<br>​<br>4​ )<br>x<br>​<br>3 ​ = ​u<br>​<br>2<br>x<br>​<br>4 ​ = ​u<br>​<br>1 ​ (1/L) sin(​x<br>​<br>3​ )<br>Where ​x<br>​<br>1 is translational forward motion, ​x<br>​<br>2 is translational left/right motion, x<br>​<br>3 is the tire angle, and ​x<br>​<br>4 is the heading of the<br><br>vehicle. For control inputs, ​u<br>​<br>1 represents vehicle velocity, and ​u<br>​<br>2 represents angular rate of change for the tire angle. The<br><br>wheelbase L is defined in the Vehicle.h header file.<br>Using a simple discretization of these differential equations with a duration ​t<br>​<br>, we can use the following equations for motion:<br>x<br>​<br>1​ (​t<br>​<br>+∆​ t​ )​   ​ = ​x<br>​<br>1​ (​t<br>​<br>) + ∆​ t​  ​u<br>​<br>1​ (​t<br>​<br>)​  ​ cos(​x<br>​<br>3​ (​t<br>​<br>)) cos(​x<br>​<br>4​ (​t<br>​<br>))  (2)<br>x<br>​<br>2 ​ (​t<br>​<br>+∆​ t​ ) = ​x<br>​<br>2 ​ (​t<br>​<br>) +​<br>​<br>∆​ t​  ​u<br>​<br>1​ (​t<br>​<br>)​  ​ cos(​x<br>​<br>3​ (​t<br>​<br>)) sin(​x<br>​<br>4​ (​t<br>​<br>))<br>x<br>​<br>3 ​ (​t<br>​<br>+∆​ t​ )​  ​ = ​x<br>​<br>3 ​ (​t<br>​<br>) + ​<br>​<br>∆​ t ​ u<br>​<br>2​ (​t<br>​<br>)<br>x<br>​<br>4 ​ (​t<br>​<br>+∆​ t​ ) = ​x<br>​<br>4 ​ (​t<br>​<br>) + ​<br>​<br>∆​ t ​ u<br>​<br>1 ​ (​t<br>​<br>) (1/L) sin(​x<br>​<br>3​ (​t<br>​<br>))<br>The value for ​x<br>​<br>3 (tire angle) must always be between [?­0.5236, 0.5236] radians/sec (i.e.,<br>/ 6 radians/sec). If a value is                             ±π<br>commanded outside this range, then ​x<br>​<br>3 should saturate using the above range. Ex: If the tire angle rate is commanded to be<br><br>the value 0.7156, the tire angle rate should equal the maximum value of 0.5236.<br>The heading should always be between [0, 2 ). If the heading is a negative value, the heading should be converted into the               π<br>range [0, 2 ) by repeatedly adding 2  . Ex: If the heading is ­.5 , the heading can be converted to ­0.5 +2  = 1.5 . π π π π π π<br>Defined values are present for these ranges inside of ​State.h<br>4. Class designs<br>The following class definitions must be used for the indicated classes. You may (if you wish) create your own classes to do<br>other tasks. The below classes are prescribed in whole (or in part):<br>Input​, ​State​, ​Vehicle​ (must use exact prescribed class definitions)<br>DataSource​, ​DataSink​, ​Director​ (are at your discretion, except for the sort method prescribed).<br>4.1 Classes that must use prescribed definitions<br>Please use the exact interfaces for Vehicle, State, and Input, or your alpha release may not compile. These are the only classes<br>for which the design is fixed.<br>4.1.1 Input<br>The ​Input class holds the values for the u variables used in the kinematic model. Its interface is included on Piazza as a<br>resource for this Project.<br>4.1.2 State<br>The ​State class is similar to Input, and its interface is included on Piazza as a resource for this Project. However, it does<br>ensure that tire angle values and heading values stay within the designated ranges if the setters for the class are called.<br>4.2 Vehicle<br>The ​Vehicle class executes a control input for the designated duration. The interface is included on Piazza as a resource for<br>this Project.<br>The ​Vehicle keeps its own state, receives a control input, and updates its state. The initial state value for the ​Vehicle is<br>x<br>​<br>1 = 0, x<br>​<br>2<br>​<br>=0, ​x<br>​<br>3 = 0, and ​x<br>​<br>4 = 0, e.g., (0, 0) position, tire angle of 0, and heading of 0. The ​Vehicle class assumes that any<br><br><br>invalid input values have been removed, so it does not do any error checking. The class does not permit anyone to update its<br>state, except by providing an ​Input​ object through the ​stateUpdate​ method prescribed in the header file.<br>4.3 Classes left largely to your design discretion<br>Anything you want to add to the interface for ​DataSource​, ​DataSink​, or ​Director​ is up to you.<br>The ​DataSource class keeps a vector of ​Input objects (control inputs), in order. Likewise, the ​DataSink class keeps a<br>vector of ​State​ objects (state outputs), in order.<br>The ​Director​ is used to pass ​Input​ values along to the ​Vehicle​.<br>Hint<br>​<br>: The ​bool data type is defined in C++, so it won’t work if you try to include the headers from previous projects. Use,<br>instead, the builtin type from C++ for bool functionality.<br>5. Recommended Functional Decomposition<br>In C++, global functions are a sign of a bad design. Rather, you provide methods inside the scope of a class. If you use global<br>functions for this assignment, you will receive significant design deductions. Just like in C programs, your main function<br>should be small. If yours includes lots of logic, rather than depending on the methods of classes, you will receive significant<br>design deductions.<br>5.1 Reading Control Inputs<br>Define a class method (not a global function) that reads all the control inputs from a provided filename. As you read them in,<br>don’t worry about how they’re sorted. The inputs will be stored in a vector in the class. I think you can figure out which class<br>this should be.<br>5.2 Sorting Control Inputs<br>Puts the control inputs in order of their timestamp. The interface for the sort function should be:<br>void​ sort ();       ​// performs qsort<br>If your algorithm does not perform quicksort, you will receive a deduction. Insertion and bubble sort are each unacceptable.<br>You should write your own sort routine, not use the sort routines in STL or any other library. You are, of course, welcome to<br>use other implementations to confirm that your qsort implementation is working, as part of your own tests. The inputs will be<br>already be stored in a vector in the class. I think you can figure out which class this should be.<br>5.2.1 Validating Control Inputs<br>This method should be part of the ​DataSource​ class. The interface for this method should be:<br>// should be called only after the vector is sorted<br>// returns true if the vector in Input objects is valid<br>bool ​validate ();<br>The vector of ​Input​ objects is invalid if any of the criteria from Section 2.1 are discovered.<br>5.3 Writing State Outputs<br>Define a class method (not a global function) that writes a vector of ​Output objects to a file of the provided filename. I<br>think you can figure out which class this should be.<br>5.4 Driving the Car<br>Once you have an (ordered) set of control inputs, you need a ​Director to coordinate the consumption of inputs, and save<br>each output. The ​Director will take the next Input (stored and sorted by the ​DataSource​) to the vehicle, fetch that<br>Output​, and store it in the output vector in the ​DataSink​. When the last ​Input is consumed, a duration of 200 ms should<br>be used. After simulating this ​Input​, the simulation is ended. In order to do this, the ​Director will “contain” a ​Vehicle<br>object, and decide how to interact with it.<br>Part of the assignment is coming up with and writing the pseudocode for this algorithm, in order to stage your design.<br>5.5 What goes in main, then?<br>In your main function, you should instantiate your classes, check your arguments and return the usage statement. Put all the<br>logic and error handling for file I/O, initialization of the ​Vehicle​, etc., in your methods as defined in your other files and in<br>the order that makes sense. You want your main to be very simple, so that if you want to reuse your code, you can do so<br>without a main function.<br>Generally, part of assignments going forward include coming up with and writing the pseudocode for this algorithm, in order<br>that your design can be performed in stages. To bootstrap this process, we provide as an example how to sketch an algorithm<br>is pseudocode below:<br>check usage<br>open input file, and output file<br>execute director<br>  while inputs<br>    execute input(s)<br>    save output(s)<br>write and close output file, input file<br>6. Alpha Submission<br>Your alpha assignment is to implement the Vehicle class methods, and turn in your ​Vehicle.cpp file to the dropbox called<br>Project 3 (alpha) on D2L. We will use your file with our own main function and test files, to check the behavior of each of<br>the ​Vehicle methods we prescribe. Use the same ​vehicle.h ​file given above and provided from the website, or be in<br>danger of your alpha not compiling.<br>As a note, you will have to complete your implementation of ​Input and ​State in order to test your alpha on your own.<br>Submit only your ​Vehicle.cpp ­­ ​do not submit implementations for Input and Output<br>​<br>, we will use our own. We have<br>already included ​Input.h and ​State.h in our ​vehicle.h interface definition, but you may need to include other<br>headers for standard C++ functionality in your cpp file. We do not recommend including headers for other custom classes in<br>your cpp file, since you will not be submitting those headers or their implementation.<br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/05/page28/" target="_blank" rel="external">http://yoursite.com/2016/11/05/page28/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/06/page29/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">C++代写：Assignment</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/11/04/page27/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">C++代写：FinalProject-SuperString.v3</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page28" data-title="C++代写：ECE 275 ­ Project 3" data-url="http://yoursite.com/2016/11/05/page28/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "C++代写：ECE 275 ­ Project 3",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/05/page28/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
