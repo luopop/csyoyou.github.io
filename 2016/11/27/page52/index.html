@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C代写：Homework Assignment 2 | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="C,Algorithm">
+  <meta name="description" content="IntroductionC语言练习题，涉及一个用在控制台操作的航班订票和查询系统，主要涉及的知识有文件的读取和对二维数组的操作。用二维数组表示航班的座位信息，开始运行时从文件读取二维数组的大小和数据，然后显示菜单供用户操作，根据用户的输入执行航线和座位的选择。RequirementCS 1050 Homework Assignment 2JOE’S AIRLINE RESERVATION SYST">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C代写：Homework Assignment 2">
+<meta property="og:url" content="http://yoursite.com/2016/11/27/page52/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="IntroductionC语言练习题，涉及一个用在控制台操作的航班订票和查询系统，主要涉及的知识有文件的读取和对二维数组的操作。用二维数组表示航班的座位信息，开始运行时从文件读取二维数组的大小和数据，然后显示菜单供用户操作，根据用户的输入执行航线和座位的选择。RequirementCS 1050 Homework Assignment 2JOE’S AIRLINE RESERVATION SYST">
+<meta property="og:updated_time" content="2017-01-11T09:24:53.232Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C代写：Homework Assignment 2">
+<meta name="twitter:description" content="IntroductionC语言练习题，涉及一个用在控制台操作的航班订票和查询系统，主要涉及的知识有文件的读取和对二维数组的操作。用二维数组表示航班的座位信息，开始运行时从文件读取二维数组的大小和数据，然后显示菜单供用户操作，根据用户的输入执行航线和座位的选择。RequirementCS 1050 Homework Assignment 2JOE’S AIRLINE RESERVATION SYST">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">C代写：Homework Assignment 2</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">C代写：Homework Assignment 2</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-27T04:23:11.000Z" itemprop="datePublished" class="page-time">
+  2016-11-27
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page52" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br><br>C语言练习题，涉及一个用在控制台操作的航班订票和查询系统，主要涉及的知识有文件的读取和对二维数组的操作。<br>用二维数组表示航班的座位信息，开始运行时从文件读取二维数组的大小和数据，然后显示菜单供用户操作，<br>根据用户的输入执行航线和座位的选择。<br><br><br><strong>Requirement</strong><br><br>CS 1050 Homework Assignment 2<br>JOE’S AIRLINE RESERVATION SYSTEM<br>Fall-2016<br>Due : 14 th October, Friday 5:00 PM (No Extension). Submission system shuts off at 5pm.<br>Directions<br>Complete the following homework assignment using the description given in each section.<br>IMPORTANT INFO<br>tc.rnet will be down for maintenance during the course of the week of 10/3, it is anticipated<br>to be back up quickly but in order to be safe there is a temporary server created to work on hw2,<br>which will be taken down as soon as the former is back up and running. So in order to not lose your<br>code follow the instructions.<br>Logging in to the new server:<br>Putty: hostname =  test.rnet.missouri.edu<br>Terminal on a mac: ssh pawprint@test.rnet.missouri.edu<br>Notice the change of server, you will be logging into a different server (test.rnet.missouri.edu) and<br>not your original server (tc.rnet.missouri.edu).<br>USE FTP clients like FileZilla or WinSCP to back up your files to your local machine. The test.rnet<br>server is a temporary one and will be take down during the week of 10/3 after tc.rnet is back,<br>unfortunately we have no control over the timings, so whenever you code something make sure you<br>keep backing the file up immediately on your local machine. Like, every 15 minutes or once you<br>finish one function or whenever you quit out of test.rnet.<br>Once you get an announcement on BLACKBOARD from DHEERAJ, saying “tc.rnet is back and<br>running” move the local copy to tc.rnet server. Again, by using FTP.<br>After that, Log into putty / terminal again using<br>tc.rnet.missouri.edu as the new host name and continue the way you have been doing it all this<br>while and submit it from here only. You cannot submit from test.rnet.missouri.edu.<br>I really hope you know how to use ftp or file transfer by now. All the TAs have spoken at least twice<br>about it in the labs.<br>Submission information:<br>Submit the assignment by the due date using the similar submission command as used for labs<br>Please include your lab section in the file name.<br>This will work only when you are on tc.rnet.missouri.edu and not on test.rnet<br>Filename must be: sectionletter-hw2.c (Include your respective lab section)<br>e.g. m-hw2.c<br>$ submit <class> <assignment> <filename><br>$ submit CS1050 HW2 m-hw2.c<br>Purpose:<br><br> Learn to use multiple types of two-dimensional arrays for data input and access.<br> Use character arrays and strings and perform string manipulation.<br> Learn to develop a complex menu system.<br> Learn the importance of using functions.<br>Description<br>Thanksgiving Break is fast approaching, so, we hereby present Mizzou’s state-of-the-art online<br>ticket booking system, Joe’s Airline Reservation System. Which will be developed by you. This<br>application helps in reserving flight seats. This is done via implementing the 8 user-defined<br>functions as explained below.<br>Your program must print a menu for the user to select what he needs to do with the application.<br>There will be admin mode which requires log-in via a passcode. There will be an option for<br>reserving a seat on a flight. Third option is to exit the application.<br>A file templateHW2.c is attached on Blackboard which will guide you on how to start the<br>program and what are the global variables you need to use and how. You can follow that.<br>Comments and prototypes have been given for you to help you out in the process.<br>GLOBAL CONSTANTS and VARIABLES:<br>#define ROW 6 //for row length<br>#define COL 4 //for column length<br>#define MAX 25 // for strings<br><br>Functions to implement:<br>1. void initialSeats(char flight[][COL], int count);<br>The initialSeats function takes in a two-dimensional char array created in main. It will initialize<br>all array elements to the character ‘O’. ‘O’ symbolizes the seat on the plane is open and can be<br>taken. The int count variable is used to symbolize the number of people who already have a seat<br>on the plane, this is a random number generated and sent from main. In this function it will<br>randomly create and assign an index in the two-dimensional array with the character ‘X’ for each<br>person up to value of count. ‘X’ is used to symbolize that an element in the two dimensional<br>array is occupied. This will be used later on in the program. MAKE SURE TO SEED RAND in<br>MAIN. Below is the way to randomly generate the seats for each passenger to take. This<br>function should be called as soon as your program starts.<br>Keep in mind the possibility of the randomized index overwriting ‘X’, if it was already there.<br>You have to handle that case. Beware!!<br>int row = rand() % ROW;<br>int col = rand() % COL;<br>2. void displayMenu();<br>Prints the display options. Admin mode, Reserve a seat and Exit. This is the main menu.<br>3. void printFlightMap(char flight[][COL]);<br>The printFlightMap function is printing off a two-dimensional character array. Thus, printing off<br>the characters stored in each index of the two-dimensional array either ‘O’ or ‘X’. As noted<br>above the ROW and COL are #defined in your program, use them. For loops are your friends<br>here. Called in admin mode and during reserving a seat (specifically in seatReservation).<br>4. int loginMatch(int passcode, int adminPasscode);<br>The loginMatch function is called to compare the passcodes, the function returns 1 if both match<br>and 0 if there is no match. This is called in admin mode. Should prompt for the passcode entry<br>until the passcode matches. The adminPasscode is specified, everyone should use the same<br>adminPassocde, then compare that with the passcode user enters in main() when they wish to<br>log-in.<br>5.  int getTotalRevenue(char f1[][COL], char f2[][COL], char f3[ ][COL]);<br>Note: f1, f2, f3 are flight1, flight2, flight3, just shorthanded.<br>The getTotalRevenue function will take in all three two-dimensional character arrays created in<br>main and calculate the total revenue using the costMatrix two dimensional array. With each two-<br>dimensional array f1, f2, and f3, search for the character ‘X’ stored in them, upon finding the<br>index of the character ‘X’, use the index to reference inside of the global two-dimensional array<br>costMatrix (look above in Constants and Global Variables). While inside of costMatrix array,<br>add the value stored in the two-dimensional array with a running total variable (Hint use +=).<br>The function will return the total revenue earned thus far from seats reserved in all 3 flights. So,<br>you will need nested for-loops. This is called only in admin mode.<br>6. void flightMenu();<br>Prints the three flight options as shown. Flights to Miami, Nashville and Las Vegas. This is done<br>when reserve a seat option is chosen.<br>7. void seatReservation(char flight[][COL]);<br>The seatReservation function takes in a two-dimensional array and allows the user to reserve an<br>index on the two-dimensional array. Before any reserving is done, this function calls the<br>printFlightMap function mentioned earlier to allow the user to see the already populated two-<br>dimensional array for that flight. Then, the user is asked to enter a row and column to reserve a<br>seat. Additionally, this function will have built in error checking (look below at output<br>example) Once the user has inputted a correct index within [0, ROW) and [0, COL) in the two-<br>dimensional array, this function needs to check if that index entered is already taken in the two-<br>dimensional array with the character ‘X.’ If the index is populated with ‘X’, an error will be<br>shown to the user (look at the output below) and have them re-enter a new possible row and<br>column again. If the index entered is not filled with ‘X’, then assign that index with ‘X’, i.e.<br>changing the element from ‘O’ to ‘X’. Before the function ends, it will call the function<br>printFlightMap again and prints a success message.<br>Remember, rows run from 0-5 and columns from 0-3. Error check for this too.<br>8. void printMessage(char name[],char num[]);<br>//DO THIS, IF YOU ARE DOING THE BONUS<br>This function is called for each flight option after the seatReservation() is called. It takes in two<br>strings, name of passenger and the flight number for that particular case. Both are character<br>arrays (strings). For flight Cou-&gt;Miami number must be set as “MIA1050”, for Cou-&gt;Nashville<br>number must be set as “BNA1050”, for flight Cou-&gt;Las Vegas num must be set as “LAS1050”,<br>this must be done in main and the name and particular number must be sent to this function.<br>Once in this function, you will merge (important part) the two strings into third string and print<br>that as the e-Ticket as shown below and print a confirmation message.<br>Eg1: name is “Fred” number is “MIA1050”, your merged string should be FMrIeAd1050. Print<br>this as the booking confirmation number.<br>Eg2: name is “Guilliams” number is “LAS1050”, you merged string should be<br>GLuAiSl1l0i5a0ms.<br>Eg3: name is “Christopher” number is “BNA1050”, your merged string should be<br>CBhNrAi1s0t5o0pher<br>9. int main(void)<br>The main function will be doing all (most of) the function calls. In main, you need to create four<br>character arrays of flight_1[ROW][COL], flight_2[ROW][COL], flight_3[ROW][COL], and<br>strings name[MAX],flight_number[MAX]<br>adminPasscode= 105016; // everyone must keep this the same<br>Also, before you call initialSeats function on all the flights arrays individually, make sure to find<br>how many people already reserved seats. This is done by creating a local variable<br>seats = rand % 5 + 1 (this is your int counts in initialSeats function), rand()%5 +1 will give a<br>random number between 1-5; you only need to do this once. A menu system will be displayed for<br>the users to run specific parts of the program (See output below of what the menu system needs<br>to look like). Make sure to implement error checking for invalid input!<br>On the main menu, the user will see a display of options: The options are 1: Admin Portal, 2:<br>Reserve a seat on a flight, and 3: Quit. The menu will need to loop until the exit option is<br>chosen.<br>To access the Admin Portal, the user enters a 1, and then must type a passcode that will be<br>stored in a variable. Now, verify the passcode, call the loginMatch function (you should<br>compare) with passcode and adminPasscode to verify if it is an authentic log-in attempt. If the<br>pair match, that is, they are equivalent then it means successful log-in. Upon successful<br>verification, inside of the admin portal, call printFlightMap on each flight array and<br>getTotalRevenue (See output below). Declare these variables in main().<br>To access Reserve a seat, the user enters a 2. Inside of this portal, the user is displayed the three<br>flights that can be accessed to book a seat. (See below output). As always, verify the user input<br>for flight option (1-5). 2 character arrays will be used, name and flight_number. Once a valid<br>flight option is chosen. Switch to that particular case and ask for the user’s first name and store<br>it in name[] and store the flight numbers (MIA1050,BNA1050,LAS1050) in flight_number[] as<br>specified above for that flight. Then, send the corresponding flight array to seatReservation,<br>after successful reservation the user will be relocated back to the main menu. Then print a<br>success message using name and fligh_number, just to confirm the booking.<br>Must be done for each case (each flight).<br>Then, if you are doing the bonus, call the printMessage with name[] and that particular<br>flight_number[],. Note: flight1 is Miami, flight2 is Nashville, flight3 is Las Vegas.<br>Please go through Sample Output and the document clearly before starting out.<br>Sample Output<br>Character in bold are inputs from the user. Yours will vary but the outline must look similar. It is big,<br>don’t worry, but will help give you a better idea. I have run it twice completely, that’s why it is 10<br>pages.<br><br><br></filename></assignment></class></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/27/page52/" target="_blank" rel="external">http://yoursite.com/2016/11/27/page52/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/28/page53/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">C代写：Data Representation and Computer Arithmetic</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/11/26/page50/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Java代写：Programming Homework Assignment</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page52" data-title="C代写：Homework Assignment 2" data-url="http://yoursite.com/2016/11/27/page52/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "C代写：Homework Assignment 2",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/27/page52/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

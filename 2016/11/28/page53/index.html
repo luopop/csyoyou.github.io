@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C代写：Data Representation and Computer Arithmetic | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="C,Algorithm">
+  <meta name="description" content="IntroductionC语言练习题，主要知识点是按指定格式解析用户输入的代表数值的字符串，然后对用户输入的字符串进行加减计算，最后将计算结果按照指定的格式输出。主要涉及对字符串的解析，以及二进制，十进制，十六进制数值之间的转换，以及浮点数的二进制表示等知识。RequirementCS 211: Computer Architecture, Fall 2016Programming Assignm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C代写：Data Representation and Computer Arithmetic">
+<meta property="og:url" content="http://yoursite.com/2016/11/28/page53/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="IntroductionC语言练习题，主要知识点是按指定格式解析用户输入的代表数值的字符串，然后对用户输入的字符串进行加减计算，最后将计算结果按照指定的格式输出。主要涉及对字符串的解析，以及二进制，十进制，十六进制数值之间的转换，以及浮点数的二进制表示等知识。RequirementCS 211: Computer Architecture, Fall 2016Programming Assignm">
+<meta property="og:updated_time" content="2017-01-11T01:23:20.256Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C代写：Data Representation and Computer Arithmetic">
+<meta name="twitter:description" content="IntroductionC语言练习题，主要知识点是按指定格式解析用户输入的代表数值的字符串，然后对用户输入的字符串进行加减计算，最后将计算结果按照指定的格式输出。主要涉及对字符串的解析，以及二进制，十进制，十六进制数值之间的转换，以及浮点数的二进制表示等知识。RequirementCS 211: Computer Architecture, Fall 2016Programming Assignm">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">C代写：Data Representation and Computer Arithmetic</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">C代写：Data Representation and Computer Arithmetic</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-28T07:24:13.000Z" itemprop="datePublished" class="page-time">
+  2016-11-28
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page53" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br><br>C语言练习题，主要知识点是按指定格式解析用户输入的代表数值的字符串，然后对用户输入的字符串进行加减计算，<br>最后将计算结果按照指定的格式输出。主要涉及对字符串的解析，以及二进制，十进制，十六进制数值之间的转换，<br>以及浮点数的二进制表示等知识。<br><br><br><strong>Requirement</strong><br><br>CS 211: Computer Architecture, Fall 2016<br>Programming Assignment 2:<br>Data Representation and Computer Arithmetic<br>1 Introduction<br>This assignment is designed to help you learn the representation, interpretation, and manipulation<br>of data as bits. There are two parts. In the first part, you will implement a program calc to add<br>and subtract numbers specified in different bases (multiplication is extra credit). In the second<br>part, you will implement a program format that will print the decimal values of bit sequences<br>representing integer and floating point data types.<br>2 Numeric Base Conversion and Calculator<br>Implement a program called calc with the following usage interface:<br>calc <op> <number1> <number2> <output base=""><br>The first argument, <op>, is either the string “+”, for addition, or “-”, for subtraction. If you<br>want to implement multiplication, then <op> can also be the string “*”. (If you do implement<br>multiplication, make sure to say so in your readme.pdf file so that the TAs know to check your<br>program for this functionality.)<br>The next two arguments, <number1> and <number2> are integers of arbitrary size. Each of these<br>numbers will be given in the form of:<br>−?(b|o|d|x)d n d n−1 …d 1 d 0<br>which can be interpreted as: a number can optionally start with a ’−’ sign, followed by a base<br>indicator, where b means the number is a binary number, o means octal, d means decimal, and x<br>means hexadecimal. d n d n−1 …d 1 d 0 are the digits of the number.<br>The final argument, <output base="">, gives the base that the resulting number should be printed<br>out in. Like the base indicator for the input numbers, this argument can be one of four strings: “b”<br>for binary, “o” for octal, “d” for decimal, and “x” for hexadecimal. Your program should output<br>the answer in the same form as the input numbers (that is, the output number should follow the<br>regular expression given above).<br>Some examples:<br>$ ./calc + d1111111111111111 d1111111111111111 d<br>d2222222222222222<br>1<br>$ ./calc + b1101 b1 d<br>d14<br>$ ./calc + d999999999 d1 d<br>d1000000000<br>$ ./calc - d10 -d4 b<br>b1110<br>$ ./calc + -d10 -d4 b<br>-b1110<br>Note that the numbers in the first example are too large to fit in a 32-bit integer type in C; this is<br>why the arbitrary size is emphasized above. Using a 64-bit integer type is not the solution since the<br>input integers can be arbitrarily large. Rather, you need to design data structures and algorithms<br>that can handle arbitrarily large numbers. Assignment update: any decimal number that we<br>ask you to handle—either an input decimal number or output in decimal format—will<br>fit in a 32-bit integer.<br>Important: You must write the base conversion code yourself. You may not use type-casting,<br>libraries, or output formats in printf(). You may use standard C arithmetic operations. You may<br>use the C standard libraries for functionality not related to the conversion (e.g., string handling<br>functions).<br>Important: If calc detects an error in the inputs, it should print out an error message that starts<br>with the string “ERROR”, followed by a string that gives an informative message about the error<br>that it detected.<br>3 Format Interpretation<br>Implement a program called format with the following usage interface:<br>format <input bit="" sequence=""> <type><br>The first argument, <input bit="" sequence="">, is a sequence of 32 bits. Remember that your C<br>program will get it as a string of 1 and 0 characters in the argv[1] argument to main. This<br>sequence ofbits represents the binary values stored in 4 contiguous bytes in memory. The leftmost<br>bits are stored in the byte with the smallest address while the rightmost bits are stored in the byte<br>with the largest address.<br>The second argument, <type>, gives the type that you should use to interpret the input bit<br>sequence, and can be either int (integer) or float.<br>The formats for the input bit sequence is as follows. If the type is:<br>int: the format is two’s complement;<br>float: the format is IEEE 754 single precision;<br>Note that the input bit sequence can correspond to negative numbers.<br>2<br>Your program should print out the decimal representation of the input bit sequence, assuming a<br>big endian byte ordering. Floating point numbers should be printed in scientific notation, where a<br>number 1.5x10 5 would be printed as 1.5e5. For positive infinity, output pinf, for negative infinity,<br>output ninf, and for “NaN”, output NaN.<br>Here are some examples:<br>$ ./format 01000001010000100100001101000100 int<br>1094861636<br>$ ./format 10000001010000100100001101000100 int<br>-2126363836<br>$ ./format 01000001010000100100001110000100 int<br>1094861700<br>$ ./format 00000000000000000000000000000001 int<br>1<br>$ ./format 01000000110000110100001111010100 float<br>6.10203e0<br>$ ./format 00111010000111111111011000001000 float<br>6.1e-4<br>$ ./format 10000000000000000000000000000000 float<br>-0.0e0<br>$ ./format 01000000010010010000111111011011 float<br>3.141593e0<br>Important: You must write the interpretation code yourself. You may not use type-casting,<br>libraries, or output formats in printf(). You may use standard C arithmetic operations. You may<br>use the C standard libraries for functionality not related to the value interpretation (e.g., string<br>handling functions).<br>Important: If format detects an error in the inputs, it should print out an error message that<br>starts with the string “ERROR”, followed by a string that gives an informative message about the<br>error that it detected. For this program, you can assume that any input bit sequence that is shorter<br>or longer than 32 bits is erroneous.<br>4 Submission<br>You have to e-submit the assignment using Sakai. Your submission should be a tar file named<br>pa2.tar that can be extracted using the command:<br>tar xf pa2.tar<br>3<br>Your tar file must contain:<br>• readme.pdf: this file should describe your design and implementation of the calc program.<br>In particular, it should detail your design, any design/implementation challenges that you<br>ran into, and an analysis (e.g., big-O analysis) of the space and time performance of your<br>program.<br>• makefile: there should be at least the following rules in your makefile:<br>all build both your calc and format executables.<br>calc build your calc executable.<br>format build your format executable.<br>clean remove all object files and executables. Prepare for rebulding from scratch.<br>• source code: All source code and header files necessary for building your calc and format<br>executables. These should at least include calc.c and format.c.<br>You can build your pa2.tgz file in the following steps:<br>1. Put all the files you want to hand in in a subdirectory called pa2.<br>2. In the parent directory that contains pa2, invoke tar:<br>tar cvfz pa2.tgz pa2<br>The arguments to tar are cfvz. The c tells tar to create a new archive file. The f tells tar that the<br>next command line argument is the name of the output file. The z tells tar to compress the tar file<br>with gzip. The v just makes tar list the files it’s putting into the archive.<br>We will compile and test your program on the iLab machines so you should make sure that your<br>program compiles and runs correctly on these machines. You must compile all C code using the<br>gcc compiler with the -Wall flags.<br>5 Grading Guidelines<br>5.1 Functionality<br>This is a large class so that necessarily the most significant part of your grade will be based on<br>programmatic checking of your program. That is, we will build a binary using the Makefile and<br>source code that you submitted, and then test the binary for correct functionality against a set of<br>inputs. Thus:<br>• You should make sure that we can build your program by just running make.<br>• You should test your code as thoroughly as you can. In particular, your code should be adept<br>at handling exceptional cases.<br>Be careful to follow all instructions. If something doesn’t seem right, ask.<br>4<br>5.2 Design<br>Having said the above about functionality, design is a critical part of any programming exercise.<br>In particular, we expect you to write reasonably efficient code based on reasonably performing<br>algorithms and data structures. More importantly, you need to understand the performance (time<br>&amp; space) implications of the algorithms and data structures you chose to use. Thus, the explanation<br>of your design and analyses in the readme.pdf will comprise a non-trivial part of your grade. Give<br>careful thoughts to your writing of this file, rather than writing whatever comes to your mind in the<br>last few minutes before the assignment is due.<br>5.3 Coding Style<br>Finally, it is important that you write “good” code. Unfortunately, we won’t be able to look at<br>your code as closely as we would like to give you good feedback. Nevertheless, a part of your grade<br>will depend on the quality of your code. Here are some guidelines for what we consider to be good:<br>• Your code is modularized. That is, your code is split into pieces that make sense, where the<br>pieces are neither too small nor too big.<br>• Your code is well documented with comments. This does not mean that you should comment<br>every line of code. Common practice is to document each function (the parameters it takes<br>as input, the results produced, any side-effects, and the function’s functionality) and add<br>comments in the code where it will help another programmer figure out what is going on.<br>• You use variable names that have some meaning (rather than cryptic names like i).<br>Further, you should observe the following protocols to make it easier for us to look at your code:<br>• Define prototypes for all functions.<br>• Place all prototype, typedef, and struct definitions in header (.h) files.<br>• Error and warning messages should be printed to stderr using fprintf.<br>5<br><br><br><br></type></type></output></number2></number1></op></op></output></number2></number1></op></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/28/page53/" target="_blank" rel="external">http://yoursite.com/2016/11/28/page53/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/29/page54/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">C代写：Homework 5</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/11/27/page52/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">C代写：Homework Assignment 2</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page53" data-title="C代写：Data Representation and Computer Arithmetic" data-url="http://yoursite.com/2016/11/28/page53/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "C代写：Data Representation and Computer Arithmetic",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/28/page53/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

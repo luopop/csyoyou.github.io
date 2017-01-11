@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C代写： ASSESSMENT 4 | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="C">
+  <meta name="description" content="IntroductionC语言练习题，要求用递归的方法实现函数foo(n)= foo(n-1)+ foo(n-2)+ foo(n-3)，而且只能在递归函数中调用一次递归函数。这道题的难点在于只能在递归函数中调用该递归函数一次，因为如果简单的按照方程来写，该递归函数应该调用三次，这样会让效率很低。解决的思路是将foo(n-2)+ foo(n-3)用循环的方式计算，然后对foo(n-1)用递归的方式计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C代写： ASSESSMENT 4">
+<meta property="og:url" content="http://yoursite.com/2016/12/02/page57/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="IntroductionC语言练习题，要求用递归的方法实现函数foo(n)= foo(n-1)+ foo(n-2)+ foo(n-3)，而且只能在递归函数中调用一次递归函数。这道题的难点在于只能在递归函数中调用该递归函数一次，因为如果简单的按照方程来写，该递归函数应该调用三次，这样会让效率很低。解决的思路是将foo(n-2)+ foo(n-3)用循环的方式计算，然后对foo(n-1)用递归的方式计">
+<meta property="og:updated_time" content="2017-01-11T07:23:30.572Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C代写： ASSESSMENT 4">
+<meta name="twitter:description" content="IntroductionC语言练习题，要求用递归的方法实现函数foo(n)= foo(n-1)+ foo(n-2)+ foo(n-3)，而且只能在递归函数中调用一次递归函数。这道题的难点在于只能在递归函数中调用该递归函数一次，因为如果简单的按照方程来写，该递归函数应该调用三次，这样会让效率很低。解决的思路是将foo(n-2)+ foo(n-3)用循环的方式计算，然后对foo(n-1)用递归的方式计">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">C代写： ASSESSMENT 4</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">C代写： ASSESSMENT 4</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-12-02T10:34:13.000Z" itemprop="datePublished" class="page-time">
+  2016-12-02
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page57" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br><br>C语言练习题，要求用递归的方法实现函数foo(n)= foo(n-1)+ foo(n-2)+ foo(n-3)，而且只能在递归函数中调用一次递归函数。<br>这道题的难点在于只能在递归函数中调用该递归函数一次，因为如果简单的按照方程来写，该递归函数应该调用三次，这样会<br>让效率很低。解决的思路是将foo(n-2)+ foo(n-3)用循环的方式计算，然后对foo(n-1)用递归的方式计算。<br><br><br><br><br><strong>Requirement</strong><br><br>Homework 7<br>Files to submit: foo.c<br>Time it took Matthew to Complete: 10 mins<br>• All programs must compile without warnings when using the -Wall and -Werror options<br>• Submit only the files requested<br>◦ Do NOT submit folders or compressed files such as .zip, .rar, .tar, .targz, etc<br>• Your program must match the output exactly to receive credit.<br>◦ Make sure that all prompts and output match mine exactly.<br>◦ Easiest way to do this is to copy and paste them<br>• All input will be valid unless stated otherwise<br>• Print all real numbers to two decimal places unless otherwise stated<br>• The examples provided in the prompts do not represent all possible input you can receive.<br>• All inputs in the examples in the prompt are underlined<br>◦ You don’t have to make anything underlined it is just there to help you differentiate between<br>what you are supposed to print and what is being given to your program<br>• If you have questions please post them on Piazza<br>Restrictions<br>• No global variables are allowed<br>• Your main function may only declare variables, call other functions, and assign<br>variables values.<br>• You must solve this problem recursively<br>• You may only make ONE recursive call in the recursive case<br>For this assignment you will be writing a program to calculate the value of the function foo. The value<br>of foo is defined as follows<br>foo(0)=2<br>foo(1)=3<br>foo(2)=5<br>foo(n)= foo(n−1)+ foo(n−2)+ foo(n−3)<br>Specifications<br>1. The value of n is accepted through the command line<br>2. You may only make 1 recursive call in the recursive case<br>1. If you don’t you will fail many of the tests with a timeout issue<br>3. You must solve the problem recursively<br>Example<br>1. ./foo.out 2<br>foo(2) = 5<br>2. ./foo.out 10<br>foo(10) = 697<br><br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/12/02/page57/" target="_blank" rel="external">http://yoursite.com/2016/12/02/page57/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/12/03/page58/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Java代写： Homework 02</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/12/01/page56/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">C代写： ASSESSMENT 4</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page57" data-title="C代写： ASSESSMENT 4" data-url="http://yoursite.com/2016/12/02/page57/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "C代写： ASSESSMENT 4",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/12/02/page57/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

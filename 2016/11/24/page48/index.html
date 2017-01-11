@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Java代写：Programming Assignment 7 | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Java">
+  <meta name="description" content="Introduction基本思路:一共有两题第一题:判断读取文件是否是回文文件,根据题目定义理解什么事回文文件,用递归来判断一个单词是否是回文,再判断整个文件第二题:完成一个类似抽奖的游戏,给对应图片编号记录分数,根据最终摇到的图片的分数来计算选手的得分,最后得出胜负注意点:第一题:读取文件的时候会发生一系列IO异常,要仔细处理第二题:组件的位置要仔细调整,做出摇奖的动画比较麻烦,要然位置变化先慢">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java代写：Programming Assignment 7">
+<meta property="og:url" content="http://yoursite.com/2016/11/24/page48/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introduction基本思路:一共有两题第一题:判断读取文件是否是回文文件,根据题目定义理解什么事回文文件,用递归来判断一个单词是否是回文,再判断整个文件第二题:完成一个类似抽奖的游戏,给对应图片编号记录分数,根据最终摇到的图片的分数来计算选手的得分,最后得出胜负注意点:第一题:读取文件的时候会发生一系列IO异常,要仔细处理第二题:组件的位置要仔细调整,做出摇奖的动画比较麻烦,要然位置变化先慢">
+<meta property="og:updated_time" content="2017-01-10T03:37:21.413Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java代写：Programming Assignment 7">
+<meta name="twitter:description" content="Introduction基本思路:一共有两题第一题:判断读取文件是否是回文文件,根据题目定义理解什么事回文文件,用递归来判断一个单词是否是回文,再判断整个文件第二题:完成一个类似抽奖的游戏,给对应图片编号记录分数,根据最终摇到的图片的分数来计算选手的得分,最后得出胜负注意点:第一题:读取文件的时候会发生一系列IO异常,要仔细处理第二题:组件的位置要仔细调整,做出摇奖的动画比较麻烦,要然位置变化先慢">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Java代写：Programming Assignment 7</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Java代写：Programming Assignment 7</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-11-24T07:33:42.000Z" itemprop="datePublished" class="page-time">
+  2016-11-24
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page48" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br><br>基本思路:<br>一共有两题<br>第一题:判断读取文件是否是回文文件,根据题目定义理解什么事回文文件,用递归来判断一个单词是否是回文,再判断整个文件<br>第二题:完成一个类似抽奖的游戏,给对应图片编号记录分数,根据最终摇到的图片的分数来计算选手的得分,最后得出胜负<br>注意点:<br>第一题:读取文件的时候会发生一系列IO异常,要仔细处理<br>第二题:组件的位置要仔细调整,做出摇奖的动画比较麻烦,要然位置变化先慢后快再慢,得到滚动的效果<br><strong>Requirement</strong><br><br>Programming Assignment 7 ( 100 Points )<br>Due: 11:59pm Thursday, November 10th<br>README ( 10 points )<br>You are required to provide a text file named README, NOT Readme.txt, README.pdf, or<br>README.doc, with your assignment in your pa7 directory. There should be no file extension after the file name<br>“README”. Your README should include the following sections:<br>Program Descriptions ( 5 points ) : Provide a high level description of what each of your programs do and<br>how you can interact with them. Make this explanation such that your grandpa or uncle or someone you know<br>who has no programming experience can understand what these programs do and how to use them. Do not<br>assume your reader is a computer science major.<br>Short Response ( 5 points ) : Answer the following questions:<br>Vim Questions:<br>1. In vim/gvim, what commands will indent N consecutive lines (starting from the cursor line) by one level<br>where the indent level is defined to be two spaces? This will take two vim commands: one to set the<br>number of spaces to indent with each indent level (default is 8), and one to actually indent N<br>consecutive lines. Likewise what command will shift N lines left (de-indent N lines)?<br>2. In vim/gvim, what command will indent an entire curly-bracket block one level, while the cursor is<br>currently on either the open or close curly bracket of the block? Likewise what command will shift an<br>entire curly-bracket block one level left (de-indent block)?<br>3. How do you open a new line below and insert (one keyboard key for both steps)?<br>Unix Question:<br>4. On the Unix command line, how can you capture (redirect) the program’s output into a file named<br>“output”?<br>Java Question:<br>5. How can you create an array of ints in Java and initialize it with the values of all single digit odd positive<br>numbers (inclusively between 0-9), all in one step/line?<br>STYLE ( 20 points )<br>Please see preview programming assignments; especially PA2’s writeup.  You will be specifically graded on<br>commenting, file headers, class and method headers, meaningful variable names, judicious use of blank lines,<br>not having more than 80 characters on a line, perfect indentation, no magic numbers/hard-coded numbers<br>other than -1, 0, +1, using setters and getters, etc (see the style section of PA2’s writeup).<br>You will lose significant points if you have static methods or static variables for the Spin100 program<br>(except, constants are okay). Instead you should create getters and setters to change the variables for an<br>object.<br>CORRECTNESS ( 70 points )<br>Start by creating your pa7 directory as usual. Then copy over the starter code from the public folder by doing<br>the following:<br>$ cp ~/../public/PA7indrome.java ~/pa7<br>$ cp ~/../public/PA7-images/<em> ~/pa7<br>Program 1: PA7indrome ( 20 Points )<br>You must use recursion and implement the methods listed below or you will lose all 20 points for this<br>program. Also,  do not edit the main() method in PA7indrome.java as it will negatively affect your grade.<br>Write a command line application that checks whether an array of strings is a palindrome. A palindrome is a<br>word, phrase, number, or other sequence of characters which reads the same forwards and backwards. The<br>program will take in a file as a command line argument. Each line of the file will be converted into a string,<br>where each string will be placed as an element in an arraylist then converted to an array (this part has already<br>been written for you in the main() method–do not edit anything in this method). Your task will be to then<br>determine if the array of strings is a palindrome or not (non-case sensitive). You will be using two recursive<br>methods to implement this functionality.<br>public static char[] reverse( char[] toRev ) {…}<br>● Overall goal: reverse the array of characters passed in using recursion.<br>● If the length of the character array passed in is 1, just return the array right away.<br>● Otherwise, swap the first and last characters in the array (#1-3 below)<br>● Copy the middle of the array into a new array and recursively call reverse on this new array (#4 below).<br>● Place the returned array back into the middle of the original array of characters, and return this<br>reversed array of characters (#5 below).<br>● Hint: you can use System.arraycopy() (look up the javadocs).<br>● This method must use ends-and-middle recursion.<br>public static boolean isPalindrome( String[] words, int lo, int hi ) {…}<br>● Overall goal: determine if the array of strings passed in is a palindrome using recursion.<br>● Determine if the string at the low index in the words array is the reverse of the string at the high index in<br>the words array. To do so, you must use your reverse() function, after converting the string to a char<br>array and passing it in. This comparison should be non-case sensitive.<br>● If the string at the low index is indeed the reverse of the string at the high index, recurse on the<br>remaining middle portion of the array by passing modified values of the low and high index in the<br>recursive call. Otherwise, return false.<br>● This method must use ends-and-middle recursion.<br>You must use these methods as they are defined above or you will lose points.<br>We will test for edge cases when grading this assignment, so it is up to you to test your program thoroughly.<br>Similar to previous assignments, your output MUST match exactly to our sample output!<br>Sample Output 1: Not a palindrome (user input in BOLD)<br>For this example, the input file is named notPalindrome. If you open the file in vim, it should look like this:<br>start<br>early<br>start<br>often<br>The output from running PA7indrome will give you the following:<br>[cs11fxyz@ieng6-201]:pa7$ java PA7indrome notPalindrome<br>Input array of strings:<br>start, early, start, often<br>The file is not a palindrome.<br>[cs11fxyz@ieng6-201]:pa7$<br>Sample Output 2: Odd-length palindrome (user input in BOLD)<br>Input file named oddPalindrome:<br>StArT<br>EaRlY<br>sTaRt<br>oFtEn<br>ufotofu<br>NeTfO<br>TrAtS<br>yLrAe<br>tRaTs<br>The output from running PA7indrome will give you the following:<br>[cs11fxyz@ieng6-201]:pa7$ java PA7indrome oddPalindrome<br>Input array of strings:<br>StArT, EaRlY, sTaRt, oFtEn, ufotofu, NeTfO, TrAtS, yLrAe, tRaTs<br>The file is a palindrome.<br>[cs11fxyz@ieng6-201]:pa7$<br>The sequence of characters in the array of Strings generated from the input file reads the same forwards and<br>backwards (non-case sensitive), so it is a palindrome. Note that because the length of the array is odd, the<br>middle string must also be a palindrome (in this case the middle string is “ufotofu”, which is a palindrome).<br>Sample Output 3: Even-length palindrome (user input in BOLD)<br>Input file named evenPalindrome:<br>StArT<br>EaRlY<br>sTaRt<br>oFtEn<br>NeTfO<br>TrAtS<br>yLrAe<br>tRaTs<br>The output from running PA7indrome will give you the following:<br>[cs11fxyz@ieng6-201]:pa7$ java PA7indrome evenPalindrome<br>Input array of strings:<br>StArT, EaRlY, sTaRt, oFtEn, NeTfO, TrAtS, yLrAe, tRaTs<br>The file is a palindrome.<br>[cs11fxyz@ieng6-201]:pa7$<br>Sample Output 4: Palindrome with new lines (user input in BOLD)<br>Input file named newLinesPalindrome. Note: New lines will be cut off (ignored) by the scanner.<br>StArT<br>EaRlY<br>sTaRt<br>oFtEn<br>NeTfO<br>TrAtS<br>yLrAe<br>tRaTs<br>The output from running PA7indrome will give you the following:<br>[cs11fxyz@ieng6-201]:pa7$ java PA7indrome newLinesPalindrome<br>Input array of strings:<br>StArT, EaRlY, sTaRt, oFtEn, NeTfO, TrAtS, yLrAe, tRaTs<br>The file is a palindrome.<br>[cs11fxyz@ieng6-201]:pa7$<br>Program 2: Spin100 ( 50 Points )<br>You are to design a game that models itself after the mini game found in the Price is Right.<br><a href="https://www.youtube.com/watch?v=mFJCfNib2ns" target="_blank" rel="external">https://www.youtube.com/watch?v=mFJCfNib2ns</a><br>Main idea of the game:<br>● There are two players: Player 1 and Player 2. Player 1 gets to spin the wheel first. Player 1 gets to<br>spin until they have reached over 100 points or have clicked the “Finish Player 1” button. At that point,<br>it becomes Player 2’s turn. Player 2 then gets to spin until they have reached over 100 points or have<br>clicked the “Finish Player 2” button.<br>● Once Player 2 goes over 100 points or clicks the “Finish Player 2” button, the game ends.<br>● Whichever player is closer to 100 points wins. Once a player goes over 100 points then they’ve lost. If<br>both players go over 100 points then it’s a tie. If both players have the same score, then it’s a tie.<br>Example scores and their outcomes:<br>Player 1  70  120  20  100  100  95<br>Player 2  90  110  120  100  105  100<br>Winner  Player 2  Tie  Player 1  Tie  Player 1  Player 2<br>Implementation Details:<br>This program will have two Java source files: Spin100Controller.java and Spin100Wheel.java.<br>Spin100Controller.java will be the main controller which extends WindowController and handles the GUI<br>layout. Spin100Wheel.java will be the actual wheel object that defines what a wheel can do, how it spins, etc.<br>1. Setting up the GUI:<br>Start by first getting the GUI set up in the begin() method of Spin100Controller.java.<br>The top panel will have 3 labels:<br>● “Spin100” - You can customize the font of this label–don’t worry about whether the font is the default or<br>not! Just make sure your program doesn’t throw errors or have an incorrect layout / text upon start.<br>● “Player 1’s score: “ - followed by player 1’s score (initially 0).<br>● “Player 2’s score: “ - followed by player 2’s score (initially 0).<br>○ Note the space following the ‘:’ for each player’s score<br>The bottom panel will have 5 buttons: (make sure the text matches exactly).<br>● “Click to Spin P1”<br>● “Finish Player 1”<br>● “Restart”<br>● “Click to Spin P2”<br>● “Finish Player 2”<br>The wheels on the center canvas:<br>● The center of the window will have the canvas, similar to PA6. The height and width of the canvas<br>should be 840 x 660. Note that the canvas will not be resized during testing. On the canvas we will<br>be displaying two wheels (one for each player). In order to create the wheels, we need to initialize an<br>array of Image(s), using the images you copied over from the public folder. Make sure your images<br>are directly inside your pa7 directory, and not in a subdirectory called PA7-images.<br>● You will want to load the 20 images into an array of Images. To ensure you arrange the images in the<br>correct order, we suggest creating the following array. This will ensure you load the images in the<br>correct order and will also be helpful for scoring later on. Load the images corresponding to these<br>score values in the order in which they appear in the array. The array of images and the array of score<br>values will be parallel arrays.<br>private static final int[] SCORES = { 50, 85, 30, 65, 10, 45, 70, 25, 90, 5,<br>100, 15, 80, 35, 60, 20, 40, 75, 55, 95 };<br>● The wheel should always start with 50 in the center and should spin in a downward direction. This<br>means that when the wheel spins for the first time, the red arrow will first point to 50, then 85, then 30,<br>and so on.<br>● You will want to create each wheel by calling the Spin100Wheel constructor. Some parameters you will<br>probably want to pass to the constructor are:<br>○ The array of Image(s) corresponding to the SCORES values.<br>○ Location of the wheel (location of the top number). The center of the left wheel should be<br>horizontally aligned with the center of the left half of the canvas. In other words, you need to find<br>the x-coordinate that will center the left wheel in the center of the left half of the canvas.<br>Similarly, you need to find the x-coordinate that will center the right wheel in the center of the<br>right half of the canvas. The y-coordinate of the top number for both wheels should be 10 (make<br>sure the layout of your wheels matches the screenshots exactly).<br>○ Reference to the Spin100Controller so that controller methods can be called from the wheel<br>(this will be useful for setting the score after the wheel stops spinning each time)<br>○ Reference to the drawing canvas so the wheel can be placed on the canvas<br>The red arrows on the center canvas:<br>● The arrows are red-filled arcs with start angle = -15, arc angle = 30, height = 150, and width = 150.<br>● Left arrow position: (234.5, 186.0)<br>● Right arrow position: (688.5, 186.0)<br>Messages declaring winner on the center canvas:<br>● Create a hidden text object saying “Tie” at position (444, 5). The text should be blue, bold, and size 16.<br>● Create a hidden text object saying “P1 Winner” at position (20, 5). The text should be green, bold, and<br>size 16.<br>● Create a hidden text object saying “P2 Winner” at position (808, 5). The text should be green, bold,<br>and size 16.<br>See the screenshot section below to see what all of this looks like.<br>2. Wheel Functionality<br>Because the wheels are animated, the Spin100Wheel class needs to extend ActiveObject (and therefore must<br>contain a run() method).<br>Creating a wheel:<br>● Each wheel needs an array of 5 VisibleImages (generated from the array of images passed in as a<br>parameter to the constructor) to store the 5 images that will be visible on the canvas at any given time.<br>● The location passed to the constructor is the location of the topmost VisibleImage. The next<br>VisibleImage will be 99 pixels below that, and the next 99 pixels below that, and so on.<br>● Each wheel needs a random double generator object to generate random numbers for the amount of<br>ticks to spin when the spin button is clicked (see more details below in the Spinning the wheel section).<br>● Don’t forget to save a reference to the Spin100Controller object to help with scoring.<br>● Set the number of ticks to 0, so the wheel begins stationary.<br>● As with all ActiveObjects, the last statement in the constructor should be start();.<br>Spinning the wheel:<br>● Initially, the wheel’s number of ticks should be set to zero. When a wheel’s spin button is clicked, the<br>controller should update the number of ticks so the wheel will start spinning. This means you will want<br>a method to generate a random number of ticks for the wheel to spin.<br>● One way to implement this is to have a method called getRandomTicks(). This method should:<br>○ First generate a random double between 0 and 1<br>○ Based on the random number, return the minimum number of ticks (50) + a number of<br>additional ticks, which indicates how many ticks a wheel should spin for. This is to allow the<br>wheel to stop on different numbers each time by randomizing where a wheel stops cycling<br>through the array of images.<br>○ If the random number is between 0 and 0.05, return MIN_TICKS + 1. If it’s between .05 and .1,<br>return MIN_TICKS + 2. You should keep adding one more tick until you return MIN_TICKS + 13<br>for when the value is between .6 and .65. From there you should subtract one less tick until you<br>return MIN_TICKS + 6 when the value is between .95 and 1.<br>■ Range of ticks to add (over the .05 increments) is<br>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 12, 11, 10, 9, 8, 7, 6)<br>● After getting the random number of ticks, the controller needs to set the wheel’s number of ticks using a<br>setter method.<br>● To make the wheel actually spin, the run method will need to constantly check its number of ticks. If<br>the number of ticks is greater than 0, increment the index of each visible image displayed to the next<br>index in the images array; in other words, for every tick, shift the images down one. Once you reach<br>the last index of the images array, wrap back around to the beginning (Hint: think mod operator).<br>Then decrement the number of ticks left for this wheel to spin and pause to slow down the animation.<br>● At the beginning of each spin, the initial delay should be set to 1. Then when the wheel delay is less<br>than 20, the wheel delay should increment by 1 on every iteration of the forever loop. When the wheel<br>delay is greater than or equal to 20 and less than 200, the wheel delay should increment by 5. When<br>the wheel delay is greater than or equal to 200 and less than 500, the wheel delay should increment by<br>20. This will give the illusion of a faster spin at the start which eventually slows down and stops once<br>the number of ticks is zero.<br>● Once the number of ticks is 0, the wheel needs to call a public method in controller to let the controller<br>know that the wheel’s score has changed and that the Text object for the score needs to be updated.<br>● Some additional methods to include in the class would be setters and getters for the ticks, delay, and<br>score. This is so that the controller can call these methods and change the wheel’s variables’ values<br>when something like the spin, finish, or reset button is pressed.<br>3. Controller Functionality<br>You will implement Spin100Controller.java to handle creating the buttons and listening to actions performed on<br>the buttons.<br>● Upon start, only the “Click to Spin P1” and “Restart” buttons should be enabled. So in your begin()<br>method, in addition to setting up the layouts of the buttons, you should also disable the “Finish Player 1”<br>button and all buttons associated with Player 2.<br>● Once you have clicked “Click to Spin P1”, all buttons are disabled until the wheel stops spinning. Once<br>the wheel stops spinning, update Player 1’s score. Now that you have spun Player 1’s wheel at least<br>once, the “Finish Player 1” button should be enabled.<br>● As long as Player 1’s score is less than or equal to 100, Player 1 can choose to continue spinning by<br>clicking “Click to Spin P1” again, or click “Finish Player 1” to finish their turn. Once Player 1’s score is<br>over 100, the controller will automatically finish the turn for Player 1.<br>● Once Player 1 has finished, all of Player 1’s buttons are disabled and the “Click to Spin P2” button is<br>enabled for Player 2 to start spinning. The spinning process follows the same condition as stated for<br>Player 1.<br>● Once Player 2 has also finished, all but the Restart button should be disabled. A game over message<br>should be displayed. The message could announce a Tie, or announce that either Player 1 or Player 2<br>won (see screenshots for detail).<br>Summary of the buttons<br>● The Spin buttons: The spin button disables itself when:<br>○ The wheels are spinning<br>○ The player’s score has passed 100<br>○ The player has clicked finish after at least one spin<br>● The Finish buttons: Each player’s finish button is disabled until they have spun at least once. It is also<br>disabled when the wheel is spinning, as well as after they have finished their turn.<br>● The Restart button: This button is always enabled except when a wheel is spinning. Once clicked:<br>○ It changes the scores back to 0<br>○ It resets the wheels so that 50 is at the center again<br>○ The “Click To Spin P1” button is enabled again and the buttons are reset to the original state.<br>Implementation Requirements for Button Event Handling<br>To manage the behaviors of the 5 buttons, you must define 5 private member inner classes inside the<br>Spin100Controller class. Use your notes from class as a reference.<br>● Each private class must implement the ActionListener interface.<br>● The ActionListener interface enforces that each class has the actionPerformed(ActionEvent e) method<br>declared and implemented.<br>Having separate inner classes for each button is much better than handling all button events in one<br>actionPerformed() method. This is because there is a one-to-one relationship between buttons and listeners,<br>resulting in cleaner code that is less prone to errors.<br>Note: Remember to use getters/setters vs. directly accessing variables by name.<br>4. Sample Screenshots:<br>The start of the program. Both<br>player’s scores are set to 0,<br>with the arrows pointing to 50.<br>Only the buttons: “Click to Spin<br>P1” and “Restart” are enabled.<br>After Player 1 clicks “Click to<br>Spin P1”, the score for Player<br>1 is updated. The “Finish<br>Player 1” button is now<br>enabled after 1 spin.<br>Player 1 clicks “Finish Player<br>1”, and now only “Restart” and<br>“Click to Spin P2” buttons are<br>enabled.<br>Player 2 now clicks “Click to<br>Spin P2”, the score for Player<br>2 is updated. “Finish Player 2”<br>button is now enabled after the<br>first spin.<br>After Player 2 clicks “Finish<br>Player 2” The winner text<br>appears. The only button<br>enabled is “Restart”.<br>This is the case when Player<br>1’s score is over 100, thus<br>Player 2 wins.<br>In the case that Player 1’s<br>score exceeds 100, the<br>buttons “Click to Spin P1” and<br>“Finish Player 1” are<br>automatically disabled,<br>allowing P2 to begin.<br>If both player’s scores exceed<br>100, the game results in a tie.<br>Turnin<br>To turnin your code, navigate to your home directory and run the following command:<br>&gt; cse11turnin pa7<br>You may turn in your programming assignment as many times as you like. The last submission you turn in<br>before the deadline is the one that we will collect.<br>Verify<br>To verify a previously turned in assignment,<br>&gt; cse11verify pa7<br>If you are unsure your program has been turned in, use the verify command. We will not take any late files you<br>forgot to turn in. Verify will help you check which files you have successfully submitted.<br>It is your responsibility to make sure you properly turned in your assignment.<br>Files to be collected:<br>Note: You must turn in all the files necessary for your program to run, including the .jar files and .png files.<br>Note: Also, if any exceptions are thrown in the terminal, you will lose points.<br>Source Files:  Image Files:  Misc:<br>PA7indrome.java<br>Spin100Controller.java<br>Spin100Wheel.java
+</em>.png (20 of them)  objectdraw.jar<br>Acme.jar<br>README<br>EC_Spin100Controller.java (extra credit)<br>EC_Spin100Wheel.java (extra credit)<br>Extra Credit ( 5 points )<br>Setup: Create copies of your regular source files and name them EC_Spin100Controller.java and<br>EC_Spin100Wheel.java.<br>Along with the functionality listed below, you will need to change the size of the window if you are adding the<br>extra buttons. Set the canvas width to 1000 and the canvas height to 660.<br>Overall Wins: 1 Point<br>Keep track of the overall wins with a message that appears at the end of the game:<br>Overall Wins P1: #, P2 @<br>where # is a non-negative number indicating how many times player 1 has won the game and @ is a non-<br>negative number indicating how many times player 2 has won the game. This message cannot overlap either<br>wheel and it should be horizontally centered between the wheels. It should be 200 pixels above the vertical<br>center of the canvas. The message can be in whatever color you would like besides black. In the case of a tie,<br>neither player’s win count should change.<br>Change Spin Direction: 1 Point<br>Add some new buttons and change the old ones so that each player has the option to spin up or down. There<br>should be a “P1, Spin Up” button, “P1, Spin Down” button, “P2, Spin Up” button, and “P2, Spin Down” button.<br>To clarify, spinning up is where the numbers appear to be moving up (so the 50 goes towards the top) whereas<br>spinning down is where the numbers appear to be moving down (so the 50 moves towards the bottom). You<br>can see the new buttons in the screenshots below. Disabling the buttons should still work the same as it does<br>in the normal portion of the PA, just make sure to disable both the Up and Down spin buttons.<br>Switch Starting Players: 3 Points<br>The “Switch” button is enabled only at the start of each round of the game. This button should be disabled in<br>the middle of a game (i.e. if a spin has occurred). This allows the player who spins first to switch with the other<br>player. For instance, if Player 1 was going to start first and the switch button is clicked. then the game will<br>restart and Player 2 will now start first. If the restart button were then clicked, Player 2 would still be going first.<br>Sample Screenshots:<br>If all extra credit features are implemented, this is the initial state of the program.<br>The overall number of wins for each player is shown when a round finishes.<br>Player 2 can begin the round of a game when “Switch” is clicked.<br><br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/11/24/page48/" target="_blank" rel="external">http://yoursite.com/2016/11/24/page48/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/11/25/page49/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">C++代写：More OOP in C++/Inheritance</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/11/23/page47/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Java代写：I NDIVIDUAL P ROJECT 03 - T HE L IBRARY</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page48" data-title="Java代写：Programming Assignment 7" data-url="http://yoursite.com/2016/11/24/page48/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "Java代写：Programming Assignment 7",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/11/24/page48/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
