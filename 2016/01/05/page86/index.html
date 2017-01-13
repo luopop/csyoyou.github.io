@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CSCA09 The Game of Life | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Python">
+  <meta name="description" content="Introduction中级难度主要实现了细胞生成游戏。需要实现游戏的逻辑代码，以及界面仿真代码。首先：完成代码的逻辑编写。比如活细胞和无细胞在不同的邻居个数的情况下，下一代会是活细胞或者无细胞的判断。其次需要实现接口函数，来显示不同的使用策略。RequirementThe Game of Life is a well-known mathematical game that gives rise">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSCA09 The Game of Life">
+<meta property="og:url" content="http://yoursite.com/2016/01/05/page86/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introduction中级难度主要实现了细胞生成游戏。需要实现游戏的逻辑代码，以及界面仿真代码。首先：完成代码的逻辑编写。比如活细胞和无细胞在不同的邻居个数的情况下，下一代会是活细胞或者无细胞的判断。其次需要实现接口函数，来显示不同的使用策略。RequirementThe Game of Life is a well-known mathematical game that gives rise">
+<meta property="og:updated_time" content="2017-01-13T02:43:48.356Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSCA09 The Game of Life">
+<meta name="twitter:description" content="Introduction中级难度主要实现了细胞生成游戏。需要实现游戏的逻辑代码，以及界面仿真代码。首先：完成代码的逻辑编写。比如活细胞和无细胞在不同的邻居个数的情况下，下一代会是活细胞或者无细胞的判断。其次需要实现接口函数，来显示不同的使用策略。RequirementThe Game of Life is a well-known mathematical game that gives rise">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">CSCA09 The Game of Life</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">CSCA09 The Game of Life</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-01-05T14:13:33.000Z" itemprop="datePublished" class="page-time">
+  2016-01-05
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page86" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br><br>中级难度<br><br>主要实现了细胞生成游戏。<br>需要实现游戏的逻辑代码，以及界面仿真代码。<br><br>首先：<br>完成代码的逻辑编写。比如活细胞和无细胞在不同的邻居个数的情况下，<br>下一代会是活细胞或者无细胞的判断。<br><br>其次需要实现接口函数，来显示不同的使用策略。<br><br><strong>Requirement</strong><br><br>The Game of Life is a well-known mathematical game that gives rise to amazingly<br>complex behavior, although it can be specified by a few simple rules. (It is not actually a<br>game in the traditional sense, with players competing for a win.) Here are the rules. The<br>game is played on a rectangular grid. Each square on the grid can be either empty<br>(represented by a 0 in our version) or occupied by a “living” cell (represented by a 1). At<br>the beginning, you can specify empty and occupied cells in some way; then the game<br>runs automatically. In each generation, the next generation is computed. A new cell is<br>born on an empty square if it is surrounded by exactly three occupied neighbor cells. A<br>cell dies of overcrowding if it is surrounded by four or more living neighbors, and it dies<br>of loneliness if it is surrounded by zero or one living neighbor. A neighbor is an occupant<br>of an adjacent square to the left, right, top, or bottom or in a diagonal direction. Figure 16<br>shows a cell and its neighbor cells.<br>Many configurations show interesting behavior when subjected to these rules. Figure 17<br>shows a glider, observed over five generations. Note how it moves. After four<br>generations, it is transformed into the identical shape, but located one square to the right<br>and below.<br>One of the more amazing configurations is the glider gun: a complex collection of cells<br>that, after 30 moves, turns back into itself and a glider (see the large figure at the end).<br>Over the next two weeks, you will use Python to program the game to eliminate the<br>drudgery of computing successive generations by hand. Your homework assignment will<br>come in two parts, also known as Programming Assignment 6 and Programming<br>Assignment 7. The Wikipedia page on The Game of Life has a lot of useful information,<br>as well as some real-time examples of program behavior. You should take a look at it.<br>Implementing this game requires a plan for what to do about the cells at the edges of the<br>grid, since those cells don’t have a full complement of eight neighbors. The Wikipedia<br>entry does bring up this issue, and options range from simple to complex. For our<br>purposes, it is sufficient to assume that every square outside of the grid is empty (i.e., 0)<br>and will remain empty for the duration of the game.<br>(Much of the description above, and all the figures below, is borrowed from a textbook<br>by Cay Horstmann.)<br>Programming Assignment 6 - Game of Life, Part 1<br>Your solution is to be written using Python 3. Make sure you provide comments<br>including the file name, your name, and the date at the top of the file you submit.<br>Also make sure to include appropriate docstrings for all functions.<br>The names of your functions must exactly match the names given in this assignment.<br>The order of the parameters in your parameter list must exactly match the order<br>given in this assignment.<br>For any given problem below, you may want to write additional functions other<br>than those specified for your solution. That’s fine with us.<br>The  core  problem  to  be  solved  in  the  implementation  of  the  Game  of  Life  is  how  to<br>generate  the  next  grid  from  the  current  grid.   Your  task  is  to  write  a  function  called<br>nextGen  which  expects  only  one  argument.   That  argument  is  a  two-­‐dimensional<br>table  (i.e.,  a  list  of  lists)  with  m  rows  and  n  columns,  representing  the  current  grid.<br>The  elements  of  the  table  are  either  0  (empty  square)  or  1  (occupied  square).   You<br>may  assume  that  all  rows  have  the  same  number  of  elements.<br>Given  the  current  grid,  nextGen  computes  and  returns  (but  does  not  print)  a  new<br>next  grid  (without  altering  the  current  grid)  by  applying  the  simple  rules  provided<br>above.   For  example,  given  this  initial  grid:<br>glider = [[0,0,0,0,0,0,0],<br>[0,0,1,0,0,0,0],<br>[0,0,0,1,0,0,0],<br>[0,1,1,1,0,0,0],<br>[0,0,0,0,0,0,0],<br>[0,0,0,0,0,0,0]]<br>your function should work like this:<br>&gt;&gt;&gt; x = nextGen(glider)<br>&gt;&gt;&gt; x<br>[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],<br>[0, 1, 0, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0],<br>[0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]<br>&gt;&gt;&gt; y = nextGen(x)<br>&gt;&gt;&gt; y<br>[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 1, 0, 0, 0],<br>[0, 0, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]<br>&gt;&gt;&gt; z = nextGen(y)<br>&gt;&gt;&gt; z<br>[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 1, 0, 0],<br>[0, 0, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]<br>&gt;&gt;&gt; q = nextGen(z)<br>&gt;&gt;&gt; q<br>[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0],<br>[0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0]]<br>If we formatted those results nicely, we’d see a sequence like this:<br>## generation 1<br>[[0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0],<br>[0, 1, 0, 1, 0, 0, 0],<br>[0, 0, 1, 1, 0, 0, 0],<br>[0, 0, 1, 0, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0]]<br>## generation 2<br>[[0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 1, 0, 0, 0],<br>[0, 1, 0, 1, 0, 0, 0],<br>[0, 0, 1, 1, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0]]<br>## generation 3<br>[[0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 1, 0, 0, 0, 0],<br>[0, 0, 0, 1, 1, 0, 0],<br>[0, 0, 1, 1, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0]]<br>## generation 4<br>[[0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0],<br>[0, 0, 0, 1, 0, 0, 0],<br>[0, 0, 0, 0, 1, 0, 0],<br>[0, 0, 1, 1, 1, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0]]<br>These grids correspond to the generations in Figure 17. Note that the grid passed to your<br>function must remain unaltered:<br>&gt;&gt;&gt; glider<br>[[0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0],<br>[0, 0, 0, 1, 0, 0, 0], [0, 1, 1, 1, 0, 0, 0],<br>[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]<br>Where to do the assignment<br>You can do this assignment on your own computer, or in the labs. In either case, use the<br>IDLE development environment – that’s what we’ll use when we grade your program.<br>Put all the functions you created in a file called “prog67.py”. Save that file until you’ve<br>completed Programming Assignment 7.<br>Submitting the Assignment<br>Do not turn in this assignment by itself. Submit it with the work you do for Programming<br>Assignment 7.<br>Saving your work<br>If you are working in the lab, you will need to copy your program to your own flash-drive<br>or save the program to your workspace on SmartSite. To save it on flash-drive, plug the<br>flash-drive into the computer (your TAs or the staff in the labs can help you figure out<br>how), open the flash-drive, and copy your work to it by moving the folder with your files<br>from the Desktop onto the flash-drive. To copy the file to your SmartSite workspace, go<br>to Workspace, select Resources, and then use the Add button next to “My Workspace”.<br>Your TAs can help you with this if you run into trouble.<br><br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/01/05/page86/" target="_blank" rel="external">http://yoursite.com/2016/01/05/page86/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/09/30/page1/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">JAVA代写 CS302 program 1</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/01/04/page85/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">CSCA08 Exercise 10</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page86" data-title="CSCA09 The Game of Life" data-url="http://yoursite.com/2016/01/05/page86/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "CSCA09 The Game of Life",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/01/05/page86/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

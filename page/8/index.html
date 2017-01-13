@@ -124,6 +124,251 @@
       <ul class="post-list">
   
     <li class="post-list-item">
+        <article id="post-page10" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/16/page10/">代写C CS37 Programming Assignment 3</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-16T14:52:53.000Z" itemprop="datePublished" class="post-time">
+  2016-10-16
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>linux下的c语言os方面课程，多线程归并排序统计加速比测试，测试1,2,4,8,16,32个线程的情况下加速比。代码不算难，但是要进行大量测试和统计操作。<br>并且需要对linux下的多线程原理足够清楚<br><br><strong>Requirement</strong><br>Project 3<br>Due date: Oct 17, 2016 (No late submissions)<br>The goal of this project is to evaluate Amdahl’s law in the context of the sorting problem. The details of your implementation are as follows:<br>1.Implementation details<br>a.Your executable should be called PROG4<br>b.You will invoke PROG4 as<br>i.PROG4 <size of="" array=""> <number of="" threads=""><br>ii.Assume that <size of="" array=""> is a multiple of 32<br>iii.Assume that the number of threads is 1, 2, 4, 8, 16 or 32<br>iv.Example invocation:<br>PROG4   3200   16<br>2.When you execute the program, the following should happen<br>a.First, you will fill the array with strictly decreasing numbers. For example, if the array is of size 320, you can initialize it to 320, 319, 318 etc.<br>b.You will partition the array into 32 parts. You will sort each part using BUBBLESORT so that they are in increasing order. Finally, all 32 sorted parts will be merged to obtain the final sorted array. To achieve this with K threads, you will proceed as follows:<br>i.When you have K threads, each thread will handle 32/K parts and sort them. Now, you have 32 sorted parts of original array A.<br>ii.You will merge the sorted parts to generate array B that will represent the sorted array A.<br>c.You will verify that the array is actually sorted and contains the correct data. For example, in the above scenario, you should see numbers from 1..320.<br>3.Important observations:<br>a.You are partitioning the array into 32 parts independent of the number of threads you have. This is critical. This ensures that the actual work done is independent of the number of threads.<br>b.Normally, when you use multiple threads, this can increase the total work done. But we are trying to avoid the problem<br>c.We initialize the array to be in a decreasing order and use bubblesort to get it into increasing order.<br>d.The number 32 is chosen because cse410.cse.msu.edu has 32 processors.<br>4.As an illustration of this, for sake of discussion, assume that array A has 3200 elements. We partition array A into 32 parts, from [0..99], [100..199], … [3100..3199].<br>a.Consider the case where number of threads=1. In this case, you have only one thread. Hence, it will sort all 32 parts separately one after another. Then, it will merge it. This will correspond to the time required to sort the array with just one thread. This time will be split into two parts: the part that can be parallelized (namely the sorting of individual parts) and the part that cannot be parallelized (namely the merging part). Use this time to evaluate the value of f, the part that is sequential. As an illustration, if the time required for sorting individual parts was 200 and the time required for merging was 25 then f = 25/(200+25).<br>i.Some smart people will realize that the merging itself could be parallielized. But we will not do that in this project. The merging will always be sequential.<br>ii.Note that Amdahl’s law only considers the case where some part can be parallelized by n threads and the remaining part must be run on only one thread. It does not consider the case where you have some part where you can utilize more than one thread but cannot utilize all n.<br>iii.In fact, the merging part will be independent of the number of threads you have.<br>b.Consider the case where K=2. In this case, each thread will sort 16 parts. Each thread will sort the parts assigned to it independently (in parallel). Then, you will merge it to get the sorted array. Recall that the merging must be done sequentially. It is expected that the merging time will remain unchanged in this process.<br>5.What to turn in<br>a.Your .cpp files, .h files and makefile that will generate PROG4<br>b.A report (pdf) describing your experience with Amdahl’s law<br>i.You should consider five different array sizes from 320 to 32,000,000.<br>ii.The sizes you choose should be such that total time to run with 1 thread is at least 1 second and no more than 10 minutes.<br>iii.For chosen sizes, run your program with 1, 2, 4, 8, 16 and 32 threads.<br>iv.Run each experiment 3 times and use the average.<br>v.Identify the sequential fraction based on your experiment with 1 thread. Observe that sorting 32 parts can be parallelized. Merging cannot be.<br>vi.Compare the results you have with that predicated by Amdahl’s law.<br>vii.Explain the difference, if any.<br>viii.(Note that the verification time should not be included in the time you report.)<br>6. A few things that will help<br>a.You saw that you can provide each thread with a threadID<br>b.You can make assignments of the parts to be sorted based on threadID<br>c.For example, if you have 4 threads, thread 0 is responsible for first 8 parts and so on.<br>d.You can create partitions in-place<br>7.Some more things<br>a.Your sorting or merging should not assume that the array is provided in a sorted fashion. It should work for arbitrary array. The reason I have specified the initial array in the given fashion is so that you can validate correctness of your program.  For example, merging cannot be simply put the parts in reverse order.<br>b.Merging would essentially occur in the main() after all threads are joined.<br>c.You are provided with 2 files pth.cpp – that does things somewhat incorrectly (discussed in class) and pth.cpp that does things in the right fashion.<br></size></number></size></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page9" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/15/page9/">代写C++ CS37 Programming Assignment 1</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-15T13:42:55.000Z" itemprop="datePublished" class="post-time">
+  2016-10-15
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>一个简单的c++程序，计算BMI指数，重点在于注意细节，c++的标准I/O的输入输出格式输出<br><br><strong>Requirement</strong><br><br>Total Point: 12 Due Date: 09/12/2016, Monday<br>Assignment Description:<br>Write a program that calculate the Body Mass Index (BMI). Your program should<br>perform the following tasks:<br>1. Prompt the user to enter the following data for each person:<br> ID (four digit integer),<br> Name 20 character string,<br> Weight in pounds (floating-point with 1 digit after decimal point),<br> Height in inches (floating-point with 1 digit after decimal point).<br>2. Compute the BMI using the following formula:<br>BMI = (weightInPounds <em> 703) / (heightInInches </em> heightInInches)<br>3. Save (Write) the input data (id, name, weight, height) and the calculated BMI<br>(floating-point with 2 digits after decimal point) into a text file (e.g. bmifile.txt).<br>4. Repeat steps 1-3 to compute the BMIs for three persons, then close the text file.<br>5. Now, read all the BMI records from the text file, one person each time, and print out<br>a summary like the following:<br>Program Requirements:<br>1. The program must use streams, cout and cin objects to perform the IOs with<br>console, printer, and file, and use IO manipulators to format the output.<br>2. The program should include the following information as comment on top of source<br>code:<br> Programming assignment number<br> Author of the program<br> Date of programming (or due date)<br> Brief description on what the program will do<br>Grading:<br>Create and run your program using IDE of your choice (CodeBlock or Visual C++).<br>Print the source code, program output and a snapshot of the text file (to show the<br>file content) and turn in all three items for grading. The turn in documents must be<br>legible. Extremely tiny font or light/blur inks used in printing make it impossible<br>to read and grade your assignments.<br>Also save the source code and output in your computer or portable storage device (USB<br>device for example) so that they can be turned in for validation if asked to do so.<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c++</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page8" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/14/page8/">代写JAVA COSC1290</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-14T13:12:35.000Z" itemprop="datePublished" class="post-time">
+  2016-10-14
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>写基于JavaFX的GUI界面，在assignment1的command功能基础上加上sqlite数据库和文件存储操作，同时把command的功能用JavaFX实现。实现的时候通过参数的形式区分文件存储和数据库存储。由于assignment1的逻辑比较复杂，实现JavaFX界面的时候，工作量略大。<br>JavaFX还有内置的WebView，能通过其调Javascript，功能更强大，界面更好看，如果熟练之后，开发起来比swing更方便<br><br><br><strong>Requirement</strong><br>    Introduction<br>You are required to implement a basic Java program using Java SE 8.0 and JavaFX.<br>This assignment is designed to help you:<br>1. Enhance your ability to build a Graphical User Interface using JavaFX;<br>2. Practise implementation of various GUI event handlers;<br>3. Practise application of using file input and output processing;<br>4. Practise the use of command-line arguments.<br>This is an individual assignment and worth 10% towards your final grade.<br>    Academic Integrity (more)<br>The submitted assignment must be your own work. No marks will be awarded for any parts<br>which are not created by you—this includes use of 3 rd -party GUI components.<br>Plagiarism is treated very seriously at RMIT. Plagiarism includes copying code directly from<br>other students, internet or other resources without proper reference. Sometimes, students<br>study and work on assignments together and submit similar files; this may be regarded as<br>plagiarism. You should always create your own assignment even if you have similar ideas.<br>Plagiarism-detection tools will be used for all submissions. Severe penalties may be applied<br>in cases of plagiarism, including loss of all marks or, in repeat cases, expulsion from the<br>course.<br>    General Implementation Details<br>• Initial data should be read from an input text file. A Save option should be<br>implemented that writes out to a text file.<br>• All menu/interactive input should be via a graphical user interface, implemented in<br>JavaFX. All information displayed to the user should be via the same GUI.<br>• Sample GUI layouts will be put on Blackboard: you are free to have different<br>layouts as long as your GUI layouts are clear (marks may be deducted for very<br>poor design).<br>• Any incorrectly formatted input should be checked by the GUI implementation.<br>• You are to use packages: all your new code should be in packages called:<br>o gui<br>o fileio<br>Code not in either of these packages will not be considered for marking.<br>• You must not use 3 rd -party GUI components (i.e., not built by you).<br>• Marks will be allocated to proper documentation and coding layout and style. Your<br>coding style should be consistent with standard coding conventions (as in Assignment<br>1).<br>• Your programs will be marked on CSIT machines using Java SE 8.0. You should test<br>your program on these machines before you submit.<br>    Task Specification<br>You are to build a Graphical User Interface (GUI) for the MyTi system of Assignment 1. You<br>will also make running of the MyTi system more configurable by reading initial Card, User<br>and TravelPass information from input files and write updated information to an output file.<br>You do not need to add any other new functionality to the MyTi system of Assignment 1.<br>    What if my Assignment 1 did not work properly?<br>• If you did not get TravelPass purchasing and Journey-taking working fully in Assignment<br>1 then you are allowed to just purchase a TravelPass (as in the first Sample Run).<br>    Part A: Packages and Organisation of Code (0.5 marks)<br>You should organise your code into 3 packages. A package called myti should be used for<br>code from Assignment 1. Packages called gui and fileio should contain all new code for<br>Assignment 2 (you can put some of your existing code into these packages, if necessary).<br>    Part B: Command-Line Arguments (0.5 mark)<br>You are to use command-line arguments to provide the name of your input and output files.<br>For example, if your main() program is in the class Assign3 and you read input from<br>input.txt and your output is output.txt, then you would run your program as follows<br>from the command-line on a unix machine:<br>&gt; java Assign2 input.txt output.txt<br>If you use eclipse, then you specify the arguments under Run &gt; Run Configurations;<br>however, as always, your program will be marked by running it from the command-line.<br>    Part C: File Input and Output (1.5 marks)<br>Put initial TravelPass prices and Card andUser information in a text file (the name of this file<br>is the first command-line argument); your program should read this file at start-up and<br>initialise prices and create Users with the appropriate values. A sample input file will be<br>provided on Blackboard: you must follow that format precisely, though you are welcome to<br>include more information than in that sample.<br>Your program will be tested with different values (but with the same format) so make<br>sure you can handle reading the file properly.<br>When the SAVE option is selected on the GUI, you should write an output (text) file. The<br>output file must use the identical format to input file format below. You should write out the<br>same information as you read in with the updated values.<br>    Part D: Graphical User Interface (6 marks)<br>Add a GUI for at least the following functionalities from Assignment 1. (You can implement<br>a GUI that covers your complete Assignment 1 functionality but there’s no extra marks in it.)<br>• The GUI should begin with a single window for purchasing Travel Passes and taking<br>Journeys. Buttons for “Managing Cards and Users” and for “Display Reports” may open<br>up new windows. See the sample GUI on Blackboard;<br>• The Take a Journey window should include:<br>o a list for selecting a Card id (i.e., Take a Journey on this Card);<br>o lists to select 2 stations;<br>o a list to select the day of travel, and an input box to enter the time;<br>o a message box where error messages or other output is displayed;<br>o CANCEL and PURCHASE buttons;<br>• The Manage Passes and Users screen should include:<br>o a list of Card IDs and associated User names;<br>o when a Card is selected, User details and remaining credit is displayed;<br>o an input box and an ADD CREDIT button for adding credit for the selected Card:<br>when this is performed, credit for that Card is displayed / updated;<br>o a message box where error messages or other output is displayed;<br>o an Add a User panel that obtains the required information for a new user and adds<br>them. When a User is created, there should be an option to register a Card to that<br>User;<br>• The Display Reports screen should include:<br>o a single Display All Journeys button;<br>o a scrollable text box that contains the list of Journeys.<br>o Note, if in Assignment 1 your function just displayed the Journeys for a Card, then<br>you can do this here: you’ll need a drop-down box to select the Card to display;<br>• SAVE and QUIT (without saving) buttons should always be available (ideally, outside<br>the JTabbedPane).<br>• Each window will need buttons to open the other window options: for full marks, if a<br>window is already open then it just shows it on top of the others, not generate a new one.<br>Obvious GUI errors should be checked—for example, if the user tries to ADD CREDIT<br>without first selecting a Card from the menu.<br>Sample screens will be added to Blackboard. You do NOT have to follow these designs; they<br>are simply a suggestion and you are free to design your own screens, as long as your GUI<br>functionality is completely clear.<br>• GUI Demo: 1 / 0.5 marks of the GUI functionality will be for a demo in Week 10 / 11;<br>this can be of “click” functionality that isn’t fully connected to the MyTi system.<br>    Part E: Other (1.5 marks)<br>As always, marks will be awarded for coding style, documentation/comments, code layout<br>and clarity, meaningful error and other messages, proper error handling, choice of data<br>structures and other design decisions. You are encouraged to discuss such issues with your<br>tutors and lab assistants, or with the coding mentors.<br>    Bonus Task (1 mark)<br>Instead of reading/writing from files, read/write from a database using JDBC.<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sqlite/">sqlite</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page7" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/13/page7/">代写C   IP1  lab1</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-13T14:13:33.000Z" itemprop="datePublished" class="post-time">
+  2016-10-13
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>实现一个Wumpus的teriminal端的游戏（println），输出一个4<em>4的表格，有玩家、恶魔、陷阱、金币，玩家遇到恶魔或者陷阱就游戏Lose，捡完所有的金币就游戏Win，同时玩家可以感知恶魔 陷阱 金币的提示。<br>这个作业 时间是12小时，然后比较麻烦的是需求给的不太清楚，需要结合网上的Wumpus游戏和作业需求综合理解，设计一个简易的Wumpus游戏，画出UML图，然后code。<br><br><br><strong>Requirement</strong><br>Wumpus!<br>Wumpus is a text-based game, where a player moves through a cave system searching<br>for gold and trying to avoid bottomless pits and a feared Wumpus. The cave system is<br>a 4 x 4 grid. Each grid element can hold one GameItem. A GameItem is one of: Gold,<br>Pit, Wumpus or ClearGround.<br>The player can move forward, backward, left or right one grid element at a time. The<br>cave system wraps around so, for example, moving left from position [3][0] causes<br>the player to appear in position [3][3].<br>The player can sense, but not see, what is in the immediate grid elements around the<br>player. A pit will be sensed as a breeze, gold as a faint glitter and the Wumpus as a<br>vile smell. In this assignment, the grid will be displayed, but in a real game this<br>feature would be disabled.<br>If the player moves onto a pit or the Wumpus, the player dies and the game ends.<br>If the player moves onto gold, the game score increases by one and the gold is<br>replaced by ClearGround.<br>Implementation:<br>You should write a Game class, which has a 2D array of size 4 x 4 of GameItem called<br>board for implementing the Wumpus game described above.<br>Classes Gold, Pit, Wumpus and ClearGround are extensions of class GameItem.<br>GameItem should provide a public method, display(), for use when displaying the<br>board and a private instance variable for specifying the displayed character. Gold is<br>displayed as ‘g’, a Pit as ‘p’, the Wumpus as ‘W’, clear ground as ‘.’ . GameItem<br>provides a constructor GameItem(char c) for specifying the displayed character.<br>It should not be possible to instantiate an object of GameItem. The player is not<br>implemented as an object, instead just being represented by Game as private row &amp;<br>column coordinates. The position of the player is displayed by a ‘</em>‘.<br>The items should be positioned randomly over board. There is exactly one Wumpus,<br>at least one, and up to three pieces of gold (chosen randomly) and exactly three pits.<br>The player is positioned over a ClearGround position.<br>Game should provide:<br>?  a private method setBoard(), which instantiates objects on the board<br>?  a private method display() which will display the board.<br>?  a private method senseNearby(), which displays text about what the<br>player can sense from the board elements immediately surrounding<br>the player.<br>?  a private method menu() which will provide a menu asking the user to<br>make a choice from the following and obtain the user input:<br>=====Wumpus====<br>1. Move player left<br>2. Move player right<br>3. Move player up<br>4. Move player down 5<br>Quit<br>?  a public method runGame() that will display the board, print out what<br>the player can sense, present the menu and process the user’s decision<br>according to the game play described above.<br>The World class only instantiates an object myGame of class Game, and calls<br>myGame.runGame()<br>You need to show the Pit , Wumpus and Gold when the game is being played and also<br>show the SenseNearby() field as this is testing your ability to utilize polymorphism to call<br>method of different classes.<br>GameItem display() method is used to display each game item.<br>Game display() method is used to loop through GameItem array to display the board.<br>You may find the class Random, available in java.util.* useful.<br>For example the following will assign integer variable guess a value from 0..4<br>inclusive.<br>Random randomGenerator = new Random();<br>guess = randomGenerator.nextInt(5);<br>.<br>Submission:<br>?  Due date: 9am 10th Oct 2016. Representing 30% of course assessment<br>?  This is a group assignment of maximum 3 students (prefer not solo)<br>?  You will need to submit 7 electronic files, (Game.java, GameItem.java, Gold.java, Pit.java,<br>Wumpus.java, ClearGround.java and World. Please note these must be Java source files (e.g.<br>World.java), not class files (i.e not World.class). We will not mark a class file.<br>?  This assignment needs to be well designed. Please draw the Class diagram of your final<br>coding design Please screenshot a full set of successful executions. Save the class diagram<br>and screenshots of executions in a PDF file called Design.pdf.<br>?  Weblearn is used for submission. Please zip all source files and Design.pdf into one for<br>submission (7z, rar, zipx or other compression format will be penalized).<br>?  Remember to include all team members’ names, student IDs and contribution % of each<br>person in you submission of Design.pdf in the first page. One submission one group and<br>multiple submission will be penalized or at your own risk of getting wrong marks.<br>Standard warning:<br>This assignment must be your own work. Any submission found in whole or in part to<br>be plagiarized will be given zero marks and will not count towards your assessment. If<br>an award of zero marks means that you do not pass the assignment hurdle then you will<br>fail the course.<br>Frequent Asked Questions<br>Question: I was just wondering if the Wumpus will be moving around the board as<br>well? Or will it be stationary like the position of the pits?<br>Answer: The Wumpus position is randomly generated. In each session, it will not be<br>move around. It will be stationary like the position of the pits.<br>Question: Is there only 1 pit, 1 gold and 1 Wumpus in the game?<br>Answer: There is exactly one Wumpus, at least one, and up to three pieces of gold<br>(chosen randomly) and exactly three pits. The player is positioned over a ClearGround<br>position<br>Question: Hey I’m hoping to submit and wanted to know if the tutor name is<br>important, I’m not sure who my tutor is.<br>Answer: The tutor’s name is not important. You can just submit to the default one.<br>Yes, all files need to be zipped into one file. The zip file name is not important as<br>weblearn will auto rename it.<br>Question: Is it like after generate Wumpus, pit and gold, the position of these objects<br>are settled, no matter where the player moves on the board, these objects are not<br>moving? Or, each time player moves a step, the position of W,P and G changes<br>randomly? If player is surrounded by more than one objects, senseNearby() should<br>output all information of them<br>Answer: After randomly generate W, P, G in the beginning of the game, these objects<br>are settled in position. Only replaced by “.” if player walks into it, like gold.<br>Yes, senseNearby() should output all information of up, down, left and right.<br>Question: At starting do I need to display 4X4 Grid along with GameItems like ( 1<br>Wumpus, 3 Pit and 3 Gold).I meant player basically see all gameItems position in the<br>grid (not like real game) at the beginning of the game.<br>Answer: Yes, you do need to display 4x4 grid along with GameItems at the starting<br>point.<br>Question: After each user selection from Menu do I need to display grid along with<br>gameItems position again.<br>Answer: Yes that is why you call display() method in the Game class.<br>Marking Guide:<br>OO Components 12 marks<br>Functional correct 12 marks<br>Documentation, Coding Style, Submission requirement, Error checking 8 marks<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page5" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/09/page5/">C代写  CMPUT 201</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-09T06:23:32.000Z" itemprop="datePublished" class="post-time">
+  2016-10-09
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>主要是对文件操作、命令行操作等，输入参数错误处理，细节较多，难度的话不大。用到的知识点主要是：argc、fscanf/fprintf、loop、printf、array.<br><br><br><strong>Requirement</strong><br><br>The following content is from a file named “instance10 001.txt”:<br>#instance10_001.txt<br>#area [0, MAX_X] x [0, MAX_Y]<br>100 100<br>#number of points NUM_PT<br>10<br>#coordinates<br>0 0<br>0 90<br>70 100<br>100 50<br>30 30<br>30 70<br>70 70<br>70 30<br>50 50<br>45 0<br>#end of instance<br>This file describes 10 points in the two-dimensional plane, within the rectangular area [0,MAX X] ×<br>[0,MAX Y]. Every line starting with a symbol # is a comment; the first non-comment line contains the integer values for MAX X and MAX Y, which are 100 and 100 in this file; the second non-comment line contains the number of points NUM PT, which is 10 in this file; the other non-comment lines present the integer x- and y-coordinates for the points, one in a line (in a non-specific order).<br>In all three assignments, the input files all follow such a file format, except that the values of the<br>variables can be different and the comment lines can be missing. Each file is called an instance, and the file name convention is to start with “instance”, followed by the number of points in the instance, then an underscore, the index of instance having the same number of points, and lastly the file suffix “.txt”.<br>That is, “instanceXXX YYY.txt” is the YYY-th (may or may not be left-patched with 0’s) instance having XXX points; for example, the above “instance10 001.txt” is the first instance having 10 points.<br>The following list contains the specifications for Assignment #1 (10 marks in total):<br>1. Write a single program with multiple functions, using the command-line options. Suppose your<br>program name is “myprogram”. If a command-line is incorrect, your program prints out the following<br>and then quits (function #1):<br>&gt;myprogram [-i inputfile [-o outputfile]]<br>2. One function (function #2) of your program is to read in the content of an instance file. To read in<br>the file “instance10 001.txt” you will execute the command:<br>&gt;myprogram -i instance10 001.txt<br>Here “-i” is the command-line option that indicates the succeeding argument is the input filename.<br>3. Your program will check the correctness of the file content (function #3) during reading. That is, to check that the first non-comment line contains two integer values for MAX X and MAX Y, the second non-comment line contains an integer value for the number of points NUM PT (this number also appears in the filename; your program does not need to validate this, but to always use the number read in from the file), and there are exactly NUM PT more lines, each contains two integer values for the x-and y-coordinates of a point. Your program also makes sure that no coordinate is out of the specified rectangular area, neither there can be duplicate points in the instance.<br>If your program encounters an error, then reports what the error is and quits; otherwise, continue to the next item.<br>4. With the correctness been checked, your program will print (function #4) out the non-comment lines of the input file to the screen, when using the command:<br>&gt;myprogram -i instance10 001.txt<br>If an output filename is specified, using either of the following commands:<br>&gt;myprogram -i instance10 001.txt -o output.txt<br>&gt;myprogram -o output.txt -i instance10 001.txt<br>where “-o” is the command-line option that indicates the succeeding argument is the output filename,then instead of printing to the screen all the non-comment lines of the input file are written into the file “output.txt”.<br>5. If your program is not fed with an input file, that is, by executing the following command:<br>&gt;myprogram<br>then your program will generate several instances (function #5) through a user interface as follows:<br>Generating random instances …<br>Enter the circuit board size MAX_X MAX_Y:<br>Enter the number of points NUM_PT:<br>Enter the number of random instances to be generated:<br>Assume the user inputs are<br>Generating random instances …<br>Enter the circuit board size MAX_X MAX_Y: 100 200<br>Enter the number of points NUM_PT: 10<br>Enter the number of random instances to be generated: 7<br>your program will generate in total 7 instances, written into 7 separate files “instance10 j.txt”,<br>for j = 1, 2, …, 7. Each instance has the rectangular area [0,100] × [0,200], and has 10 points.<br>The coordinates of a point is generated uniformly randomly within the rectangular area. And your<br>program makes sure there are no duplicate points within each instance. If it is impossible for your<br>program to generate these files, prints out what an error is and quits. All these files are saved in the<br>current directory executing the command, and your program prints to the screen:<br>instance10_1.txt generated<br>instance10_2.txt generated<br>instance10_3.txt generated<br>instance10_4.txt generated<br>instance10_5.txt generated<br>instance10_6.txt generated<br>instance10_7.txt generated … done!<br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Autotest/">Autotest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page6" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/09/page6/">代写C   IP1  lab1</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-09T06:23:32.000Z" itemprop="datePublished" class="post-time">
+  2016-10-09
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>是电路和C语言的结合，电阻串联并联，然后用欧姆定律求总的电流。 实现了三个function，一个欧姆定律function，一个串联function，一个并联function。<br><br><br><strong>Requirement</strong><br>As electrical engineering students, you are familiar with Ohm’s Law (V = IR) and calculating the value of resistors in series (R = R1+R2) and parallel (1/R = 1/R1 + 1/R2). Consider the following circuit:<br>Write a program to calculate the overall current in this circuit.<br>You must use 3 functions: ohm_law(…), series(…), and parallel(…). A 4th function parallel_three(…) is optional. Do not write functions like sum_r1_r2(…).<br>Calculate the current for:<br>int r1=100, r2=200, r3=300, r4=400, r5=500, r6=600, r7=700;<br>(you may copy&amp;paste this into your .c file)<br>The answer should be 124.6 mA.<br>Calculate the current for:<br>int r1=123, r2=234, r3=345, r4=456, r5=567, r6=678, r7=789;<br>The answer should be 107.6 mA.<br>You may find it helpful to use intermediate variables, and to print debugging information.<br><br>(optional: you can call functions as inputs to other functions, i.e.<br>z = f( g(x,y), h(x,y) );<br>Using this, calculate the current from voltage and Rx values in a single line.)<br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page4" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/05/page4/">Java代写  Intermediate &amp; Object-Oriented Application Development</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-10-05T04:21:31.000Z" itemprop="datePublished" class="post-time">
+  2016-10-05
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>Java的基础题目，根据输入分数数据处理统计，格式化输出<br><br><br><strong>Requirement</strong><br><br>This project is designed to help you practice File Input/Output using Java. It is to be completed and handed in by Thursday, October 6, 2016.<br>Design and write an application to provide a report on student exam scores.  The input is provided in the file scores.txt.  This file can be found at the course Angel web site.  Do not modify the input file in any way.<br>The data layout is a follows:<br>Score<br>Last Name<br>First Name<br>The data on the file is comma delimited.<br>The report output should appear as:<br><br>To receive full credit, you must do the following:<br>1.    Use proper File Input/Output techniques.<br>2.    Generate a properly formatted report containing a report header with date. The detail lines must include the student name, letter grade, and score.  The summary should include the total number of exams, a breakdown of grade distribution, and the average exam score.  The output report file name should be report.txt.<br>3.    When assigning letter grades, use the following scale: 90 to 100 – A, 80 to 89 – B, 70 to 79 – C, 60 to 69 – D, below 60 - F.<br>Hand in:<br>1.    A printed copy of your report.<br>2.    A printed copy of your java code<br>3.    a written algorithm<br>4.    Either email your .java files in a compressed file (.zip)<br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
         <article id="post-page3" 
   class="article article-type-post" itemprop="blogPost">
      
@@ -232,7 +477,7 @@
 
 <nav id="page-nav">
     <div class="inner">
-    <a class="extend prev" rel="prev" href="/page/7/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span>
+    <a class="extend prev" rel="prev" href="/page/7/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/9/">下一页</a>
     </div>
 </nav>
 

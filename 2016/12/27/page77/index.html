@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C++代写 CS1073  Data Structures and Algorithms | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Algorithm,C++">
+  <meta name="description" content="Introduction本题是实现一个五子棋的游戏，给了部分模板代码，完成五子棋的游戏逻辑，主要考察c++的基础知识和OOP的设计能力，还有数据结构和算法共分了4个task，难度逐渐递增，然后需要通过自动测试RequirementCompSys202/MechEng270Data Structures and AlgorithmsAssignment #3 (20% of final grade)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++代写 CS1073  Data Structures and Algorithms">
+<meta property="og:url" content="http://yoursite.com/2016/12/27/page77/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introduction本题是实现一个五子棋的游戏，给了部分模板代码，完成五子棋的游戏逻辑，主要考察c++的基础知识和OOP的设计能力，还有数据结构和算法共分了4个task，难度逐渐递增，然后需要通过自动测试RequirementCompSys202/MechEng270Data Structures and AlgorithmsAssignment #3 (20% of final grade)">
+<meta property="og:updated_time" content="2017-01-12T03:43:02.129Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C++代写 CS1073  Data Structures and Algorithms">
+<meta name="twitter:description" content="Introduction本题是实现一个五子棋的游戏，给了部分模板代码，完成五子棋的游戏逻辑，主要考察c++的基础知识和OOP的设计能力，还有数据结构和算法共分了4个task，难度逐渐递增，然后需要通过自动测试RequirementCompSys202/MechEng270Data Structures and AlgorithmsAssignment #3 (20% of final grade)">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">C++代写 CS1073  Data Structures and Algorithms</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">C++代写 CS1073  Data Structures and Algorithms</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2016-12-27T04:14:52.000Z" itemprop="datePublished" class="page-time">
+  2016-12-27
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page77" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br>本题是实现一个五子棋的游戏，给了部分模板代码，完成五子棋的游戏逻辑，主要考察c++的基础知识和OOP的设计能力，还有数据结构和算法<br>共分了4个task，难度逐渐递增，然后需要通过自动测试<br><br><br><strong>Requirement</strong><br><br>CompSys202/MechEng270<br>Data Structures and Algorithms<br>Assignment #3 (20% of final grade)<br>Due: 11:00am, 21 October 2016<br>Learning outcomes<br>The purpose of this assignment is to target the following learning outcomes:<br>• Demonstrate a basic understanding of C++ development.<br>• Continue to develop and practice your skills in OOP design.<br>• Practice using data structures and algorithms effectively.<br>• Apply good coding practices such as naming conventions and code style.<br>1 Connect Four!<br>The game of Connect Four is described by Wikipedia as follows:<br>[Connect Four] is a two-player connection game in which the players first choose a color and then take turns<br>dropping colored discs from the top into a seven-column, six-row vertically suspended grid. The pieces fall<br>straight down, occupying the next available space within the column. The objective of the game is to connect<br>four of one’s own discs of the same color next to each other vertically, horizontally, or diagonally before your<br>opponent.<br>In this assignment you will construct a simple game of Connect Four. This game will be played between two human<br>players, and will be played until one player wins or a stalemate is reached. A simple demonstration of the Connect<br>Four game is displayed in figure 1.<br>2 Tasks<br>2.1 Player Information [Task 1] (15%)<br>2.1.1 Implement the Player Class<br>The Player class will store information about each player such as their name and color. A player has three<br>properties:<br>• The player’s name, e.g. “Nick”.<br>• The player’s score.<br>• The total number of games won by the player.<br>The player’s name can only be set in the constructor, while the score should be initialized to 0 and can only be<br>increased by 1 or reset using the methods of the Player class. The total number of games won by a player is<br>initialized to zero when the Player is constructed, and then can only be increased by 1.<br>Complete the implementation of the Player class as described in the file Player.hpp by adding code to Player.cpp.<br>1<br>(a) The game is created<br>with a standard 6 row by<br>7 column grid. At the be-<br>ginning of the game the<br>game grid is empty. The<br>top row of the grid is row<br>0 and the left-most col-<br>umn is column 0.<br>(b) The game starts with<br>player one’s turn. In this<br>case player one has in-<br>serted a disc (red) into<br>column 3. The disc falls<br>to the bottom of the grid<br>and stops at row 5.<br>(c) Player two plays their<br>first turn by inserting a<br>yellow disc into column<br>2. The disc falls to the<br>bottom of the grid to<br>come to rest next to the<br>disc placed by player one.<br>(d) Player one plays their<br>next move, placing a red<br>disc in column 4.<br>(e) Player two plays their<br>next move, inserting a<br>yellow disc in column 3.<br>This disc falls towards<br>the bottom of the grid<br>and stops at row 4, where<br>it is stacked on top of the<br>first disc placed by player<br>one.<br>(f) Player one plays their<br>next move, inserting a<br>second red disc into col-<br>umn 4. This disc falls to-<br>wards the bottom of the<br>grid, stacking on top of<br>a previously placed red<br>disc.<br>(g) Player two plays their<br>third move, inserting a<br>yellow disc into column<br>3, where it comes to rest<br>in row 3 on top of two<br>other discs already in-<br>serted into that column.<br>(h) Player one plays their<br>fourth move, inserting a<br>red disc in column 5 that<br>falls to the bottom of the<br>grid (row 5).<br>(i) Player two plays their<br>fourth move by inserting<br>a yellow disc into column<br>4 which stops at row 3<br>due to other discs previ-<br>ously inserted into that<br>column.<br>(j) Player one plays their<br>fifth move, inserting a<br>disc into column 6. This<br>disc falls to the bottom<br>row (row 5) and com-<br>pletes a horizontal row of<br>four red discs. Connect<br>four! Player one wins!<br>Figure 1: A demonstration of the Connect Four game in action.<br>2.1.2 Testing the Player Class<br>Testing code in this assignment works in a similar way to Assignments 1 and 2. When you are ready to test your<br>code, you can compile and run the tests by executing the command make test from the command-line console.<br>The tests for the Player class are already enabled in test.cpp.<br>If you need further information on how to test your code, refer to the testing sections of the assignment briefs<br>for assignments 1 and 2.<br>2.2 Tracking Player Moves [Task 2] (20%)<br>2.2.1 Implement the Grid Class<br>The Grid class is represents the vertically suspended grid into which players insert their colored discs. Each cell<br>of the grid can be represented by a value from the Cell enum declared inside the Grid class. Each cell will either<br>be empty, or hold a disc inserted by one of the two players. The number of cells is determined by the number of<br>rows and columns in the grid, and your Grid class constructor should allow the creation of a game Grid with any<br>size greater than 4 rows by 4 columns. In the case where one of the initialized dimensions is smaller than 4, that<br>dimension should be modified to be exactly 4. For example, if a grid is initialized with 2 rows and 6 columns, it<br>should be automatically corrected to 4 rows and 6 columns inside the Grid constructor.<br>During a game, discs may be inserted into the Grid by either player using the insertDisc method, which takes<br>a Cell value representing the new disc and a column of the grid that the disc should be inserted into. When a disc<br>is inserted into the grid it should be inserted on top of the other discs in the grid, or at the bottom of the grid if<br>there are no other discs in that column. This emulates the physical effect of inserting the disc into the grid in a<br>physical game of Connect Four.<br>To implement the game, other classes will need to be able to access elements in the grid. This information will<br>be accessed using the public cellAt method, which returns a value from the Grid given a specific row and column.<br>This method should return GC_EMPTY for any row or column outside the bounds of the grid. The bounds of the grid<br>2<br>will be returned by the rowCount and columnCount methods.<br>Once the game is over, the game grid needs to be emptied of all inserted player discs so a new game can be<br>started. In the Grid class this is done using the reset method.<br>Complete the implementation for the Grid class in Grid.cpp based on the declarations already created for you<br>in Grid.hpp. Make sure to read the comments above the class and each method in the class for more information<br>on how to implement them properly.<br>2.2.2 Testing the Grid Class<br>The tests for the Grid class can be enabled by uncommenting the following line at the top of test.cpp:<br>// #define ENABLE_T2_TESTS<br>Once the Task 2 tests are enabled, run make test to execute all of the currently enabled tests. Remember that<br>not all aspects of the Grid class may be tested in the tests you have been given, so don’t assume the task is<br>complete once all of the tests pass.<br>2.3 Creating a Connect Four Game [Task 3] (30%)<br>2.3.1 Implement the Game Class<br>The Game class composes the Grid class, aggregates multiple instances of the Player class together and performs<br>the game logic. A game is created using the default constructor for the Game class. The Game’s status method will<br>return GS_INVALID until two Players are assigned to the Game using the setPlayerOne and setPlayerTwo methods<br>and a Grid is assigned using the setGrid method.<br>The game will be executed one turn at a time using the playNextTurn method, with the nextPlayer method<br>providing (read-only) information about which player’s turn it is next. Once the game is complete, the status<br>method will return GS_COMPLETE, and return the winning player via the winner method. Note that if the game is a<br>draw, the winner method will return a null pointer (0), but the Game’s status will still be GS_COMPLETE. If a new<br>game is requested, the state of the current game can be cleared using the restart method.<br>You will need to create code to calculate the status of the game by traversing the grid and identifying 4 or more<br>discs from the same player in a row in any vertical, horizontal or diagonal orientation. Once one player gets at<br>least 4 discs in a row in any direction, they win the game. When a player wins the game, the Game state should<br>be updated accordingly so that the game status is set to GS_COMPLETE and the corresponding Player is returned<br>via the winner method. When a Player wins a game, their score and total number of wins should be increased by<br>1 using the appropriate methods of the Player class (a tie does not count as a win for either player). When the<br>game is restarted (using the restart method), each Player’s score should be reset. The possible directions discs<br>can be connected in to win the game are shown in figure 2 below.<br>(a) A vertical connect-four<br>for the red player (player<br>one).<br>(b) A horizontal connect-<br>four for the red player<br>(player one).<br>(c) A diagonal-up connect-<br>four for the red player<br>(player one).<br>(d) A diagonal-down<br>connect-four for the yellow<br>player (player two).<br>Figure 2: Completed games showing a winning combination in each possible direction. The winning combination<br>of discs has been highlighted in each example.<br>Complete the implementation for the Game class in Game.cpp based on the declarations already created for you<br>in Game.hpp. Make sure to read the comments above the class and each method in the class for more information<br>on how to implement them properly.<br>2.3.2 Testing the Game Class<br>The tests for the Game class can be enabled by uncommenting the following line at the top of test.cpp:<br>3<br>// #define ENABLE_T3_TESTS<br>Once the Task 3 tests are enabled, run make test to execute all of the currently enabled tests. Remember that<br>not all aspects of the Game class may be tested in the tests you have been given, so don’t assume the task is<br>complete once all of the tests pass.<br>2.4 Super Connect Four [Task 4] (15%)<br>In this task you will implement a variant of the classic Connect Four game we will call “Super Connect Four”. In<br>this variant of the game when a player connects four or more discs in a row, those discs will be removed from the<br>grid. This will cause any discs above the removed discs to move down to fill the space in the grid left by the removal<br>of the connected discs. One point will be added to the score of the player who connected the discs. If another line<br>of four or more discs belonging to one player exists after all affected discs have been moved, then this process is<br>repeated. This process continues until the grid reaches a stable state where no more lines of four discs exist and no<br>more cells need to be moved. One turn of such a game is demonstrated in figure 3.<br>(a) The initial game<br>board state for this<br>example. Both<br>players have already<br>made several moves.<br>(b) Player two plays<br>the next move, form-<br>ing a chain of four<br>discs horizontally in<br>row 3. Player two’s<br>score is increased by<br>1.<br>(c) The connected<br>discs are removed<br>from the game grid,<br>leaving blank spaces<br>in the grid.<br>(d) The remaining<br>discs above the ones<br>that were removed<br>are moved down<br>vertically to fill<br>the empty space in<br>the grid. Moving<br>the discs forms two<br>new chains of discs<br>belonging to player<br>one.<br>(e) The grid is<br>scanned, and two<br>new chains belong-<br>ing to player one are<br>found. Player one’s<br>score is increased by<br>1 and the discs are<br>removed from the<br>grid.<br>(f) The disc that was<br>above the removed<br>discs is moved to<br>the bottom of the<br>grid. The grid is re-<br>scanned but no new<br>chains of discs have<br>been formed and no<br>discs need to be<br>moved down. Player<br>two’s turn ends.<br>Figure 3: A demonstration of one turn in the “Super Connect Four” game.<br>The process for each turn of the game should be as follows:<br>1. Make the player’s move by inserting their token into the grid.<br>2. Check to see if any chains of 4 or more discs in any direction have been formed.<br>3. Increase the score by 1 for any players whose discs have formed chains of 4 or more. Each player’s score may<br>only increase by 1 each time the grid is checked (even if players get multiple simultaneous chains in a single<br>check).<br>4. Remove all discs in all chains from the grid.<br>5. Fill all spaces in the grid created in the previous step by moving the discs above the spaces down.<br>6. Repeat from step 2 until no more chains of discs are found and the grid has reached a stable state.<br>Make sure that disc the disc removal and movement steps are fully completed before the grid is re-scanned. Failing<br>to do so may cause additional matches while the grid is still between stable states. This is important for scenarios<br>such as those shown in figure 4 and figure 5.<br>Just as in normal Connect Four, players take alternating turns until the game is complete. This game will end<br>once there is no more space in the grid for either player to insert discs. The winner is the player with the highest<br>score at the end of the game.<br>4<br>(a) The initial game<br>board state for this ex-<br>ample. Both players<br>have already made sev-<br>eral moves.<br>(b) Player one plays the<br>next move, forming a<br>chain of four discs hori-<br>zontally in row 2 as well<br>as a diagonal chain of<br>four discs. Player one’s<br>score is increased by 1.<br>(c) The connected discs<br>are removed from the<br>game grid, leaving blank<br>spaces in the grid.<br>(d) The remaining discs<br>above the ones that<br>were removed are moved<br>down vertically to fill the<br>empty space in the grid.<br>The grid is stable, so<br>this is the end of player<br>one’s turn.<br>Figure 4: A demonstration of a turn in the “Super Connect Four” game where multiple chains of discs are formed<br>for a player in the same move.<br>(a) The initial game<br>board state for this ex-<br>ample. Both players<br>have already made sev-<br>eral moves.<br>(b) Player one plays the<br>next move, forming a<br>chain of four discs hori-<br>zontally in row 5. Player<br>one’s score is increased<br>by 1.<br>(c) The connected discs<br>are removed from the<br>game grid, leaving blank<br>spaces in the grid.<br>(d) The remaining discs<br>above the ones that<br>were removed are moved<br>down vertically to fill the<br>empty space in the grid.<br>Moving the discs forms<br>new chains of discs for<br>both players.<br>(e) The grid is scanned,<br>and new chains belong-<br>ing to both players are<br>found. Both player’s<br>scores are increased by<br>1 and the discs are re-<br>moved from the grid.<br>There are no more discs<br>to move down. Player<br>one’s turn ends.<br>Figure 5: A more complex example of the behavior of the “Super Connect Four” game.<br>2.4.1 Implement the SuperGame class<br>Implement the SuperGame class in SuperGame.hpp and SuperGame.cpp by deriving from the Game class, therefore<br>reducing the amount of code you need to write by inheriting some of the functionality of the Game class. The<br>SuperGame class should use the interface defined by the Game class so that it can be substituted in place of the Game<br>class to provide a new game experience with the same user interfaces.<br>The scoring for the SuperGame is different to the original Game class. When a player gets a chain of four discs<br>their score still increases by 1. However, the game does not end until the game grid has been filled, so the “winner”<br>of the game is determined by the Player with the highest score once the game grid has been filled and no more<br>moves can be played. Once the game is over the winner has their win counter increased by 1. Both player’s scores<br>are still reset when the game is restarted.<br>2.4.2 Testing the SuperGame class<br>The tests for the SuperGame class can be enabled by uncommenting the following line at the top of test.cpp:<br>// #define ENABLE_T4_TESTS<br>Once the Task 4 tests are enabled, run make test to execute all of the currently enabled tests. Remember that<br>not all aspects of the SuperGame class may be tested in the tests you have been given, so don’t assume the task<br>is complete once all of the tests pass.<br>You have also been given a command-line interface (main.cpp) which can be used for advanced testing of your<br>5<br>code by playing a Connect Four or Super Connect Four game. To build and run the command-line interface, use<br>the command make run from the command-line console.<br>You may share any tests you write for this assignment with classmates on Piazza.<br>2.5 Code Inspection (20%)<br>Your code will be inspected for:<br>• Effective use of OOP<br>• Consistent coding style<br>• Code commenting<br>• Memory management<br>Marks will be allocated for each by your marker.<br>Important: how your code will be marked<br>• Your code will be marked using a semi-automated setup. If you fail to follow the setup given, your code will<br>not be marked. All submitted files must compile without requiring any editing. Use the provided tests and<br>Makefile to ensure your code compiles and runs without errors on the university Ubuntu lab PCs. Any tests<br>that run for longer than 10 seconds will be terminated and will be recorded as failed.<br>• Although you may add more to them (e.g. member variables, #include statements, or helper functions), you<br>must not modify the existing interface of classes defined in the following files (e.g. do not delete or modify<br>the existing functions declared):<br>– ConnectFour/Player.hpp<br>– ConnectFour/Grid.hpp<br>– ConnectFour/Game.hpp<br>• Do not move any existing code from the ConnectFour directory, and make sure all of your new code files are<br>created inside the ConnectFour directory.<br>• You may modify test.cpp as you please (for your own testing purposes); this file will not be marked at all.<br>Be aware that your code must still work with the original test.cpp. Do not change the location of this file.<br>You are free to share any additional tests you create with classmates on Piazza.<br>• Your code will also be inspected for good programming practices, particularly using good object-oriented<br>principles. Think about naming conventions for variables and functions you declare. Make sure you comment<br>your code where necessary to help the marker understand why you wrote a piece of code a specific way, or<br>what the code is supposed to do. Use consistent indentation and brace placement.<br>Submission<br>You will submit via Canvas. Make sure you can get your code compiled and running with test.cpp (make test) on<br>the university Ubuntu computers. Submit the following, in a single ZIP archive file:<br>• A signed and dated declaration stating that you worked on the assignment independently, and that it is<br>your own work. Include your name, ID number, the date, the course and assignment number. You can find<br>this Cover Sheet on Canvas. All code will be checked against other submissions. Submissions detected as<br>being similar to others will ensure that the students involved are forwarded to the Misconduct Committee.<br>• The entire contents of the src_for_students folder you were given at the start of the assignment, including<br>the new code you have written for this assignment. Ensure you execute make clean before zipping the<br>folder so your submission doesn’t include any executable files (your code will be re-built for marking).<br>6<br>Academic honesty<br>• The work done on this assignment must be your own work. Think carefully about any problems you come<br>across, and try to solve them yourself before you ask anyone for help. Under no circumstances should you<br>take or pay for an electronic copy of someone else’s work.<br>• All submitted code will be checked using software similarity tools. Submissions with suspicious similarity will<br>result in an Investigative Meeting and will be forwarded to the Disciplinary Committee.<br>• Penalties for copying will be severe – to avoid being caught copying, don’t do it.<br>• To ensure you are not identified as cheating you should follow these points:<br>– Always do individual assignments by yourself.<br>– Never show or give another person your code.<br>– Never put your code in a public place (e.g. Reddit, Github, forums, your website).<br>– Never leave your computer unattended. You are responsible for the security of your account.<br>– Ensure you always remove your USB flash drive from the computer before you log off.<br>Late submissions<br>Late submissions incur the following penalties:<br>• 15% penalty for zero to 24 hours late<br>• 30% penalty for 25 to 48 hours late<br>• 100% penalty for over 48 hours late<br>You must double check that you have uploaded the correct code for marking! There will be no exceptions<br>if you accidentally submitted the wrong files, regardless of whether you can prove you did not modify them since<br>the deadline. No exceptions.<br>7<br><br><br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/12/27/page77/" target="_blank" rel="external">http://yoursite.com/2016/12/27/page77/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/12/28/page78/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Java代写 Programming Assignment 2  Link State Routing</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/12/26/page76/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Java代写 CS1073  Assignment 3</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page77" data-title="C++代写 CS1073  Data Structures and Algorithms" data-url="http://yoursite.com/2016/12/27/page77/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "C++代写 CS1073  Data Structures and Algorithms",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2016/12/27/page77/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
