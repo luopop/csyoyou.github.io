@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Python代写 Extra Credit Homework Implementing Sudoku | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Python">
+  <meta name="description" content="Introduction中级难度本次作业的目标是，利用python实现数独的答案求解。完成本次程序设计，需要灵活使用file，字典，list，Z3库等等知识。步骤：1、导入Z3库，Z3库的详细资料需要自己上网获得2、稍微简单点的是，文档中给了一些api的示例，但是更深入的需要自己去读源码3、根据交集，并集，bool型，等等来填写方框数据，并求解。RequirementExtra Credit Ho">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python代写 Extra Credit Homework Implementing Sudoku">
+<meta property="og:url" content="http://yoursite.com/2017/01/13/page94/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introduction中级难度本次作业的目标是，利用python实现数独的答案求解。完成本次程序设计，需要灵活使用file，字典，list，Z3库等等知识。步骤：1、导入Z3库，Z3库的详细资料需要自己上网获得2、稍微简单点的是，文档中给了一些api的示例，但是更深入的需要自己去读源码3、根据交集，并集，bool型，等等来填写方框数据，并求解。RequirementExtra Credit Ho">
+<meta property="og:updated_time" content="2017-01-15T14:13:49.434Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python代写 Extra Credit Homework Implementing Sudoku">
+<meta name="twitter:description" content="Introduction中级难度本次作业的目标是，利用python实现数独的答案求解。完成本次程序设计，需要灵活使用file，字典，list，Z3库等等知识。步骤：1、导入Z3库，Z3库的详细资料需要自己上网获得2、稍微简单点的是，文档中给了一些api的示例，但是更深入的需要自己去读源码3、根据交集，并集，bool型，等等来填写方框数据，并求解。RequirementExtra Credit Ho">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python代写 Extra Credit Homework Implementing Sudoku</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Python代写 Extra Credit Homework Implementing Sudoku</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2017-01-13T06:52:11.000Z" itemprop="datePublished" class="page-time">
+  2017-01-13
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page94" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br><br>中级难度<br><br>本次作业的目标是，利用python实现数独的答案求解。<br>完成本次程序设计，需要灵活使用file，字典，list，Z3库等等知识。<br><br><br>步骤：<br>1、导入Z3库，Z3库的详细资料需要自己上网获得<br>2、稍微简单点的是，文档中给了一些api的示例，但是更深入的需要自己去读源码<br>3、根据交集，并集，bool型，等等来填写方框数据，并求解。<br><br><br><br><strong>Requirement</strong><br><br>Extra Credit Homework: Implementing Sudoku<br>and KenKen Solvers Using Z3<br>October 11, 2016<br>1 Problem<br>You will be implementing a Sudoku solver which can solve a 2x2, 3x3 and 4x4<br>puzzle (really an NxN puzzle for N≥2). Using techniques similar to solving<br>Sudoku you will also implement a solver for the KenKen puzzle. Both imple-<br>mentations will use the Z3 solver to actually solve the problem and Python will<br>be used to interact with Z3.<br>2 Introduction to Z3<br>Z3 is an SMT solver which means it is able to determine whether a logical<br>statement is true or false (within certain limitations).<br>Here are some examples of using Z3 from within Python:<br>Proving DeMorgan’s Law:<br>1 from z3 import ∗<br>2 s = Solver () # Z3 solver instance<br>3 a = Bool ( ’a ’ ) # Z3 boolean variable a<br>4 b = Bool ( ’b ’ ) # Z3 boolean variable b<br>5 a or b = Or(a ,b) # a or b means a or b is true<br>6 nna and nb = Not(And(Not(a) , Not(b) ) )<br>7 # nna and nb means not ( not (a) and not (b) )<br>8 # is true<br>9 s . add( a or b != nna and nb ) # Here we are asserting to Z3<br>10 # (a or b) is not equivalent to<br>11 # ˜(˜a and ˜b)<br>12 s . check () # Here we ask Z3 i f our statement is<br>13 # s a t i s f i a b l e or unsatisfiable<br>When running this in python interactive mode, Z3 reports unsat which means<br>that our assertion that<br>(a ∨ b) 6= ¬(¬a ∧ ¬b)<br>is false. This means that it’s negation (DeMorgan’s Law) is true.<br>1<br>Finding Pythagorean triples, e.g., integers x,y,z such that x 2 + y 2 = z 2 :<br>1 from z3 import ∗<br>2 s = Solver () # Z3 solver instance<br>3 x = Int ( ’x ’ ) # Z3 Integer variable x<br>4 y = Int ( ’y ’ ) # Z3 Integer variable y<br>5 z = Int ( ’z ’ ) # Z3 Integer variable z<br>6 s . add(And(x &gt; 0 , y &gt; 0 , z &gt; 0) ) # Assert x , y and z are all<br>7 # positive<br>8 s . add(x∗x + y∗y == z∗z) # Assert xˆ2 + yˆ2 = zˆ2<br>9 s . check () # Query Z3 to see i f it can find an answer<br>10 s . model () # Get the satisfying assignment for x , y and z<br>11 s . add(x != 12) # Disallow the solution where x = 12<br>12 s . check () # Check i f Z3 can s t i l l find an answer<br>13 s . model () # Get the satisfying assignment<br>In this example, Int() creates an integer variable in Z3. 1 On line 6 a constraint<br>was added to the solver, e.g., we constrained the values of x,y and z to be<br>positive. On line 8 an additional constraint is added which states that we are<br>interested only in integers that solve the equation x 2 + y 2 = z 2 . On line 9 we<br>ask Z3 if the added constraints can be solved, which in this case is true. On<br>line 10 we ask Z3 for the assignment and get: x = 12, y = 9 and z = 15 (your<br>answer may vary). On line 11 we assert that x cannot be equal to 12 (this makes<br>Z3’s previous answer illegal). On lines 12 and 13 we check for satisfiability and<br>retrieve the solution which in this case is: x = 8, y = 6 and z = 10.<br>3 Introducing Python<br>A good tutorial to learn Python (this is the free version, you can’t watch videos<br>and might get pop ups):<br><a href="http://learnpythonthehardway.org/book/" target="_blank" rel="external">http://learnpythonthehardway.org/book/</a><br>Read this to learn how to do list comprehensions in Python:<br><a href="http://www.secnetix.de/olli/Python/list" target="_blank" rel="external">http://www.secnetix.de/olli/Python/list</a> comprehensions.hawk<br>More examples of using Python with Z3:<br><a href="http://cpl0.net/" target="_blank" rel="external">http://cpl0.net/</a> argp/papers/z3py-guide.pdf<br>Documentation of the Z3 Python API:<br><a href="http://research.microsoft.com/en-us/um/redmond/projects/z3/namespacez3py.html" target="_blank" rel="external">http://research.microsoft.com/en-us/um/redmond/projects/z3/namespacez3py.html</a><br>1 There is an important distinction between Int variables in Z3 and int variables in other<br>programming languages: In Z3, this declaration is akin to saying that, x for instance, x is<br>an element of the integers in a mathematical sense. In other programming languages, an int<br>simply allocates some amount of space which represents a value in a finite range of integers.<br>2<br>4 Useful Python and Z3 Commands<br>Solver() - Creates a solver for Z3.<br>s.add(constraint) - Adds a constraint to a Solver s.<br>s.check() - Returns sat if the current constraints are satisfiable, and unsat if<br>the constraints are unsatisfiable.<br>s.model() - Gets the satisfying instance from the solver. Note: this function<br>should only be called if s.check() returned sat.<br>Int(“name”) - Declares an integer variable in Z3.<br>The following functions can take either multiple arguments, e.g., Or(a, b, c)<br>or a list Or(my list).<br>And() - Asserts that all arguments given are true.<br>Or() - Asserts at least one argument given is true.<br>Distinct() - Asserts that all given variables are distinct.<br>Sum() - Creates a variable which is equal to the sum of the arguments.<br>Product() - Creates a variable equal to the product of the arguments.<br>Z3 also interacts with Python’s comparison and arithmetic operators:<br>1 from z3 import ∗<br>2 s = Solver ()<br>3 x = Int ( ’x ’ )<br>4 y = Int ( ’y ’ )<br>5 z = Int ( ’z ’ )<br>6 a = Int ( ’a ’ )<br>7 s . add(x != y) # Z3 variables x and y are asserted to be different<br>8 s . add(x == 3) # Z3 variable x is now equal to 3. This is different<br>9 # from assignment<br>10 s . add(z &gt;= y) # Z3 variable z is asserted to be greater than or<br>11 # equal to y<br>12 s . add(y &gt; 7) # y is asserted to be greater than 7<br>13 s . add(a == x + y) # a is now equal to x + y<br>14 s . add(x∗y &gt; 7)# The product of x and y is greater than 7<br>3<br>5 Sudoku Solver<br>The rules for Sudoku may be found here:<br>Sudoku - Wikipedia<br>For dimension 2, there will be 4 2x2 sub-grids, all squares will contain numbers<br>from 1 to 4 and the row/column/grid uniqueness rule remains.<br>For dimension 4, there will be 16 4x4 subgrids, all squares will contain numbers<br>from 1 to 16 and the row/column/grid uniqueness rule remains.<br>Part A: Modify sudoku base.py to accept puzzles which have dimensions other<br>than 3. You should not modify the input processing code and you should define<br>the limits in loops and constraints in terms of of the variable n. The variable n<br>is the length of the sub-grids in the puzzle. This is an easy exercise meant to<br>encourage you to study the implementation.<br>Part B: In the final if statement, after printing the solution add constraints<br>which assert that the solution is not valid. What this means is that there is a<br>solution where at least one of the blank squares in the puzzle can have a value<br>different from the same square in the solution. After adding this constraint,<br>you should check if there is a solution and print ”Solution is unique” if s.check()<br>does not return sat and print ”Solution is not unique” otherwise.<br>6 KenKen Solver<br>Please read KenKen - Wikipedia for an description of the KenKen puzzle.<br>It is recommended to start with your sudoku solution as a base because it will<br>able to accept different dimensions. Remove the section that adds the sub-grid<br>constraints. Also remove the code which detects non-unique solutions – this is<br>not required for this exercise.<br>The puzzle list contains lists representing the cages in the puzzle. puzzle[i][0]<br>holds the goal for the operation, puzzle[i][1] contains the operation to be used<br>for the cage. The operations will be ’+’, ’-’, ’<em>’, ’/’ and ’g’ which denote addi-<br>tion, subtraction, multiplication, division and given respectively. Here ”given”<br>means that the goal is the value of the indicated square. For cages using divi-<br>sion or subtraction, you may assume that the cage has two squares in it. Since<br>these operations are not commutative you will have to assert for squares a and<br>b a/b == goal or b/a == goal is true.<br>Finally, for a cage list cage cage[2</em>i] holds the row of the grid and cage[2*i+1]<br>holds the column of the grid where i is in the interval [1, len(cage)). These two<br>values indicate the coordinate of a square in the grid.<br>An example of a cage:<br>cage = [11, ’+’, 0, 0, 1, 0, 1, 1]<br>This means that the goal is 11, the operation is addition and the cage is on the<br>squares (0,0), (1,0) and (1,1).<br>4<br>Your solution should replace the code to enter the Sudoku puzzle in order<br>to encode these constraints into Z3.<br>7 Grading<br>For both parts you will not be graded on detecting invalid input (you should<br>not change the input or output code), nor the performance of your solution<br>(solutions which take more than 2 minutes on large tests will not be accepted).<br>It is recommended you test your solutions using the provided test files, e.g.,<br>sudoku testn.txt and kenken testn.txt. The reference results are in README.txt.<br>If you pass the provided tests, it is highly likely that you will receive full credit<br>on the assignment.<br>8 Set Up and Technical Issues<br>If you are using Windows:<br>Choose one of the MSI packages for Windows from<br><a href="https://www.python.org/downloads/release/python-278/" target="_blank" rel="external">https://www.python.org/downloads/release/python-278/</a><br>Use 64-bit if you are able.<br>Follow the instructions to install Z3py (precompiled) at:<br><a href="http://z3.codeplex.com/wikipage?title=Z3Py%20on%20Windows" target="_blank" rel="external">http://z3.codeplex.com/wikipage?title=Z3Py%20on%20Windows</a><br>Make sure you set your path. Search for how to do this.<br>On Linux:<br>Download the Z3 source from<br><a href="http://download-codeplex.sec.s-msft.com/Download/SourceControlFileDownload.ashx?" target="_blank" rel="external">http://download-codeplex.sec.s-msft.com/Download/SourceControlFileDownload.ashx?</a><br>ProjectName=z3&amp;changeSetId=89c1785b73225a1b363c0e485f854613121b70a7<br>Follow the instructions at:<br><a href="http://z3.codeplex.com/SourceControl/latest#README" target="_blank" rel="external">http://z3.codeplex.com/SourceControl/latest#README</a><br>Everything should work after this. You may need to install additional software.<br>Your terminal will likely give you commands to install the software.<br>On Mac OS X the easiest way is to install brew:<br><a href="http://brew.sh/" target="_blank" rel="external">http://brew.sh/</a><br>And issuing<br>brew tap homebrew/science<br>brew install z3<br>This should install everything you need including Z3. You will need to set your<br>PYTHONPATH variable: in a terminal type<br>export PYTHONPATH=”/usr/local/Cellar/z3/4.3.1/lib/python2.7/site-packages:${PYTHONPATH}”<br>You can also append this to your .bash profile or .bashrc file to have this setting<br>applied when you log in.<br>Note: Z3 currently works only with the Python 2.x series.<br>5<br><br><br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2017/01/13/page94/" target="_blank" rel="external">http://yoursite.com/2017/01/13/page94/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2017/01/14/page95/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Python代写 Prof Jeff Johnson   CS 110</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2017/01/12/page93/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python代写 CS1210 Computer Science I Foundations</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page94" data-title="Python代写 Extra Credit Homework Implementing Sudoku" data-url="http://yoursite.com/2017/01/13/page94/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "Python代写 Extra Credit Homework Implementing Sudoku",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2017/01/13/page94/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -124,6 +124,146 @@
       <ul class="post-list">
   
     <li class="post-list-item">
+        <article id="post-page66" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/12/16/page66/">Java代写： AP Assignment 1 s2 2016</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-12-15T23:06:55.000Z" itemprop="datePublished" class="post-time">
+  2016-12-16
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br><br>java实现一个旅行售票管理系统，这个题主要考察学生的java基础知识，编程逻辑能力，类的设计和OOP知识，<br>功能点比较多，细节点也比较多。<br><br><strong>Requirement</strong><br><br>COSC1290/1295 Advanced Programming / Java for C Programmers<br>School of CS and IT, RMIT University<br>Assignment 1 – Semester 2 2016 – UPDATED<br>Due date: 5.00pm, September 12, 2016<br>Introduction<br>You are required to implement a basic Java program using Java SE 7.0 or above.<br>This assignment is designed to help you:<br>1. Test your knowledge of basic Java concepts;<br>2.  Evaluate your ability to design programming logic;<br>3. Practise your knowledge of class design and OO constructs in Java;<br>4. Practise error handling in Java;<br>5. Develop a reasonable sized application in Java.<br>This is an individual assignment and worth 15% towards your final grade..<br>Academic Integrity (more)<br>The submitted assignment must be your own work. No marks will be awarded for any parts<br>which are not created by you.<br>Plagiarism is treated very seriously at RMIT. Plagiarism includes copying code directly from<br>other students, internet or other resources without proper reference. Sometimes, students<br>study and work on assignments together and submit similar files: this may be regarded as<br>plagiarism.<br>Please note that you should always create your own assignment even if you have very similar<br>ideas. Plagiarism-detection tools will be used for all submissions. Severe penalties may be<br>applied in cases of plagiarism, including loss of all marks or, in repeat cases, expulsion from<br>the course.<br>At any point, but especially during the scheduled lab-demonstrations, you may be required to<br>show and explain your design and code to any of the teaching staff.<br>General Implementation Details<br> All input data should be read from the standard input and all output data should be<br>printed to the standard output. There is no need to use files all.<br> If the input is formatted incorrectly the execution should stop immediately and an<br>appropriate error message should be displayed.<br> Marks will be allocated to your class design. You are required to modularise classes<br>properly—i.e., to use multiple methods as appropriate. No method should be longer<br>than 50 lines.<br> Marks will be allocated to proper documentation and coding layout and style. Your<br>coding style should be consistent with standard Java coding conventions<br>(<a href="https://google.github.io/styleguide/javaguide.html" target="_blank" rel="external">https://google.github.io/styleguide/javaguide.html</a>)<br> Your programs will be marked on RMIT UNIX machines using Java SE 7.0. Make<br>sure you test your program on these machines before you submit.<br> Further hints, tips and details, including submission instructions, will be made via<br>Blackboard and in lectures.<br>Overall Specification<br>You will implement an electronic ticket for public transport, called MyTi (My Ticket).<br> A MyTi can be “charged” by adding credit to it: initially, a MyTi has zero credit; a MyTi<br>can hold up to $100 of credit.<br> Any attempt to add credit that goes above the limit causes an error message and for the<br>charge to fail.<br> Amounts to be credited to a MyTi must be integer dollar amounts in precise multiples of<br>$5.00.<br> Travel Passes can be bought using a MyTi ticket: a pass can be for either “2 Hours” or<br>“All Day”, and can be for either “Zone 1” or “Zone 1 and 2”.<br> Prices are as follows:<br>o 2 Hour Zone 1 pass: $3.50<br>o 2 Hour Zone 1+2 pass: $5.00<br>o All Day Zone 1 pass: $6.90<br>o All Day Zone 1+2 pass: $9.80<br> If you attempt to purchase a travel pass without sufficient credit on your MyTi ticket then<br>the attempt fails: no ticket is issued and there is no charge to your ticket.<br>Your system must handle multiple MyTi tickets, each with its own unique id—the id will be<br>used to identify which MyTi ticket is being used / charged / etc.<br>Journeys and Travel Passes<br>The MyTi system is designed to automatically combine multiple Journeys in a day by one<br>User into the cheapest Travel Pass that covers those Journeys. For example, if a User travels<br>twice inside 2 hours, then a 2 Hour pass is purchased. However, if the user travels again later<br>in the day, the 2 Hour pass may be turned into an All Day pass if that is cheaper than 2 2-<br>Hour passes.<br>Each time the user asks for a new Journey, the previously purchased Travel Pass should be<br>checked:<br>1. If the current Travel Pass is an All Day and we are in the day and the pass covers the<br>journey zones, then a new Travel Pass does not need to be purchased;<br>2. If the new Journey fits inside the 2 Hours of the current Travel Pass, then a new<br>Travel Pass does not need to be purchased;<br>3. If the current Travel Pass is a 2 Hour and the new Journey is outside that time, then a<br>new 2 Hour Pass needs to be purchased.<br>TravelPass objects should store the information needed for all decisions described above<br>(e.g. whether to add a new Journey into an existing TravelPass).<br>To purchase a Travel Pass take a Journey, the system user must be prompted for:<br>-  The id of the MyTi card is to be charged to be used;<br>-  the day of travel, the start time and the end time;<br>-  the starting Station and end Station of the journey.<br>BONUS: The above means that users may spend more on Travel Passes than they needed to:<br>e.g., they may end up buying multiple 2-hour travel passes instead of one All Day pass. A<br>bonus task is implement logic that always results in the cheapest Travel Pass options:<br>1. IF the new Travel Pass means that all that day’s Passes would add up to cost more<br>than a All Day Pass—then all the Passes for that day are replaced by a single All Day<br>Pass; in this case the MyTi card is charged the difference between what has already<br>been paid that day, and what an All Day Pass would cost.<br>2. You have to do similar thinking about when different Journeys are in different Zones!<br>I’ll leave that to you to think about <br>If you try to purchase a Journey that requires a new Travel Pass, or an upgrade from 2 Hour<br>to All Day, and there is not enough credit left on their MyTi card, then the purchase of that<br>Journey must fail (with an Exception), and the user told they need to recharge their card.<br>Users<br>A MyTi ticket can be associated with one unique User. The MyTi ticket needs to store details<br>of its user, such as name and email address. A User needs to have access to their MyTi card.<br>Day and Times<br>To make things easier (and to run demos in less than real time!) you will type in the day and<br>times of Journeys (rather than using a System call to get them automatically). Using a “24<br>hour” time representation should make it easy to determine the length of Journeys. Note that<br>a Journey fits inside a 2 Hour pass if it ends before the end of the 2 Hour period. An All Day<br>pass covers all journeys that start inside that day and runs from midnight to 23:59pm.<br>Stations<br>Stations have a unique name and each Station can tell which Zone it is in.<br>Admin Functions<br>You also need to implement the following system administration functions:<br>-  On request, print all TravelPasses purchased on all MyTi cards. This list should<br>ordered by card id. For each TravelPass, list the Journeys that were in it;<br>-  Print usage statistics for all Stations: i.e., how many journeys started at each Station,<br>how many finished at each Station;<br>-  Create a new User: this requires input of a new id (the operation fails if it is already in<br>use), name, type (Adult, Junior, Senior), and email address.<br>Program Development<br>When implementing large programs, especially using object-oriented style, it is highly<br>recommended that you build your program incrementally.<br>This assignment proposes a specific incremental implementation process: this is designed to<br>both help you think about building large programs, and to help ensure good progress! You are<br>not strictly required to follow the structure below, but it will help you manage complexity.<br>Part A (1 mark): Extend existing code<br>Sample code implementing the outline of menu-based main program will be made available.<br>1. Design the TravelPass class to contain all data and operations it needs (e.g. the Zone<br>and Duration; Day and Start/End times);<br>2. Define Exceptions to handle problems/errors. These may include: trying to<br>purchase a pass without having enough funds; recharging by an invalid amount;<br>invalid menu options or inputs, etc.<br>Part B (1 mark): Class Design<br>Define all the classes and interfaces needed for the described system. In particular, you<br>should try to encapsulate all the appropriate data and operations that a class needs. This may<br>mean some classes refer to each other (e.g., the way Account refers to Customer).<br>At this point, you may just want to think about the data and operations and just write the<br>definitions, not all the code.<br>You will be submitting or demonstrating your class design in tutes or labs before the<br>due date. Details will be announced in lectures and on Blackboard.<br>Part C (3 marks): Main Program<br>Your main program should be in a class called MyTiSystem. (Of course, any class can<br>contain a main(); this is useful for testing that class.) The main program contains a menu that<br>offers the following options in a loop:<br>1. Buy a Travel Pass using a MyTi card<br>2. Recharge a MyTi card<br>3. Show remaining credit for a MyTi card<br>4. Purchase a Journey using a MyTi card<br>5. Print all Journeys made using all MyTi cards<br>6. Show Station statistics<br>7. Add a new User<br>8. Quit<br>Since we managing multiple MyTi cards, we have to enter a card’s id to know which MyTi<br>ticket to charge for a travel pass.<br>Part D (4 marks): Implement Core Functionality<br>Implement the core functionality of the MyTi system described above, except for the<br>complex decision-making around deciding whether a journey fits inside an existing<br>Travel Pass—i.e. in this version, just have the system buy a 2 Hour Travel Pass for each<br>Journey. You should be able to implement the rest of the MyTi functionality described above,<br>and run and test your system<br>Part E (1 marks): Include Multiple Journeys in Travel Passes<br>Implement the logic that decides whether a new Journey fits inside an existing Travel Pass or<br>whether the user needs to buy a new Travel Pass for that Journey.<br>Demos (1 mark each – 2 marks total)<br>You are required to demonstrate your progress and final solution to the teaching staff twice.<br>Details will be made available during lectures and on Blackboard.<br>Other (3 marks)<br>Marks will be awarded for coding style, documentation/comments, code layout and clarity,<br>meaningful error and other messages, proper error handling, choice of data structures and<br>other design decisions. You are encouraged to discuss such issues with your tutors and lab<br>assistants, or with the coding mentors.<br>Bonus (1.5 marks each)<br> Implement logic, or “business rules”, for combining Travel Passes so that the user is<br>charged the cheapest Travel Pass that fits their day of travel. You are welcome to discuss<br>the logic and different conditions via Blackboard Discussion boards; however, every<br>student must implement the final Java solution by themselves.<br> There will be another bonus task announced later on for students that would like to<br>challenge themselves further.<br>Test Data<br>Your program MUST include the following test items: just create them in your main program<br>and use them to populate your data structures that keep track of all such items. These will be<br>used to test/mark your program so it’s crucial that you enter them. You may add further Users<br>and Stations if you wish, but you must add at least the ones below.<br> Users (id, type, name, email)<br>o lc, Lawrence Cavedon, lawrence.cavedon@rmit.edu.au<br> Stations (name, zone)<br>o Central, 1<br>o Flagstaff, 1<br>o Richmond, 1<br>o Lilydale, 2<br>o Epping, 2<br>Sample Test Runs<br>Sample runs demonstrating behaviour of the system will be provided on Blackboard.<br>Submission<br>Assignment submission will be via Blackboard, by 5.00pm, Monday September 12 2016.<br>You can submit your assignment as many times as you want before the due date. Each<br>submission will overwrite any previous submissions.<br>1. You need to submit a class diagram (in pdf, gif or jpeg format).<br>2. You are required to submit your .java files weekly via Blackboard. Your progress will<br>be taken into consideration in marking. Further details will follow.<br>3. You must include a README file. This should describe how to run your program,<br>what extra functionality you implemented, any standard functionality you know does<br>not work, and any problems or assumptions. If the tutors have any problem running<br>your program and the README does not help then you will lose marks.<br>4. There will also be demos for this assignment. You will be asked to demonstrate your<br>progress and/or explain your design. Details of the demo will be announced on<br>Blackboard and in lectures.<br>5. For the code submission, you must include only the source files in your submission<br>(do not submit any *.class files!). Your code must on under RMIT UNIX machines.<br>6. Late final submissions will incur a penalty of 10% per day. Submissions made 5 days<br>after the due date will receive no marks.<br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page65" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/12/15/page65/">Python代写： ass4</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-12-15T03:56:57.000Z" itemprop="datePublished" class="post-time">
+  2016-12-15
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br><br>用python实现二叉搜索数的功能，在原来的模板基础上，增加题目要求写的方法，实现功能并且最后完成测试<br><br><strong>Requirement</strong><br><br>You may begin this assignment with the sample BST code.<br>Add the following functionality to the code:<br>1.  Modify the code so that each node stores not only a number (which is used as the sort value (or “key”) of the node), but also a string containing the name of a person.  So, the root node of a BST may contain for its data:  [40, “Wendy”], the left child of the root may be [18, “Carol”].   Modify all functions that this change affects.<br>2.  Add a function called “changeLeaves” which changes the person’s name contained in the leaf nodes to “Leif”.    Recall that a leaf node is one that has no children.  Your function should take one parameter, the root of a BST, and it should return the root of the (changed) tree.<br>3. Add a function called “countNodes” that counts the number of nodes that contain names starting with “w” or “W”.  Your function should take one parameter, the head of a BST and it should return the number of nodes matching the given condition.<br>4. Add a function called “printReverse” that prints all the nodes in reverse order.  That is, the node with the largest numerical value is printed first and the node with the smallest numerical value is printed last.  Your function should take as a parameter the root of a BST and it should return nothing.<br>5. Write a function that will convince the TA that your code works.  Be sure to explain what you are showing.  You should cover special cases such as empty trees.<br>What to Submit<br>Submit a single file containing your entire program.  DO NOT ZIP THE FILE. You do not need to include the data file.  We will test your program on a different grid.<br>Be sure you document your program appropriately.  Each function should include a header comment explaining what the function does, what the parameters are and what it returns.<br>Marking<br>The assignment will be marked using a rubric.  Rubrics provide a guide to the TAs however they are not all inclusive.  We may deduct marks for unanticipated errors.<br>I do not give extensions on assignments.   A 24 hour extension is available to everyone but comes with a 2 mark penalty.  Please do not ask for another extension unless you have a very, very good reason.<br>Academic Integrity<br>Please refer to the notes on Academic Integrity.  It is ok (and encouraged) to talk about solutions with your friends but please do your own work.  It is also ok to take snippits of code from the internet as long as the code does not solve the entire problem.  If you use snippits of code, please document it in your comments by adding a URL indicating where the code came from.<br><br>“””<br>This module implements binary search trees.<br>The tree elements may be of any type.  Duplicates are not allowed.<br><br>Example for CISC 121<br><br>“””<br><br># A BST node is a dict with three elements:<br># 1. data: the value in the node<br># 2. left: a reference to the left subtree<br># 3. right: a reference to the right subtree<br><br># Prints an indented display of the tree – useful for debugging.<br># The output will look kind of like a sideways version of a drawing<br># of the tree.<br>def display(tree, indent=0):<br>    if tree == None: # empty<br>        pass<br>    else:<br>        # right tree first (so it’s on the right when you tilt your<br>        # head to the left to look at the display)<br>        display(tree[‘right’],indent+1)<br>        print(“    “ * indent + str(tree[‘data’]))<br>        # now the left tree<br>        display(tree[‘left’],indent+1)<br><br><br><br># adds a value to a BST and returns a pointer to the modified BST<br>def add(tree, value):<br>    if tree == None:<br>        return {‘data’:value, ‘left’:None, ‘right’:None}<br>    elif value &lt; tree[‘data’]:<br>        tree[‘left’] = add(tree[‘left’],value)<br>        return tree<br>    elif value &gt; tree[‘data’]:<br>        tree[‘right’] = add(tree[‘right’],value)<br>        return tree<br>    else: # value == tree[‘data’]<br>        return tree # ignore duplicate<br><br>def printValues(tree):<br>    if tree == None:<br>        return<br>    printValues(tree[‘left’])<br>    print(tree[‘data’])<br>    printValues(tree[‘right’])<br><br>def main():<br>    myTree = None  #create an empty tree<br>    #Create a tree with the nodes [20, 2, 25, 14, 1, 23, 75, 93, 74]<br>    #Note that the add function always returns the root of the BST!<br>    myTree = add(myTree, 20)<br>    myTree = add(myTree, 2)<br>    myTree = add(myTree, 25)<br>    myTree = add(myTree, 14)<br>    myTree = add(myTree, 1)<br>    myTree = add(myTree, 23)<br>    myTree = add(myTree, 75)<br>    myTree = add(myTree, 93)<br>    myTree = add(myTree, 74)<br><br>    display(myTree, 0)<br>    printValues(myTree)<br><br><br>main()<br><br><br><br><br><br><br><br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page64" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/12/14/page64/">C++代写： CS  162 Intro  to  Programming  III</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-12-14T03:26:52.000Z" itemprop="datePublished" class="post-time">
+  2016-12-14
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br><br>根据给的类图，实现一个优先级队列，完成类接口和重写hashCode函数，实现displayTodoList ，displayOrdered ，addTask ，removeTask ，<br>alterTaskPriority 等等方法的实现<br><br><strong>Requirement</strong><br><br>1.0 System Analysis<br>The class diagrams for this project is as following:<br><br><br>2.0 System Design<br>Task class used to store a task information. It’s implements the Comparable Interface and rewrite the equals and hashCode function.<br><br>This program give each task an id. We access the task by id and do the operation.<br><br>Todo class provide the following operations:<br>Function displayTodoList display a list of all tasks on screen.<br>Function displayOrdered display a list of all tasks orderd by priority and due today on screen.<br>Function addTask add a task to the list.<br>Function removeTask remove an item from the list.<br>Function alterTaskPriority alter the priority of a task.<br>Function alterTaskDue alter the due of a task.<br>Function readFromFile read a list of tasks from a text file and load the data into field taskList.<br>Function writeIntoFile storage all the tasks into a file.<br>3.0 Test Plan<br>Case1: display all the tasks<br>    1| read the chapter1 of algorithm| 0| todo<br>    2| clean the table| 2| done<br>    3| make lunch| 1| todo<br><br>Case2: display all the tasks ordered by priority<br>    2| clean the table| 2| done<br>    3| make lunch| 1| todo<br>    1| read the chapter1 of algorithm| 0| todo<br><br>Case3: add a task : clean the floor<br>    1| clean the table| 2| done<br>    2| make lunch| 1| todo<br>    3| read the chapter1 of algorithm| 0| todo<br>    4| clean the floor| 0| todo<br><br>Case4: remove a task, id: 2<br>    1| clean the table| 2| done<br>    2| read the chapter1 of algorithm| 0| todo<br>    3| clean the floor| 0| todo<br><br>Case5: alter a task’s priority, id: 3 priority: 4<br>    1| clean the table| 2| done<br>    2| read the chapter1 of algorithm| 0| todo<br>    3| clean the floor| 4| todo<br><br>Case6: alter a task’s due, id: 3 due done<br>    1| clean the table| 2| done<br>    2| read the chapter1 of algorithm| 0| todo<br>    3| clean the floor| 4| done<br><br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-page63" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/12/11/page63/">C++代写： CS  162 Intro  to  Programming  II</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-12-11T13:20:53.000Z" itemprop="datePublished" class="post-time">
+  2016-12-11
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br><br>c++的入门题，练习vector的使用方法，push_back(),pop_back(), []. clear()等等方法的联系使用,最后在描述和vector和array的区别<br><br><br><strong>Requirement</strong><br><br>CS  162<br>Intro  to  Programming  II<br>Vectors<br>1<br>Vectors<br>– A container from the Standard Template Library<br>– Holds a set of elements, like an array<br>– Flexible number of elements - can grow and<br>shrink<br>•  Similar  to  a  dynamic  array<br>• Must include vector header file to use vectors<br>#include <vector><br>Vectors<br>• Can hold values of any type<br>– Type is specified when a vector is defined<br>vector<int> scores;<br>vector<double> volumes;<br>• Can use [] to access elements<br>• scores[3]<br>• volumes[0]<br>Defining  Vectors<br>• Define a vector of integers (starts with 0<br>elements)<br>vector<int> scores;<br>• Define int vector with initial size 30 elements<br>vector<int> scores(30);<br>• Define 20-element int vector and initialize all<br>elements to 0<br>vector<int> scores(20, 0);<br>• Define int vector initialized to size and contents<br>of vector finals<br>vector<int> scores(finals);<br>Growing a Vector’s Size<br>• Use push_back member function to add<br>an element to a full array or to an array<br>that had no defined size<br>// Add a new element holding a 75<br>scores.push_back(75);<br>• Use size member function to determine<br>number of elements currently in a vector<br>howbig = scores.size();<br>Removing Vector Elements<br>• Use pop_back member function to<br>remove last element from vector<br>scores.pop_back();<br>• To remove all contents of vector, use<br>clear member function<br>scores.clear();<br>• To determine if vector is empty, use empty<br>member function<br>while (!scores.empty()) …<br>Vector  Func<ons 1="" 2="" 5="" 7="" 8="" 9="" 567="" • useful="" vector="" func<ons:="" • capacity()="" :="" returns="" the="" capacity="" of="" • reserve="" (n)="" reallocates="" storage="" to="" increase="" be="" n.="" if="" n="" is="" <="" than="" current="" capacity,="" it="" does="" nothing.="" • push_back(val)="" adds="" val="" end="" • pop_back()="" last="" element="" more="" on="" page="" expensive="" opera<ons="" • add="" an="" into="" middle="" a="" (not="" at="" end)="" • eg.="" add="" posi<on="" i="" • all="" elements="" index="" and="" higher="" are="" moved="" down="" by="" one="" insert="" • remove="" from="" ater="" removed="" up="" remove="" arrays="" or="" vectors="" • vectors="" great="" you="" need="" flexibility="" dynamically="" resize="" array="" • arrays="" efficient="" vectors.="" • use="" really="" care="" about="" speed="" • do="" not="" use="" just="" because="" container="" with="" built="" in="" func<ons="" “easier”="" code.="" font=""></ons></int></int></int></int></double></int></vector></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
         <article id="post-page62" 
   class="article article-type-post" itemprop="blogPost">
      
@@ -329,146 +469,6 @@
     </div>
     
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page56" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/12/01/page56/">C代写： ASSESSMENT 4</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-12-01T08:33:17.000Z" itemprop="datePublished" class="post-time">
-  2016-12-01
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br><br>C语言练习题，用户输入二进制字符串，其中某些位的值未知，用x代替，程序的功能为根据用户输入的字符串输出所有可能的二进制字符串组合。<br>要求必须用递归的方法实现。<br><br><br><br><br><strong>Requirement</strong><br><br>Homework 7<br>Files to submit: bin_str.c<br>Time it took Matthew to Complete: 10 mins<br>• All programs must compile without warnings when using the -Wall and -Werror options<br>• Submit only the files requested<br>◦ Do NOT submit folders or compressed files such as .zip, .rar, .tar, .targz, etc<br>• Your program must match the output exactly to receive credit.<br>◦ Make sure that all prompts and output match mine exactly.<br>◦ Easiest way to do this is to copy and paste them<br>• All input will be valid unless stated otherwise<br>• Print all real numbers to two decimal places unless otherwise stated<br>• The examples provided in the prompts do not represent all possible input you can receive.<br>• All inputs in the examples in the prompt are underlined<br>◦ You don’t have to make anything underlined it is just there to help you differentiate between<br>what you are supposed to print and what is being given to your program<br>• If you have questions please post them on Piazza<br>Restrictions<br>• No global variables are allowed<br>• Your main function may only declare variables, call other functions, and assign<br>variables values.<br>• You must solve this problem recursively<br>1. Write a program called bin_str.c that completes a binary number. A binary<br>number is made up of 0’s and 1’s but the input strings you will receive can also<br>contain x’s. An x represents a digit that can be either a 0 or a 1. Your program<br>should display all the possible binary digits that can be formed. For example the<br>string x1x0 could represent either 0100, 0110, 1100, or 1110.<br>1. Your program should accept the binary string as a command line argument<br>2. You MUST solve this program RECURISIVELY<br>Examples<br>1../bin_str.out 0110<br>0110<br>2../bin_str.out 01x0<br>0100<br>0110<br>3../bin_str.out xx<br>00<br>01<br>10<br>11<br>4../bin_str.out 101x100x11x<br>10101000110<br>10101000111<br>10101001110<br>10101001111<br>10111000110<br>10111000111<br>10111001110<br>10111001111<br><br><br><br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page55" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/11/30/page55/">C代写： ASSESSMENT 4</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-11-30T04:32:15.000Z" itemprop="datePublished" class="post-time">
-  2016-11-30
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br><br>C语言，实现四子棋游戏，用二维数组模拟棋盘，根据用户输入将用户的棋子放入棋盘，电脑玩家随机放置棋子，<br>游戏过程中在每一步之后判断是否有玩家的4个棋子连成一条直线或斜线，如果有，该玩家获胜。主要涉及的知识<br>是二维数组的操作以及处理用户的输入，根据用户的输入执行相应功能。<br><br><br><br><strong>Requirement</strong><br><br><em>image from: www.amazon.com<br>EEE101 C Programming and Software Engineering 1 – ASSESSMENT 4<br>Assessment Number 4<br>Contribution to Overall Marks  25%<br>Issue Date  14/11/2016<br>Submission Deadline  28/11/2016 at 0900 (9am)<br>Assessment Overview<br>This assessment aims at testing some concepts of C programming in particular the use of<br>two-dimensional arrays, and the use of pointers to pass them between functions, as well as<br>the routine of code development using the software development process (SDP) presented in<br>Lecture 1, namely the five main steps of the software development process:<br>1. Problem statement: formulate the problem.<br>2. Analysis: determine the inputs, outputs, variables, etc<br>3. Design: define the list of steps (the algorithm) needed to solve the problem.<br>4. Implementation: the C code has to be submitted as a separate file. Just indicate here the<br>name of the file.<br>5. Testing: explain how you have tested and verified your C program.<br>EXERCISE 1 (10 POINTS OUT OF 10)<br>Connect 4 is a game of strategy for 2 players. Each player chooses a counter colour and then<br>they take turns to place the counters into a rectangular grid of size M x N (typically 6 x 7).<br>Counters are placed into the top of a column and fall down to occupy the next available slot<br>in that column (see the photo in Figure 1). The game is won when either player is able to<br>create a line of 4 counters vertically, horizontally or diagonally.<br>Figure 1: Connect 4 Game</em><br>This assignment requires you to use a 2 dimensional matrix together with a modular<br>programming strategy to recreate this game using C programming. Your game will allow you<br>to play either against another person, or against the computer who will place counters at<br>random.<br>Program Requirements<br>  Offer the user a choice between playing the computer or another player.<br>  Display the current state of the board to each player<br>  You should use one or more 2 dimensional matrices to represent the Connect 4 playing<br>board declared inside function main() as a local variable and passed to other functions as<br>needed.<br>  As a minimum you should create your own functions to perform the following tasks:<br>1. input counters;<br>2. check the board for a win;<br>3. display the board;<br>Programming Constraints<br>All variables used must be local.<br>Ideas<br>Try to keep your program as flexible as possible e.g. use constants to define matrix sizes so<br>that these could be easily changed.<br>Program in small sections, getting each part to work before integrating them all.<br>Consider how to deal with invalid inputs to avoid crashing the program.<br>Consider providing an option to change the matrix size and the winning length (e.g. connect 5)<br>Don’t forget that this is an interactive game, it should be easy to use and look tidy<br>Note: The programme requirements are becoming more vague (less well defined) with each<br>assignment to allow you the opportunity to interpret the problem in your own way and<br>develop your own solution.<br>What should be submitted?<br>You should submit the followings:<br>1) A short report (up to a few pages of text plus C source codes) detailing for each question:<br>a) SDP steps 1 to 3 in the report (Report + Specification + Analysis + Algorithm Design)<br>(40%)<br>b) SDP step 4 (Implementation(35%) + Robustness(10%)): your C source code including<br>the comments. (45%)<br>c) SDP step 5 in the report (testing): you will explain your testing methodology<br>including: what you wanted to test, how you have tested it and the outcome of your<br>tests. (15%). Note: you do not need to include screenshots of results<br>Please refer to the file “EEE101 Marking Guidelines Assignments 4-5” on ICE<br>for a detailed marking scheme.<br>2) The report in Microsoft Word or pdf format and C source code of your implementation<br>for each question should be zipped into a single file, i.e. the zip file will contain 4 files,<br>two reports and two source codes. (It is a good practice to include comments in your<br>code stating the aim of the program, what are the inputs, what are the outputs, which<br>algorithm is used, who is the author and so on.)<br>The naming of Report ( .doc or .pdf), Source Code (.c) and Compressed file (.zip, or .rar)<br>  StudentID_LastName_FirstName<em>AssignmentNumber-QuestionNumber.docx or .pdf<br>  StudentID</em> AssignmentNumber-QuestionNumber.c<br>  StudentID_LastName_FirstName_AssignmentNumber.zip or .rar<br>For example<br>  10115085_Zhang_Hanqing_4-1.docx<br>  10115085_4-1.c<br>Zipped together into:<br>  10115085_Zhang_Hanqing_4.zip<br>How the work should be submitted?<br>Should be submitted electronically through ICE so that the marker can run your programs<br>during marking. Feedback and your grade will also be given through ICE.<br>Remember that you are responsible for ensuring that your C code will run in Visual Studio<br>2013 and that if it does not without documentary explanation you may get a 0 mark for your<br>implementation.<br><br><br><br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page54" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/11/29/page54/">C代写：Homework 5</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-11-29T09:22:15.000Z" itemprop="datePublished" class="post-time">
-  2016-11-29
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br><br>C语言，实现基本的字符串操作函数和矩阵计算，包括字符串复制，字符串拼接，字符串比对，计算字符串的长度以及统计字符串中字符出现的频率等基本函数。<br>用二维数组表示矩阵，计算矩阵的加法和乘法，涉及使用malloc和free动态分配二维数组的内存，矩阵的计算等知识。<br><br><br><strong>Requirement</strong><br><br>CSCE 155E Fall 2016<br>Homework 5<br>Due Date: 11/13/2015, 2.30 PM<br>Instructions Follow instructions carefully, failure to do so may result in points being de-<br>ducted. Make sure your programs compile and run by using the web grader interface. You<br>do not need to printout your source code for the programs. Print a copy of the rubric for<br>this assignment and hand in a hard copy by the due date.<br>Partner policy: You are not allowed to work with a partner for this assignment.<br>Program 1. String Utilities In this exercise you will implement several utility functions<br>involving strings. You will place all of your function prototypes in a header file named<br>string_utils.h and all of your function definitions in a source file, string_utils.c. As before,<br>you should implement your own main test driver program to test your functions, but you<br>need not hand it in.<br>(a) void addChar(char <em>str, char c, int n)<br>- this function should add a char c at index n in string str. The following characters<br>should be shifted up to make room for the inserted character. For example, a call to<br>this function on the string “Hello World”, ‘p’, ‘4’, would result in the string “Hellpo<br>World”<br>(b) int numChar(const char </em>src, char c)<br>- this example determines the number of character c appears in the string. It does<br>not matter if the letter in the string is capitalized or not. For example, a call to this<br>function on the string “HellO World”, ‘o’, would return 2<br>(c) int isPalindrome(const char <em>src)<br>- this example determines if the string src is a palindrome or not. Return 1 if the string<br>is a palindrome and 0 if not. For example, a call to this function on the string “testset”,<br>will return 1<br>(d) int strCompare(const char </em>str, const char <em>str2)<br>- Write your own string comparison function that compares two strings for equality.<br>You cannot use the <string.h> string comparison functions. Make sure the compare<br>function is case insensitive. Return 0 if the two strings are equal and 1 if they are not.<br>For example, a call to this function on the string “Hello world”, and “Hello World” will<br>return 0<br>1<br>(e) char</string.h></em> strCat(char <em>str, char </em>str2)<br>- Concatenate the two strings “str” and “str2” and store that in a newly created dynamic<br>string. The function should return this dynamic string. You cannot use the <string.h><br>concatenation functions. For example, a call to this function on the string “Hello”, and<br>“ World” will return a dynamically created string that contains “Hello World”<br>(f) void consonantVowel(char <em>str)<br>- This function will print out the number of consonantes and vowels in the string. Note:<br>printing should be done in the function (notice the return type is void). For example, a<br>call to this function on the string “Hello”, will print Consonants: 3, Vowels 2<br>Program 2. Array In this exercise you will write several functions that operate on arrays.<br>You will place all the function prototypes in a header file named array_utils.h with their<br>definitions in a source file named array_utils.c. You should test your functions by writing a<br>driver program, but you need not hand it in.<br>(a) The dot product of two arrays are a = [a 1 ,a 2 ,a 3 ,..,a n ] and b = [b 1 ,b 2 ,b 3 ,..,b n ] is<br>a · b =<br>n<br>X<br>i=1<br>a i b i = a 1 b 1 + a 2 b 2 + ··· + a n b n<br>Write a function that computes the dot product of the two arrays<br>int dotProduct(const int </em>a, int size, const int <em>b, int size2);<br>(b) Write a function that takes an integer array and returns the number of integers that<br>are prime in the array<br>int numPrime(const int </em>a, int size);<br>(c) Write the following function:<br>int <em> arrayDifference(const int </em>a, const int <em>b, int sizeOfA, int sizeOfB);<br>which dynamically creates an array and fills it with all integers that can be found in<br>a , but not b . The values in the returned array should be unique; that is, there should<br>not be any duplicates. Furthermore, the size of the allocated arrays should not waste<br>memory.<br>(d) Write the following function:<br>int </em> arrayIntersect(const int <em>a, const int </em>b, int sizeOfA, int sizeOfB);<br>which dynamically creates an array and fills it with all integers that can be found in a<br>and b . The values in the returned array should be unique; that is, there should not be<br>any duplicates. Furthermore, the size of the allocated arrays should not waste memory.<br>Program 3. Matrices In this exercise you will write several functions that operate on<br>matrices or two-dimensional arrays. For this exercise, we will restrict our attention to square<br>matrices-collections of numbers with the same number of columns and rows. You will place<br>2<br>all the function prototypes in a header file named matrix.h with their definitions in a source<br>file named matrix.c. You should test your functions by writing a driver program, but you<br>need not hand it in.<br>(a) Write a function that takes two matrices and determines if the sum of all of the<br>elements in matrix A is equal to the sum of all the elements in matrix B. Return 0 if<br>the summation is equal and 1 if they are not equal.<br>int sumEqual(int <strong>A, int </strong>B, int n);<br>(b) Write a function that takes two matrices and determines if they are equal (all of their<br>elements are the same). If the matrices are equal, return 0. Return 1 if they are not<br>equal.<br>int isEqual(int <strong>A, int </strong>B, int n);<br>(c) Write a function to compute the sum of the elements along the diagonal of the matrix.<br>Return the sum of the elements along the diagonal.<br>int diagonal(int <strong>A, int n);<br>(d) Write a function to compute the summation of matrix A and B.<br>int</strong> sumMatrix(int <strong>A, int </strong>B, int n);<br>(e) The product of two square n × n matrices:<br>C = A × B<br>The entries for C are:<br>c ij =<br>n<br>X<br>k=1<br>a ik b kj<br>where 1 ≤ i,j ≤ n and c ij is the ( i , j )-th entry of the matrix C . Write the following<br>function to compute the product of two n × n square matrices:<br>int <strong> product(int </strong>A, int <em>*B, int n);<br>Bonus<br>Name the files, bonus.c and bonus.h<br>char highestFreq(char </em>str)<br>- this function should return the highest frequency character c in the string. For example, a<br>call to this function with the string “Hello World”, would return “l”,<br>3<br><br><br></string.h></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page53" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/11/28/page53/">C代写：Data Representation and Computer Arithmetic</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-11-28T07:24:13.000Z" itemprop="datePublished" class="post-time">
-  2016-11-28
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br><br>C语言练习题，主要知识点是按指定格式解析用户输入的代表数值的字符串，然后对用户输入的字符串进行加减计算，<br>最后将计算结果按照指定的格式输出。主要涉及对字符串的解析，以及二进制，十进制，十六进制数值之间的转换，<br>以及浮点数的二进制表示等知识。<br><br><br><strong>Requirement</strong><br><br>CS 211: Computer Architecture, Fall 2016<br>Programming Assignment 2:<br>Data Representation and Computer Arithmetic<br>1 Introduction<br>This assignment is designed to help you learn the representation, interpretation, and manipulation<br>of data as bits. There are two parts. In the first part, you will implement a program calc to add<br>and subtract numbers specified in different bases (multiplication is extra credit). In the second<br>part, you will implement a program format that will print the decimal values of bit sequences<br>representing integer and floating point data types.<br>2 Numeric Base Conversion and Calculator<br>Implement a program called calc with the following usage interface:<br>calc <op> <number1> <number2> <output base=""><br>The first argument, <op>, is either the string “+”, for addition, or “-”, for subtraction. If you<br>want to implement multiplication, then <op> can also be the string “*”. (If you do implement<br>multiplication, make sure to say so in your readme.pdf file so that the TAs know to check your<br>program for this functionality.)<br>The next two arguments, <number1> and <number2> are integers of arbitrary size. Each of these<br>numbers will be given in the form of:<br>−?(b|o|d|x)d n d n−1 …d 1 d 0<br>which can be interpreted as: a number can optionally start with a ’−’ sign, followed by a base<br>indicator, where b means the number is a binary number, o means octal, d means decimal, and x<br>means hexadecimal. d n d n−1 …d 1 d 0 are the digits of the number.<br>The final argument, <output base="">, gives the base that the resulting number should be printed<br>out in. Like the base indicator for the input numbers, this argument can be one of four strings: “b”<br>for binary, “o” for octal, “d” for decimal, and “x” for hexadecimal. Your program should output<br>the answer in the same form as the input numbers (that is, the output number should follow the<br>regular expression given above).<br>Some examples:<br>$ ./calc + d1111111111111111 d1111111111111111 d<br>d2222222222222222<br>1<br>$ ./calc + b1101 b1 d<br>d14<br>$ ./calc + d999999999 d1 d<br>d1000000000<br>$ ./calc - d10 -d4 b<br>b1110<br>$ ./calc + -d10 -d4 b<br>-b1110<br>Note that the numbers in the first example are too large to fit in a 32-bit integer type in C; this is<br>why the arbitrary size is emphasized above. Using a 64-bit integer type is not the solution since the<br>input integers can be arbitrarily large. Rather, you need to design data structures and algorithms<br>that can handle arbitrarily large numbers. Assignment update: any decimal number that we<br>ask you to handle—either an input decimal number or output in decimal format—will<br>fit in a 32-bit integer.<br>Important: You must write the base conversion code yourself. You may not use type-casting,<br>libraries, or output formats in printf(). You may use standard C arithmetic operations. You may<br>use the C standard libraries for functionality not related to the conversion (e.g., string handling<br>functions).<br>Important: If calc detects an error in the inputs, it should print out an error message that starts<br>with the string “ERROR”, followed by a string that gives an informative message about the error<br>that it detected.<br>3 Format Interpretation<br>Implement a program called format with the following usage interface:<br>format <input bit="" sequence=""> <type><br>The first argument, <input bit="" sequence="">, is a sequence of 32 bits. Remember that your C<br>program will get it as a string of 1 and 0 characters in the argv[1] argument to main. This<br>sequence ofbits represents the binary values stored in 4 contiguous bytes in memory. The leftmost<br>bits are stored in the byte with the smallest address while the rightmost bits are stored in the byte<br>with the largest address.<br>The second argument, <type>, gives the type that you should use to interpret the input bit<br>sequence, and can be either int (integer) or float.<br>The formats for the input bit sequence is as follows. If the type is:<br>int: the format is two’s complement;<br>float: the format is IEEE 754 single precision;<br>Note that the input bit sequence can correspond to negative numbers.<br>2<br>Your program should print out the decimal representation of the input bit sequence, assuming a<br>big endian byte ordering. Floating point numbers should be printed in scientific notation, where a<br>number 1.5x10 5 would be printed as 1.5e5. For positive infinity, output pinf, for negative infinity,<br>output ninf, and for “NaN”, output NaN.<br>Here are some examples:<br>$ ./format 01000001010000100100001101000100 int<br>1094861636<br>$ ./format 10000001010000100100001101000100 int<br>-2126363836<br>$ ./format 01000001010000100100001110000100 int<br>1094861700<br>$ ./format 00000000000000000000000000000001 int<br>1<br>$ ./format 01000000110000110100001111010100 float<br>6.10203e0<br>$ ./format 00111010000111111111011000001000 float<br>6.1e-4<br>$ ./format 10000000000000000000000000000000 float<br>-0.0e0<br>$ ./format 01000000010010010000111111011011 float<br>3.141593e0<br>Important: You must write the interpretation code yourself. You may not use type-casting,<br>libraries, or output formats in printf(). You may use standard C arithmetic operations. You may<br>use the C standard libraries for functionality not related to the value interpretation (e.g., string<br>handling functions).<br>Important: If format detects an error in the inputs, it should print out an error message that<br>starts with the string “ERROR”, followed by a string that gives an informative message about the<br>error that it detected. For this program, you can assume that any input bit sequence that is shorter<br>or longer than 32 bits is erroneous.<br>4 Submission<br>You have to e-submit the assignment using Sakai. Your submission should be a tar file named<br>pa2.tar that can be extracted using the command:<br>tar xf pa2.tar<br>3<br>Your tar file must contain:<br>• readme.pdf: this file should describe your design and implementation of the calc program.<br>In particular, it should detail your design, any design/implementation challenges that you<br>ran into, and an analysis (e.g., big-O analysis) of the space and time performance of your<br>program.<br>• makefile: there should be at least the following rules in your makefile:<br>all build both your calc and format executables.<br>calc build your calc executable.<br>format build your format executable.<br>clean remove all object files and executables. Prepare for rebulding from scratch.<br>• source code: All source code and header files necessary for building your calc and format<br>executables. These should at least include calc.c and format.c.<br>You can build your pa2.tgz file in the following steps:<br>1. Put all the files you want to hand in in a subdirectory called pa2.<br>2. In the parent directory that contains pa2, invoke tar:<br>tar cvfz pa2.tgz pa2<br>The arguments to tar are cfvz. The c tells tar to create a new archive file. The f tells tar that the<br>next command line argument is the name of the output file. The z tells tar to compress the tar file<br>with gzip. The v just makes tar list the files it’s putting into the archive.<br>We will compile and test your program on the iLab machines so you should make sure that your<br>program compiles and runs correctly on these machines. You must compile all C code using the<br>gcc compiler with the -Wall flags.<br>5 Grading Guidelines<br>5.1 Functionality<br>This is a large class so that necessarily the most significant part of your grade will be based on<br>programmatic checking of your program. That is, we will build a binary using the Makefile and<br>source code that you submitted, and then test the binary for correct functionality against a set of<br>inputs. Thus:<br>• You should make sure that we can build your program by just running make.<br>• You should test your code as thoroughly as you can. In particular, your code should be adept<br>at handling exceptional cases.<br>Be careful to follow all instructions. If something doesn’t seem right, ask.<br>4<br>5.2 Design<br>Having said the above about functionality, design is a critical part of any programming exercise.<br>In particular, we expect you to write reasonably efficient code based on reasonably performing<br>algorithms and data structures. More importantly, you need to understand the performance (time<br>&amp; space) implications of the algorithms and data structures you chose to use. Thus, the explanation<br>of your design and analyses in the readme.pdf will comprise a non-trivial part of your grade. Give<br>careful thoughts to your writing of this file, rather than writing whatever comes to your mind in the<br>last few minutes before the assignment is due.<br>5.3 Coding Style<br>Finally, it is important that you write “good” code. Unfortunately, we won’t be able to look at<br>your code as closely as we would like to give you good feedback. Nevertheless, a part of your grade<br>will depend on the quality of your code. Here are some guidelines for what we consider to be good:<br>• Your code is modularized. That is, your code is split into pieces that make sense, where the<br>pieces are neither too small nor too big.<br>• Your code is well documented with comments. This does not mean that you should comment<br>every line of code. Common practice is to document each function (the parameters it takes<br>as input, the results produced, any side-effects, and the function’s functionality) and add<br>comments in the code where it will help another programmer figure out what is going on.<br>• You use variable names that have some meaning (rather than cryptic names like i).<br>Further, you should observe the following protocols to make it easier for us to look at your code:<br>• Define prototypes for all functions.<br>• Place all prototype, typedef, and struct definitions in header (.h) files.<br>• Error and warning messages should be printed to stderr using fprintf.<br>5<br><br><br><br></type></type></output></number2></number1></op></op></output></number2></number1></op></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
 
 </article>
     </li>

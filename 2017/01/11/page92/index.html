@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Python代写 Assignment 2 Files, Dictionaries and Objects | 留学生Computer Science编程作业代写 | 专业 高效 原创</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Python">
+  <meta name="description" content="Introduction高级难度本次作业的目标是，利用python实现数据库，以及数据库操作。完成本次程序设计，需要灵活使用class，file，字典，对象，等等知识。不仅如此，还需要对数据库有一定的了解。步骤：1、实现Table和database对象。用来存储数据。2、实现文件操作，读取数据，存入对应的对象中。3、实现查询，合并，输入接口。Requirement1/9Assignment 2:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python代写 Assignment 2 Files, Dictionaries and Objects">
+<meta property="og:url" content="http://yoursite.com/2017/01/11/page92/index.html">
+<meta property="og:site_name" content="留学生Computer Science编程作业代写">
+<meta property="og:description" content="Introduction高级难度本次作业的目标是，利用python实现数据库，以及数据库操作。完成本次程序设计，需要灵活使用class，file，字典，对象，等等知识。不仅如此，还需要对数据库有一定的了解。步骤：1、实现Table和database对象。用来存储数据。2、实现文件操作，读取数据，存入对应的对象中。3、实现查询，合并，输入接口。Requirement1/9Assignment 2:">
+<meta property="og:updated_time" content="2017-01-15T14:06:28.234Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python代写 Assignment 2 Files, Dictionaries and Objects">
+<meta name="twitter:description" content="Introduction高级难度本次作业的目标是，利用python实现数据库，以及数据库操作。完成本次程序设计，需要灵活使用class，file，字典，对象，等等知识。不仅如此，还需要对数据库有一定的了解。步骤：1、实现Table和database对象。用来存储数据。2、实现文件操作，读取数据，存入对应的对象中。3、实现查询，合并，输入接口。Requirement1/9Assignment 2:">
+  
+    <link rel="alternative" href="/atom.xml" title="留学生Computer Science编程作业代写" type="application/atom+xml">
+  
+  <meta name="summary" content="null">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">csyoyo</h5>
+        <a href="mailto:undefined" title="cscoderman@gmail.com" class="mail">cscoderman@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-user"></i>
+            关于我
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+    <img src="/img/qrcode.jpg" alt="">
+  <p><h4>微信</h4></p>
+  <p>csyoyo</p>
+  <p><h4>邮箱</h4></p>
+  <p>cscoderman@gmail.com</p>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python代写 Assignment 2 Files, Dictionaries and Objects</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Python代写 Assignment 2 Files, Dictionaries and Objects</h1>
+    <h5 class="subtitle">
+          
+            <time datetime="2017-01-11T05:34:12.000Z" itemprop="datePublished" class="page-time">
+  2017-01-11
+</time>
+
+ 
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-page92" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <font size="4"><br><strong>Introduction</strong><br><br>高级难度<br><br>本次作业的目标是，利用python实现数据库，以及数据库操作。<br>完成本次程序设计，需要灵活使用class，file，字典，对象，等等知识。<br>不仅如此，还需要对数据库有一定的了解。<br><br><br>步骤：<br>1、实现Table和database对象。用来存储数据。<br>2、实现文件操作，读取数据，存入对应的对象中。<br>3、实现查询，合并，输入接口。<br><br><br><br><strong>Requirement</strong><br><br>1/9<br>Assignment 2: Files, Dictionaries and Objects<br>Due: Electronically, by 11:55 PM on December 1, 2016<br>Introduction<br>We’ve covered many important Python concepts by this point, including lists, files, dictionaries and (basic)<br>OOP. In this assignment, we apply most of these concepts to write a program that can combine and transform<br>tables of data in order to answer questions about that data. The program you will write is called SQuEaL. It<br>stands for Simplified Query Engine and Language, but more importantly it’s the noise that Dan Zingaro (at<br>UTM) made when he came up with what he thinks is a super-cool idea for this assignment. We’ll see!<br>Querying Data<br>The quantity and variety of data generated today requires that we have ways to organize that data and extract<br>pieces of data that are currently of interest. For example, you might have thousands of emails in your inbox<br>right now, but you have ways of searching and filtering that data to find messages from certain people, with<br>specific keywords, or sent on specific dates.<br>Nowhere is the importance of data more evident in our daily lives than when we interact with online retailers.<br>Consider the typical interaction with a website like Amazon. Perhaps you’re looking for a new CS book to<br>read over the holidays. You might search for Computer Science in the search box. Among the millions of<br>products available, Amazon returns only those products of relevance in the search results.<br>When you purchase a book, you are required to create a customer account. Amazon stores your account<br>information along with this order and all orders you make in the future. Later, you can check on your order<br>history to see exactly what you’ve purchased. Of course, millions of other customers have purchased stuff<br>too, so Amazon has to maintain all of this data and make sure that you see only your data and another person<br>sees only theirs. Amazon will also want to use this data for internal purposes to see how much they’ve sold,<br>what products are most popular, what kinds of ads to serve to you, etc. Data is used to answer a wide variety<br>of questions such as these:<br>What are the Computer Science books available right now?<br>Does the current user have a customer account?<br>What is the order history for the current customer?<br>How many products did Amazon sell this year?<br>What are the top ten most popular books this year?<br>Websites like Amazon use databases to store these vast amounts of data. They then make queries on that data<br>in order to retrieve data for a variety of purposes. One sample query might be: “give me all of the Computer<br>Science books”; another might be: “give me this customer’s order history, from oldest order to most recent<br>order”. There are languages used to make such queries on databases. The most popular of these languages is<br>SQL (Structured Query Language), and if you take CSCC43 you’ll learn a lot more SQL.<br>In this assignment, you’ll write a program that understands a SQL-like language for making queries of data.<br>Don’t worry: we won’t mention SQL again in this handout, and we expect no outside knowledge of databases<br>or SQL (OOPS!) or Amazon or anything like that. Everything is in this handout. Warning: if you know<br>some SQL, you should be extra careful to do what we are asking and not make assumptions based on<br>what you might have learned elsewhere.<br>Tables and Databases<br>11/21/2016<br>2/9<br>The first two important terms for us are table and database. From now on, when we use these terms, they<br>mean what is described in this section.<br>Below is a sample table that we will call  movies . It contains information on movies; try to understand what<br>the table is showing before continuing to the text below.<br>movies<br>m.year m.title m.studio m.gross<br>1997 Titanic Par. 2186.8<br>2003 The Lord of the Rings: The Return of the King NL 1119.9<br>2010 Toy Story 3 BV 1063.2<br>The table starts with a header giving the names of each column. The column names are  m.year ,  m.title<br>m.studio , and  m.gross . (Ignore the  m. prefix for now; you’ll see why it’s there soon.) Note that the header<br>isn’t one of the data rows. The data rows are the rows below the header. The table has four columns, and each<br>row gives a value in each column. For example, we see that the first movie is Titanic, the year it was made<br>was 1997, the studio that produced it was Par. (short for Paramount), and the gross revenue (amount the<br>movies made) for the movie was 2186.8. (Yes, that’s given in millions of dollars… anyone who hasn’t<br>dropped CS to enroll in film school, please continue reading.)<br>So that’s a table: a grid where each column has a column name and each row gives a value for each column.<br>Each row corresponds to a single thing/object/entity; in this example, each row corresponds to a movie.<br>A database is a collection of one or more tables. A database might consist of only one table, such as  movies .<br>But we can expand our database to include more tables. For example, we can add a second table,  oscars , so<br>that we have two tables in our database:<br>oscars<br>o.year o.category o.title<br>2010 Animated Feature Film Toy Story 3<br>2003 Directing The Lord of the Rings: The Return of the King<br>1997 Directing Titanic<br>1997 Best Picture Titanic<br>This table gives names of movies that won Academy Awards (also knows as “The Oscars”, the year they<br>won, and the category in which they won. Notice that the names are the same ones as in the  movies table<br>above. This is no coincidence. Stay tuned.<br>The two tables  movies and  oscars is another example of a database; this database has two tables.<br>SQuEaL: Operations on Tables<br>In this section, you’ll learn the operations that can be performed on tables and how these operations are<br>written in SQuEaL. Throughout, keep one thing in mind: each operation on a table creates a new table.<br>Selecting Columns<br>One thing we can do on a table is select some or all of its columns. For example, consider the  movies table<br>(the first table given in this handout). We might be interested in only the names of the movies, so we might<br>want a table with only the  m.title column. We could express this in SQuEaL as:<br>select m.title from movies<br>and this would give us a table with just one column:<br>one column from movies<br>11/21/2016<br>3/9<br>m.title<br>Titanic<br>The Lord of the Rings: The Return of the King<br>Toy Story 3<br>Or maybe you want only the movie names and year (and not the studio or gross revenue). You’d express this<br>as:<br>select m.title,m.year from movies<br>and you’d get a table with two columns,  m.title and  m.year :<br>two columns from movies<br>m.year m.title<br>1997 Titanic<br>2003 The Lord of the Rings: The Return of the King<br>2010 Toy Story 3<br>You may have noticed that the columns in this table are in the “wrong” order. However, that doesn’t matter.<br>The order of the columns does not change the data in the table. You will see in the next section that we will<br>use dictionaries to store columns, so the order of columns is not preserved. This is expected behaviour.<br>Moving on: there are two ways to get all of the columns. You could list them all separated by commas:<br>select m.title,m.studio,m.gross,m.year from movies<br>or you can use a shorthand; the  <em> means “all columns”:<br>select </em> from movies<br>In both cases, you get a new table that contains exactly the same information as  movies .<br>Multiple Tables<br>Selecting columns from a table is nice, but it doesn’t let us use the full capacity of our data stored in the<br>database. Recall that a database can have multiple tables, and that these tables might be meaningfully related.<br>For example, our  movies table contains the name of the movie, but the  oscars table contains additional<br>information on awards that movie won (we’ll give you the data to make more related tables, such as ratings<br>and actors who starred in the various movies).<br>Look back at those two tables. It would be nice to be able to create a single table that joins those two tables<br>into one, like this:<br>movies join oscars<br>m.title m.studio m.gross o.category<br>Titanic Par. 2186.8 Directing<br>Titanic Par. 2186.8 Best Picture<br>The Lord of the Rings: The Return of the King NL 1119.9 Directing<br>Toy Story 3 BV 1063.2 Animated Feature Film<br>Notice that, for each row, we have some of the data from the  movies and some of the data from oscars<br>( o.category ).<br>You should be able to perform these joins by hand. The column on which we are joining the two tables is the<br>column that contains the common information. In this case, both tables have a  title column, so we join on<br>that. Consider the first row of  movies . The title of the film is Titanic, so we’re going to join with all rows of<br>the  oscars table where the  o.title is Titanic. In this case, there are two rows where  o.title is Titanic, the<br>11/21/2016<br>4/9<br>3rd and 4th (best picture and directing for 1997). Joining the first row from  movies and that third row from<br>oscars gives us the first row for our new table:<br>movies join oscars<br>m.title m.studio m.gross o.category<br>Titanic Par. 2186.8 Directing<br>The first row of  movies would also join with the 4th row of  oscars , to produce the 2nd row of our new table.<br>Likewise, the 2nd and 3rd rows of  movies would join with the 2nd and 1st rows of  oscars respectively, to<br>produce our final table.<br>Here is the SQuEaL syntax for performing the join described here:<br>select m.title,m.studio,m.gross,o.category from movies,oscars where m.title=o.title<br>You should notice two things. First, after  from , we now have the names of two tables. In addition, we have<br>added the keyword  where followed by a condition that must be true in order for a row to appear in the table.<br>m.title=o.title means that a row from the movie table can be joined to a row of the oscar table exactly<br>when the title columns are equal. (This is why we have the  m. and  o. prefixes. We can’t have two columns<br>with the same name or we wouldn’t have a way to refer uniquely to them!)<br>STOP! Make sure you understand this join stuff before continuing. Be sure you can work through questions<br>like the following, or you’ll have conceptual trouble later:<br>What if there were an oscar winner from the  oscar table that didn’t have a row in the  movies table?<br>Would that winner show up in the new table?<br>What if there were a movie in the  movies table that didn’t win any awards in the  oscars table? Would<br>that movie show up in the new table?<br>s<br>p<br>o<br>i<br>l<br>e<br>r<br>The answer to both questions is no. For example, in the second case, we’d be looking at a movie in the<br>movies table and trying to connect that row with a row in the  oscars table. But since that movie’s title isn’t in<br>oscars , we find no match, and hence can’t add a row to the join table. (believe it or not, making money<br>doesn’t mean that a movie is any good -insert your own Twilight/Michael Bay joke here-).<br>Your Tasks<br>Your task for this assignment is in three parts. In the first part, you will create objects and methods to allow<br>you to work with tables and dictionaries, then you will write functions to read a database (one or more<br>tables), finally you will write a program that accepts SQuEaL queries from the keyboard, runs them on a<br>database, and outputs the results.<br>Starter Code<br>Please download the Assignment 2 Starter Files and extract the zip archive. The archive contains starter<br>Python code files and some sample tables that constitute databases (see below).<br>Part 1: Building Table and Database Objects<br>First, you will write the code to complete the  Table and  Database classes in  database.py . You will have to<br>decide how to implement these classes, including what instance variables and methods they should have. The<br>two methods that we will insist upon both classes having is  get_dict , and  set_dict , whose DocStrings have<br>11/21/2016<br>5/9<br>already been provided, and deal with dictionary representation of tables. These methods will allow us to more<br>easily test your code. You should NOT be using these in your own code.<br>A table, is represented as a dictionary where each key is the name of a column and each value is the list of<br>items in that column from the top row to the bottom. For example, the movies dictionary would contain four<br>key/value pairs. Here is one of them: the key is  ‘m.year’ and the value is  [‘1997’,’2003’,’2010’] ,<br>another would have the key  ‘m.title’ mapped to the value  [‘Titanic’,’The Lord of the Rings: The<br>Return of the King’,’Toy Story 3’] .<br>A database can be represented as a dictionary where the keys are table names and the values are table objects.<br>Before you spend time building the methods for  Table and  Database , we suggest that you read the rest of the<br>handout so you better understand what you’ll have to do with these classes. Building sensible and well<br>thought-out methods will make your life much easier when completing the next part of the assignment.<br>Part 2: Reading Tables and Databases<br>Next, you will write some reading-related functions in  reading.py .<br>Write the following functions in  reading.py :<br>read_table: (str) -&gt; Table<br>The parameter is the name of a table file (note: this time, it’s the name of the file, and not the file<br>handle). A table file is a comma-separated file such as  movies.csv . (Do not open  csv files in Excel or<br>some other spreadsheet program. They are text files. Open them in a text editor -OTHER THAN<br>NOTEPAD- to see them.) It is your task to understand the structure of this type of file in order to read<br>it properly. The function returns a Table object.<br>read_database: () -&gt; Database<br>The database on which this function operates consists of all of the table files in the current directory.<br>These files all have an extension of  .csv . This function reads each file and returns a Database object<br>representing the data from all csv files in the current directory. For a file named  x.csv , the name of the<br>table is  x ; that is, the  .csv is not part of the table name. Note that each column name in the database is<br>guaranteed to be unique. That is, if there is a column called  x in one table, then there is guaranteed not<br>to be column  x in another table. (This is why we use the  m. -style prefixes on column names: so that our<br>column names are not shared by multiple tables in the database.)<br>How are you to obtain a list of all of the  .csv files in the directory? Use  glob.glob(‘<em>.csv’) to<br>obtain a list of these filenames. We have included this bit of code to demonstrate this for you, so you<br>are just provided with a list of the names of the files thats you need to process.<br>Note that there should be no  input and no  print in  reading.py . Two functions and that’s all. If you<br>run  reading.py and it prints something or requests user input, something is wrong.<br>Part 3: Running Queries<br>In  squeal.py , you will write a program that:<br>1. Reads the database in the current directory.<br>2. Reads SQuEaL queries from the keyboard until a blank line is entered. Each query is guaranteed to be<br>of the proper syntax. You do not need to try to verify that the query has the correct syntax; it is<br>guaranteed to be a well-formed query, and it is fine if your program crashes on malformed queries.<br>After running the query, continue with the next input prompt.<br>SQuEaL Syntax<br>11/21/2016<br>6/9<br>Here is the syntax of valid SQuEaL queries. When we speak of a token, we mean a piece of the query that<br>you get by calling  split on the query. In order, the query contains:<br>The token  select . This token is required.<br>A comma-separated list of one or more column names. There are no spaces in this list, there are no<br>duplicate column names in this list, and all columns are guaranteed to exist in the table. The special<br>token  </em> (instead of a comma-separated list of column names) means “all columns”.<br>The token  from . This token is required.<br>A comma-separated list of one or more table names. There are no spaces in this list, there are no<br>duplicate table names in this list, and all tables are guaranteed to exist in the database.<br>The token  where . This token is optional. If not present, then the query is finished here and no more<br>tokens will be present. If the token  where is present, then it is followed by a  where clause that looks<br>like this:<br>A comma-separated list of one or more constraints. There are no spaces in this list, and each<br>column mentioned in the constraints is guaranteed to exist. Each constraint is of one of the<br>following four forms:  column_name1=column_name2 ,  column_name1&gt;column_name2 ,<br>column_name1=’value’ , or  column_name1&gt;’value’ (you can also implement &lt; if you wish, but<br>we won’t be testing it). Single quotes are used to indicate that the second operand is a hard-coded<br>value rather than the value of another column in the row. Notice that there are no spaces around<br>the operators. Only these two operators are allowed. Also, note that only<br>column_name1=’value’ and  column_name1&gt;’value’ are valid,  ‘value’=column_name and<br>‘value’&gt;column_name are not valid constraints (i.e., the value can only come after the operator)<br>A Required Function:  run_query<br>We’re not specifying much in terms of required functions in  squeal.py . It is your responsibility to break the<br>work into meaningful, self-contained functions that perform well-defined and small tasks, and we will be<br>marking your design. That said, we are requiring that you write two particular functions. The first of which<br>is:<br>run_query: (Database, str) -&gt; Table<br>This function takes a Database object, and a query (in the form of a string) as its parameters. Runs the given<br>query on the given database, and returns a table representing the resulting table.<br>Another Required Function:  cartesian_product<br>The second function you must write is this:<br>cartesian_product: (Table, Table) -&gt; Table<br>The Cartesian product of two tables is a new table where each row in the first table is paired with every row<br>in the second table. For example, the Cartesian product of the  movies and  oscars tables is the following.<br>cartesian product<br>m.year m.title m.studio m.gross o.year o.category o.title<br>1997 Titanic Par. 2186.8 2010<br>Animated<br>Feature<br>Film<br>Toy Story 3<br>1997 Titanic Par. 2186.8 2003 Directing<br>The Lord of the<br>Rings: The Return<br>of the King<br>1997 Titanic Par. 2186.8 1997 Directing Titanic<br>1997 Titanic Par. 2186.8 1997<br>Best<br>Picture<br>Titanic<br>2003<br>The Lord of the Rings:<br>The Return of the King<br>NL 1119.9 2010<br>Animated<br>Feature<br>Film<br>Toy Story 3<br>11/21/2016<br>7/9<br>2003<br>The Lord of the Rings:<br>The Return of the King<br>NL 1119.9 2003 Directing<br>The Lord of the<br>Rings: The Return<br>of the King<br>2003<br>The Lord of the Rings:<br>The Return of the King<br>NL 1119.9 1997 Directing Titanic<br>2003<br>The Lord of the Rings:<br>The Return of the King<br>NL 1119.9 1997<br>Best<br>Picture<br>Titanic<br>2010 Toy Story 3 BV 1063.2 2010<br>Animated<br>Feature<br>Film<br>Toy Story 3<br>2010 Toy Story 3 BV 1063.2 2003 Directing<br>The Lord of the<br>Rings: The Return<br>of the King<br>2010 Toy Story 3 BV 1063.2 1997 Directing Titanic<br>2010 Toy Story 3 BV 1063.2 1997<br>Best<br>Picture<br>Titanic<br>Note that there are three rows in  movies and four rows in  oscars , so we get 3<em>4 = 12 rows in the cartesian<br>product table. Of course, most of these 12 rows are probably not what you want, as the titles don’t match. The<br>way that these nonsense rows get removed is through a suitable  where clause that constrains which rows are<br>kept. For example, with a  where clause of  m.title=o.title , you end up with only four rows, as expected.<br>Although it isn’t very efficient (and certainly isn’t the way things are implemented in a real database system),<br>you must process the SQuEaL query by first using your  cartesian_product function to join all the tables in<br>the query into a huge table and then keep the “good” rows and columns for the query based on the  where and<br>select clauses.<br>You may have noticed in reading the SQuEaL Syntax that one or more tables are allowed in the  from part of<br>the query. That is, you must support queries that contain one or two or three or more tables. Don’t<br>overcomplicate this. First produce the Cartesian product on the first two tables; that gives you a new table.<br>Then, do the Cartesian product on that new table and the third table in the list of tables; that gives you a new<br>table again, and so on. You can use  imdb.csv or  oscar-actors.csv in your starter files if you want to try a<br>query that involves three tables.<br>What to do with a Query<br>So, a user runs  squeal.py and types a query, like  select </em> from movies or whatever. What does your<br>program have to do to process this query?<br>The first thing you want to do is break the query into tokens by calling  split . Remember: the query is<br>guaranteed to have proper syntax!<br>Now, start with the first table after the  from ; call that your base table. If there is a second table in the tables<br>list, compute the Cartesian product of the base table and that second table; that results in another table (call it<br>t2 ). If there is a third table in the tables list, compute the Cartesian product of  t2 and that third table. Keep<br>doing this until you’ve finished with all of the tables. When you’re done, you have a table containing all of the<br>columns from all of the tables that are involved in the query.<br>Now, apply any constraints in the  where clause. Each constraint from left to right results in a new table that<br>keeps only the rows that satisfy the constraint. Processing the first constraint removes 0 or more rows;<br>processing the second constraint takes the result of the first constraint and removes a further 0 or more rows,<br>and so on. We see many opportunities for helper functions here: processing one constraint, processing all<br>constraints, finding operators, handling values vs. column names, etc.<br>Finally, create a new table where you keep only those columns that were listed after the  select . (Another<br>opportunity for good design with a helper function!) The resulting table is the result of the query. Be careful:<br>11/21/2016<br>8/9<br>even though  select is listed first in the query (it is the first token), it is the last thing you do in processing the<br>query!<br>Once you’ve generated the table for the query, you want to output that table to the screen with commas<br>separating columns. We have provided a helper function in your starter code that outputs a table in the proper<br>format.<br>When are Tables Equivalent?<br>If two tables have the same rows and the same column names, but the column order is different, then the<br>tables are equivalent.<br>Similarly, if two tables have the same rows and the same column names, but the order of the rows is different,<br>then the tables are equivalent.<br>So, you can take a table, change the order of the columns, change the order of the rows, and it will still be the<br>same table. What does this mean? It means that the order in which you add rows during a Cartesian product<br>operation doesn’t matter. As long as you have the correct rows in your table, it is fine.<br>Testing your Code<br>It is recommended that you test each function as you write it by creating small files, tables, or queries,<br>depending on the function. This is preferable to doing lots of work, finding a bug, and then having no idea<br>where in the code that bug was introduced.<br>We are not asking you to submit your testing code as part of your submission.<br>To help you test, we are also providing a type-checker. It is in your starter code ( typechecker.py ). This<br>module simply tests that the required functions accept the proper number of parameters and return the proper<br>type. Passing the type-checker says nothing of the correctness of your functions, and does not test any helper<br>functions that you have written. (We haven’t prescribed how you should write those, so we can’t test their<br>type contracts!)<br>More Examples<br>Looking for more databases on which to run your code? We’ve provided a bunch of sample  .csv files. We’ve<br>added much more detailed movie info, an olympic database, as well as a database of every type of food that<br>was mentioned in the tv show Seinfeld (some databases are more practical than others). We may add new<br>files to play with as we go, so check back periodically. If you come across some fun .csv files, feel free to let<br>me know.<br>Marking<br>These are the aspects of your work that will be marked for Assignment 2:<br>Correctness: Your functions should perform as specified.<br>Formatting style: Make sure that you follow the PEP-8 Python style guidelines, and the general<br>programming rules that we have introduced throughout the term.<br>Programming style: Your variable names should be meaningful and your code as simple and clear as<br>possible.<br>No magic numbers:: remember this from Assignment 1? You should define constants and use them<br>instead of magic numbers.<br>Commenting: be sure to include accurate docstrings (that follow the design recipe we have been<br>using) and include internal comments.<br>Design: We expect a reasonable choice of functions/methods. Functions/methods should generally be<br>short – no longer than about 20-30 lines of code. Write helper functions/methods to meet this goal.<br>11/21/2016<br>9/9<br>What to Submit<br>The very last thing you should do before submitting is to run the type-check module one last time.<br>Otherwise, you could make a small error in your final changes before submitting that causes your code to<br>receive zero for correctness. Make sure that any  print or  input statements are hidden behind  if(<strong>name</strong><br>== “<strong>main</strong>“) , or else the type-checker (and more importantly the auto-marker) will wait for input when it<br>imports your file, and pause indefinitely.<br>Submit  database.py ,  reading.py and  squeal.py . Your files must be named exactly as given here (i.e. no<br>capital letters, and please don’t change the filenames).<br><br><br></font>
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://yoursite.com/2017/01/11/page92/" target="_blank" rel="external">http://yoursite.com/2017/01/11/page92/</a>
+                </p>
+                <footer><cite><a href="http://yoursite.com">@留学生Computer Science编程作业代写</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2017/01/12/page93/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Python代写 CS1210 Computer Science I Foundations</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2017/01/10/page91/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python代写 Turtle Graphics Lab</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="page92" data-title="Python代写 Assignment 2 Files, Dictionaries and Objects" data-url="http://yoursite.com/2017/01/11/page92/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ysblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "Python代写 Assignment 2 Files, Dictionaries and Objects",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "http://yoursite.com/2017/01/11/page92/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
