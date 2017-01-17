@@ -124,6 +124,41 @@
       <ul class="post-list">
   
     <li class="post-list-item">
+        <article id="post-page36" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/11/11/page36/">C代写：Bonus Lab (Chat Program using Message Queues)</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-11-11T14:32:43.000Z" itemprop="datePublished" class="post-time">
+  2016-11-11
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br>c语言的纸牌游戏，规定用链表实现功能，包括创建4种花色，洗牌，发牌等功能的实现。<br>最后还提供了sample方便测试，这个题目属于阶段性题目的一部分，以后还会有相应的扩展<br><br><strong>Requirement</strong><br>1<br>ECE175 Computer Programming for Engineering Applications<br>Homework Assignment 8<br>Due Date: Tuesday April 12, 2016 11:59 PM, via D2L<br>Conventions: Name your C programs as hwxpy.c<br>where x corresponds to the homework number and y correspondto the problem number.<br>Write comments to your programs. Programs with no comments will receive PARTIAL<br>credit. For each program that you turn in, at least the following information should be<br>included<br>Author:<br>Date created:<br>- Brief (two lines) description of the program:<br>Submission Instructions: Submit your .c files via D2L Dropbox.<br>Problem 1 (60 pts): Write a C program to<br>1) Create a full deck of 52 cards that are in order. In other words, for each of the four<br>suits, the cards should be in order from Ace (1) through King (13).<br>each card is consisted of<br>suit [clubs (♣),spades (♠),hearts (♥), or diamonds (♦))<br>a face (1(Ace) – 10, Jacks (J), Queens (Q), and Kings (K))<br>To simulate the deck, and each of the players’ hands, you MUST use a dynamic list of<br>cards with the following type<br>typedef struct card_s {<br>char suit;<br>int face;<br>struct card_s *listp;<br>} card;<br>At the HW demo time, you will be asked to print the deck that you create.<br>2) shuffle the deck (52 cards), using the following algorithm:<br>(a) For each card in the deck, get a random number in the range of 0 to 50 to be<br>used as the index of the element to swap that card with, i.e.<br>if deck[0] holds the Jack of clubs (J ♣) and the random number generated was<br>24, and deck[24] holds the 9 of diamonds (9♦), then<br>after the first swap, deck[0] would hold the 9 of diamonds (9♦) and<br>24] would hold the Jack of clubs (J ♣). You would then proceed to<br>deck[1], find a random index of a card to swap with, and swap those cards,<br>etc.<br>(b) Repeat step (a) at least 100 times.<br>Note: You must seed the random number generator with a call to time() with<br>srand(). [see sec 2.22 Random numbers in your Zyante book]<br>At the HW demo time, you will be asked to print the deck after the shuffle is done.<br>3) deal the cards (after shuffling the deck) by giving one card to the user/player,<br>followed by one card to the computer/dealer, followed by one card to the<br>2<br>user/player, etc. until each player get 8 cards. There are only 2 players<br>(computer/dealer and one user/player).<br>The player’s hand is represented as a dynamic list of cards. The list is populated<br>with the cards drawn by the player.<br>The dealer’s hand is represented as a dynamic list of cards. The list is populated<br>with the cards drawn by the dealer.<br>Note: the card(s) added to each of the player/dealer’s hand (drawn from the deck)<br>must be added to that player/dealer’s linked list correctly and MUST be removed<br>from the deck.<br>At the HW demo time, you will be asked to print both computer’s hand and user’s hand<br>Note: your program can do one of the followings (pick one):<br>♣, ♠, ♥, ♦<br>OR  display club, spade, heart, diamond<br>Sample code execution 1:<br>Note: your program will NOT<br>get exactly these shuffle<br>cards since rand() is used!<br>Note: you can see that the shuffled<br>cards are distributed to each hand in<br>an alternate fashion and starts with a<br>player/user hand.<br>- 1st card from the shuffled one is 4 of<br>club which is assigned to player’s<br>hand<br>- 2nd card from the shuffled one is 2<br>of spade which is assigned to<br>computer’s hand<br>- 3rd card from the shuffled one is 10<br>of spade which is assigned to player’s<br>hand<br>- etc.<br>3<br>Sample code execution 2:<br>Note: your program will NOT get<br>exactly these shuffle cards since<br>rand() is used!<br>Note: you can see that the shuffled cards are<br>distributed to each hand in an alternate fashion<br>and starts with a player/user hand.<br>- 1st card from the shuffled one is A ♦ which is<br>assigned to player’s hand<br>- 2nd card from the shuffled one is 6 ♦ which is<br>assigned to computer’s hand<br>- 3rd card from the shuffled one is  5♣  which is<br>assigned to player’s hand<br>- etc.<br><br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
         <article id="post-page35" 
   class="article article-type-post" itemprop="blogPost">
      
@@ -436,41 +471,6 @@
     <div class="post-content" id="post-content" itemprop="postContent" >
     
         <font size="4"><br><strong>Introduction</strong><br>自己实现一个类似stl的string库的superstring，对string功能进行扩展，包括自己实现 ==, !=, &gt;, &lt;, &gt;=, &lt;=.等操作符的重载，构造函数，find函数，trim函数，<br>insert，replace，还有类型转换等等函数的实现，难度不大，但是工作量很大。<br><br><strong>Requirement</strong><br>SET-252 C Programming #2<br>Homework:    SuperString – Final Project ( 30% of your final grade )<br><br><br>Warning:    You fail the course if you fail the final project.<br>Warning:    Your final grade for the course cannot be higher than your final project grade.<br>Warning:    You cannot consult with any student that has already completed this project.<br>Warning:    You cannot view, use or reference any code for this project written by students that have taken this course in the past.<br><br>Step 1<br>Implement the following class header file (i.e. write the cpp file).<br>You may add any other properties and/or methods that you need.  You might want to check with me before adding them just to make sure you’re on the right track.<br>Write a main function that will test all the different methods.  Make sure your main function is easy to read and understand.  I recommend you use regions and procedures to break up the logic.  You can easily comment out a call to previously made procedures so you can test only the current procedure that you are working on.<br>You may use any string functions you want (e.g. strlen, strstr, etc).<br>You may not use the built-in String class.<br>In addition to the methods listed below, overload the following operators with all reasonable parameters (i.e. char, const char <em>, CSuperString &amp;): ==, !=, &gt;, &lt;, &gt;=, &lt;=.<br>NONE of the class methods other than the constructors or the assignment operators ( = and += ) should change m_pstrSuperString.<br>You must assign the value back to the class instance to make it permanent.  For example:<br>ssBuffer = ssBuffer.ToUpperCase( );<br>Minus one letter grade for any memory leak.  Minus two letter grades if there are a lot of memory leaks.<br>Minus one letter grade if replace with substrings doesn’t work correctly.<br>Minus one letter grade if self assignment doesn’t work correctly (e.g. ssBuffer = ssBuffer.ToUpperCase( ); ).<br>Minus one letter grade if you don’t solve the double call problem.  The following should display correctly:<br>printf( “Left( 2 ): %s, Left( 4 ): %s\n”, ssBuffer.Left( 2 ), ssBuffer.Left( 4 ) );<br>Splitting the code up into two lines is not the solution.<br>Add the following procedure to your tests and make sure it executes without errors.<br><br>void MuahahahTest1( )<br>{<br>CSuperString ssTest;<br>cout &lt;&lt; “Muahahah Test #1: “ &lt;&lt; ssTest &lt;&lt; endl;<br>    }<br><br>Add the following procedure to your tests and make sure it executes without errors.<br><br>void MuahahahTest2( )<br>{<br>CSuperString ssTest = “I Love Star Wars and I Love Star Trek”;<br><br>ssTest = ssTest.Replace( “Love”,”Really Love Love” );<br><br>cout &lt;&lt; “Muahahah Test #2: “ &lt;&lt; ssTest &lt;&lt; endl;<br>    }<br>I recommend you start with just the following methods, get those working and code, test and run additional methods one at a time: constructor, initialize, assignment operator, deep copy, to string and print.<br>Next, I’d recommend you get all the other constructors done.<br>After that, I’d recommend you get all the “to <data type="">” methods done.<br><br>// ——————————————————————————–<br>// Class: CSuperString<br>// ——————————————————————————–<br>class CSuperString<br>{<br><br>    private:<br>        char</data></em> m_pstrSuperString;<br><br>    public:<br>        // Constructors<br>        CSuperString( );<br>        // Parameterized/Copy constructors<br>        // CSuperString ssBuffer( “I Love Star Trek” );<br>        // CSuperString ssBuffer( 3.14159f );<br>        CSuperString( const char <em>pstrStringToCopy );<br>        CSuperString( const bool blnBooleanToCopy );<br>        CSuperString( const char chrLetterToCopy );<br>        CSuperString( const short shtShortToCopy );<br>        CSuperString( const int intIntegerToCopy );<br>        CSuperString( const long lngLongToCopy );<br>        CSuperString( const float sngFloatToCopy );<br>        CSuperString( const double dblDoubleToCopy );<br>        CSuperString( const CSuperString &amp;ssStringToCopy );<br><br>        // Destructor<br>        virtual ~CSuperString( );<br><br>        long Length( ) const;<br><br>        // Assignment Operators<br>        void operator = ( const char </em>pstrStringToCopy );<br>        void operator = ( const char chrLetterToCopy );<br>        void operator = ( const CSuperString &amp;ssStringToCopy );<br>        // Extra credit for numeric parameters<br><br>        // Concatenate operator<br>        void operator += ( const char <em>pstrStringToAppend );<br>        void operator += ( const char chrCharacterToAppend );<br>        void operator += ( const CSuperString &amp;ssStringToAppend );<br>        // Extra credit for numeric parameters<br><br>        friend CSuperString operator + ( const CSuperString &amp;ssLeft,<br>                                const CSuperString &amp;ssRight );<br>        friend CSuperString operator + ( const char </em> pstrLeftSide,<br>                                const CSuperString &amp;ssRightString );<br>        friend CSuperString operator + ( const CSuperString &amp;ssLeftString,<br>                                const char <em> pstrRightSide );<br><br>        long FindFirstIndexOf ( const char chrLetterToFind );<br>        long FindFirstIndexOf ( const char chrLetterToFind, long lngStartIndex );<br>        long FindLastIndexOf ( const char chrLetterToFind );<br><br>        long FindFirstIndexOf ( const char </em>pstrSubStringToFind );<br>        long FindFirstIndexOf ( const char <em>pstrSubStringToFind, long lngStartIndex );<br>        long FindLastIndexOf ( const char </em>pstrSubStringToFind );<br><br>        // Do not change original string.  For example:<br>        // cout &lt;&lt; ssBuffer.ToString( ) &lt;&lt; endl;        // I Love Star Trek<br>        // cout &lt;&lt; ssBuffer.ToUpperCase( ) &lt;&lt; endl;    // I LOVE STAR TREK<br>        // cout &lt;&lt; ssBuffer.ToString( ) &lt;&lt; endl;        // I Love Star Trek<br>        const char<em> ToUpperCase( );<br>        const char</em> ToLowerCase( );<br>        const char<em> TrimLeft( );<br>        const char</em> TrimRight( );<br>        const char<em> Trim( );<br>        const char</em> Reverse( );<br><br>        const char<em> Left ( long lngCharactersToCopy );<br>        const char</em> Right ( long lngCharactersToCopy );<br>        const char<em> Substring ( long lngStart, long lngSubStringLength );<br><br>        const char</em> Replace ( char chrLetterToFind, char chrReplace );<br>        // Hard<br>        const char<em> Replace ( const char </em>pstrFind, const char<em> pstrReplace );<br>        const char</em> Insert ( const char chrLetterToInsert, long lngIndex );<br>        const char<em> Insert ( const char </em>pstrSubString, long lngIndex );<br><br>        // Subscript operator<br>        char&amp; operator [ ] ( long lngIndex );<br>        const char&amp; operator [ ] ( long lngIndex ) const;<br><br>        const char* ToString ( );<br>        bool ToBoolean ( );<br>        short ToShort ( );<br>        int ToInteger ( );<br>        long ToLong ( );<br>        float ToFloat ( );<br>        double ToDouble ( );<br><br>        // cin &gt;&gt; ssBuffer;<br>        // cout &lt;&lt; ssBuffer;<br>        friend ostream&amp; operator &lt;&lt; ( ostream &amp;osOut, const CSuperString &amp;ssOutput );<br>        friend istream&amp; operator &gt;&gt; ( istream &amp;isIn, CSuperString &amp;ssInput );<br><br>        // Don’t forget the comparison operators!!!<br>};<br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page26" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/11/03/page26/">C++代写：COMP1040_HW2</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-11-03T04:24:58.000Z" itemprop="datePublished" class="post-time">
-  2016-11-03
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>一个c++的小练习题，练习class的使用。实现一个Point类和circle类，包括构造函数还要一些基本函数的方法，<br>计算圆的面积，最后在main函数创建对象完成测试。<br><br><strong>Requirement</strong><br>Define a class called Point.<br>The Point class should contain a constructor which takes float x and float y as parameters.<br>Save these arguments as class variables.<br>Give the class appropriate getters and setters.<br>Define a class called Circle.<br>The Circle class should contain a constructor which takes Point center and float radius as<br>parameters.<br>Save these arguments as class variables.<br>Give the class appropriate getters and setters.<br>The class should have a toString method which should return the contents of the class as a String in<br>the form: Circle at x:50, y:25, radius:20.<br>The Circle class should have an additional method called calculateArea() which returns the area of<br>the circle.<br>Create a Circle object and test it a number of times by changing the radius of the object and<br>calculating the area.<br>For example:<br>Circle at x:50.0, y:25.0, radius:20.0<br>Area: 1256.6371<br>Circle at x:50.0, y:25.0, radius:70.0<br>Area: 15393.805<br><br></font>
     
     </div>
     

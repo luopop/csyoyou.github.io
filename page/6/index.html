@@ -124,6 +124,41 @@
       <ul class="post-list">
   
     <li class="post-list-item">
+        <article id="post-page47" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/11/23/page47/">Java代写：I NDIVIDUAL P ROJECT 03 - T HE L IBRARY</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-11-23T03:16:42.000Z" itemprop="datePublished" class="post-time">
+  2016-11-23
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <font size="4"><br><strong>Introduction</strong><br><br>基本思路:<br>面向对象的基础作业,根据题目要求定义属性和成员方法<br>注意点:<br>实例化对象与对象调用方法的运用,一个自定义类作为另一个自定义类的属性的理解<br><br><strong>Requirement</strong><br><br>O BJECT -O RIENTED P ROGRAMMING<br>I NDIVIDUAL P ROJECT 03 - T HE L IBRARY<br>Project 03 Background<br>Write a console (text) program comprised of a main() class, CSC211Project03, a driver<br>class, Project03Driver, and your Textbook class.<br>The driver class should have<br>•<br>a data field that is a constant array of type String called SUBJECT_LIST and is initialized<br>to at least five different textbook subjects.<br>•<br>a data field, library, that is an array of Textbook objects. The library should contain<br>10,000 textbooks. (Though you may want to test it with 10 books until you’re sure the<br>driver functions correctly.)<br>• The driver class constructor should instantiate the array, library, and fill it with random<br>Textbook objects. Randomly select a subject for each Textbook from SUBJECT_LIST<br>and a random pageCount for each Textbook between 500 and 1500. (These are college<br>textbooks after all!)<br>The driver class should have the following methods:<br>• findHeaviest returns the weight of the heaviest textbook in the library<br>•<br>getHeaviest returns the index of the heaviest textbook in the library<br>•<br>computeAverageSize returns the average page count for all the textbooks<br>•<br>computeTotalPages returns the total number of pages in all the textbooks in library<br>• getLibraryStats calls all of the above methods and reports on the library’s stats,<br>including how many total textbooks are int eh library. This is the method called from the<br>main() class.<br>Project 3 Rubric<br>General (50 Pts):<br>• 10 pts - compiles and runs, no syntax errors<br>• 10 pts - all Project03Driver methods commented using javadoc style comments<br>• 5 pts - main() class, CSC211Project03, is correct<br>• 5 pts - no magic numbers used with arrays<br>• 10 pts - all Project03Driver data fields correctly declared<br>• 10 pts - correct Project03Driver constructor implementation<br>Method implementation (50 Pts):<br>• Correct functionality in each method listed below is worth 10 points:<br>findHeaviest, getHeaviest,<br>computeAverageSize, computeTotalPages, getLibraryStats<br><br><br></font>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
         <article id="post-page46" 
   class="article article-type-post" itemprop="blogPost">
      
@@ -457,41 +492,6 @@
     </div>
     
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-page36" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/11/11/page36/">C代写：Bonus Lab (Chat Program using Message Queues)</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-11-11T14:32:43.000Z" itemprop="datePublished" class="post-time">
-  2016-11-11
-</time>
-
-        
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <font size="4"><br><strong>Introduction</strong><br>c语言的纸牌游戏，规定用链表实现功能，包括创建4种花色，洗牌，发牌等功能的实现。<br>最后还提供了sample方便测试，这个题目属于阶段性题目的一部分，以后还会有相应的扩展<br><br><strong>Requirement</strong><br>1<br>ECE175 Computer Programming for Engineering Applications<br>Homework Assignment 8<br>Due Date: Tuesday April 12, 2016 11:59 PM, via D2L<br>Conventions: Name your C programs as hwxpy.c<br>where x corresponds to the homework number and y correspondto the problem number.<br>Write comments to your programs. Programs with no comments will receive PARTIAL<br>credit. For each program that you turn in, at least the following information should be<br>included<br>Author:<br>Date created:<br>- Brief (two lines) description of the program:<br>Submission Instructions: Submit your .c files via D2L Dropbox.<br>Problem 1 (60 pts): Write a C program to<br>1) Create a full deck of 52 cards that are in order. In other words, for each of the four<br>suits, the cards should be in order from Ace (1) through King (13).<br>each card is consisted of<br>suit [clubs (♣),spades (♠),hearts (♥), or diamonds (♦))<br>a face (1(Ace) – 10, Jacks (J), Queens (Q), and Kings (K))<br>To simulate the deck, and each of the players’ hands, you MUST use a dynamic list of<br>cards with the following type<br>typedef struct card_s {<br>char suit;<br>int face;<br>struct card_s *listp;<br>} card;<br>At the HW demo time, you will be asked to print the deck that you create.<br>2) shuffle the deck (52 cards), using the following algorithm:<br>(a) For each card in the deck, get a random number in the range of 0 to 50 to be<br>used as the index of the element to swap that card with, i.e.<br>if deck[0] holds the Jack of clubs (J ♣) and the random number generated was<br>24, and deck[24] holds the 9 of diamonds (9♦), then<br>after the first swap, deck[0] would hold the 9 of diamonds (9♦) and<br>24] would hold the Jack of clubs (J ♣). You would then proceed to<br>deck[1], find a random index of a card to swap with, and swap those cards,<br>etc.<br>(b) Repeat step (a) at least 100 times.<br>Note: You must seed the random number generator with a call to time() with<br>srand(). [see sec 2.22 Random numbers in your Zyante book]<br>At the HW demo time, you will be asked to print the deck after the shuffle is done.<br>3) deal the cards (after shuffling the deck) by giving one card to the user/player,<br>followed by one card to the computer/dealer, followed by one card to the<br>2<br>user/player, etc. until each player get 8 cards. There are only 2 players<br>(computer/dealer and one user/player).<br>The player’s hand is represented as a dynamic list of cards. The list is populated<br>with the cards drawn by the player.<br>The dealer’s hand is represented as a dynamic list of cards. The list is populated<br>with the cards drawn by the dealer.<br>Note: the card(s) added to each of the player/dealer’s hand (drawn from the deck)<br>must be added to that player/dealer’s linked list correctly and MUST be removed<br>from the deck.<br>At the HW demo time, you will be asked to print both computer’s hand and user’s hand<br>Note: your program can do one of the followings (pick one):<br>♣, ♠, ♥, ♦<br>OR  display club, spade, heart, diamond<br>Sample code execution 1:<br>Note: your program will NOT<br>get exactly these shuffle<br>cards since rand() is used!<br>Note: you can see that the shuffled<br>cards are distributed to each hand in<br>an alternate fashion and starts with a<br>player/user hand.<br>- 1st card from the shuffled one is 4 of<br>club which is assigned to player’s<br>hand<br>- 2nd card from the shuffled one is 2<br>of spade which is assigned to<br>computer’s hand<br>- 3rd card from the shuffled one is 10<br>of spade which is assigned to player’s<br>hand<br>- etc.<br>3<br>Sample code execution 2:<br>Note: your program will NOT get<br>exactly these shuffle cards since<br>rand() is used!<br>Note: you can see that the shuffled cards are<br>distributed to each hand in an alternate fashion<br>and starts with a player/user hand.<br>- 1st card from the shuffled one is A ♦ which is<br>assigned to player’s hand<br>- 2nd card from the shuffled one is 6 ♦ which is<br>assigned to computer’s hand<br>- 3rd card from the shuffled one is  5♣  which is<br>assigned to player’s hand<br>- etc.<br><br><br><br></font>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
 
 </article>
     </li>
